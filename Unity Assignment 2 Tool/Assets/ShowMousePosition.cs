@@ -17,19 +17,21 @@ public class ShowMousePosition : MonoBehaviour
     [SerializeField] public bool creatingWall = true;
 
     [Tooltip("Wall prefab goes here")]
-    [SerializeField] public GameObject[] walls;
+    [SerializeField] private GameObject[] walls;
 
-    private GameObject currentWall;
+    [SerializeField] private GameObject currentWall;
 
     private void Update()
     {
-        if (creatingWall && currentWall != null)
-        {
-            Vector3 endPoint = GetMouseWorldPosition();
-            float distance = Vector3.Distance(currentWall.transform.position, endPoint);
-            currentWall.transform.localScale = new Vector3(1, 1, distance);
-            currentWall.transform.LookAt(endPoint);
-        }
+        //if (creatingWall && currentWall != null)
+        //{
+
+
+        //    Vector3 endPoint = GetMouseWorldPosition();
+        //    float distance = Vector3.Distance(currentWall.transform.position, endPoint);
+        //    currentWall.transform.localScale = new Vector3(1, 1, distance);
+        //    currentWall.transform.LookAt(endPoint);
+        //}
     }
 
     public void CreateWall()
@@ -37,7 +39,18 @@ public class ShowMousePosition : MonoBehaviour
         if (currentWall != null) return;
 
         Vector3 startPoint = GetMouseWorldPosition();
+        currentWall = Instantiate(walls[0], startPoint, Quaternion.identity,transform);
+        Debug.Log("Wall is starting");
+    }
+
+    public void ContinueWall()
+    {
+        if (currentWall == null) return;
+        
+        Vector3 startPoint = GetMouseWorldPosition();
         currentWall = Instantiate(walls[0], startPoint, Quaternion.identity, transform);
+
+        Debug.Log("Wall is continuing to be built");
     }
 
     public void FinishWall()
@@ -45,6 +58,8 @@ public class ShowMousePosition : MonoBehaviour
         if (currentWall == null) return;
 
         currentWall = null;
+
+        Debug.Log("Wall is finished");
     }
 
     private Vector3 GetMouseWorldPosition()

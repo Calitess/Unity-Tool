@@ -1,3 +1,5 @@
+
+
 using UnityEngine;
 using UnityEditor;
 
@@ -48,9 +50,12 @@ public class ShowPointerEditor : Editor
     {
         if (creatingWallProperty.boolValue == true)
         {
+
+            //Make everything else in scene not selectable
+            HandleUtility.AddDefaultControl(GUIUtility.GetControlID(FocusType.Passive));
+
             // Draw the raycast pointer
             DrawRaycastPointer(GetMouseWorldPosition(), Vector3.down);
-            HandleUtility.AddDefaultControl(GUIUtility.GetControlID(FocusType.Passive));
 
             // Handle mouse events
             HandleMouseEvents();
@@ -102,6 +107,7 @@ public class ShowPointerEditor : Editor
         }
         else if (Event.current.type == EventType.MouseDrag && Event.current.button == 0)
         {
+            targetObject.ContinueWall();
             Event.current.Use();
         }
         else if (Event.current.type == EventType.MouseUp && Event.current.button == 0)
