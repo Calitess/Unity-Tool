@@ -6,7 +6,7 @@ using UnityEditor;
 [CustomEditor(typeof(ShowMousePosition))]
 public class ShowPointerEditor : Editor
 {
-    private SerializedProperty creatingWallProperty,wallsProperty;
+    private SerializedProperty creatingWallProperty,gridProperty,wallsProperty;
     private ShowMousePosition targetObject;
 
 
@@ -27,7 +27,9 @@ public class ShowPointerEditor : Editor
 
         // Get the serialized bool field from the target object
         creatingWallProperty = serializedObject.FindProperty("creatingWall");
+        gridProperty = serializedObject.FindProperty("useGrid");
         wallsProperty = serializedObject.FindProperty("walls");
+        
 
     }
 
@@ -39,8 +41,15 @@ public class ShowPointerEditor : Editor
         // Draw the bool field for creatingWall
         EditorGUILayout.PropertyField(creatingWallProperty);
 
+        EditorGUILayout.PropertyField(gridProperty);
+
         EditorGUILayout.PropertyField(wallsProperty, true);
-      
+
+        if (GUILayout.Button("Delete All Walls"))
+        {
+            targetObject.deleteAllChildren();
+        }
+
 
         // Apply any changes made to the serialized object
         serializedObject.ApplyModifiedProperties();
@@ -54,8 +63,24 @@ public class ShowPointerEditor : Editor
             //Make everything else in scene not selectable
             HandleUtility.AddDefaultControl(GUIUtility.GetControlID(FocusType.Passive));
 
-            // Draw the raycast pointer
-            DrawRaycastPointer(GetMouseWorldPosition(), Vector3.down);
+            if (gridProperty.boolValue == true)
+            {
+                Vector3 snappingPos = targetObject.SnapPosition(GetMouseWorldPosition());
+
+                //Debug.Log(snappingPos);
+
+                // Draw the raycast pointer
+                DrawRaycastPointer(snappingPos, Vector3.down);
+            }
+            else if (gridProperty.boolValue == false)
+            {
+                Vector3 snappingPos = targetObject.GetMouseWorldPosition();
+
+                //Debug.Log(snappingPos);
+
+                // Draw the raycast pointer
+                DrawRaycastPointer(snappingPos, Vector3.down);
+            }
 
             // Handle mouse events
             HandleMouseEvents();
@@ -64,6 +89,7 @@ public class ShowPointerEditor : Editor
             SceneView.RepaintAll();
         }
         else { }
+
     }
 
     private void DrawRaycastPointer(Vector3 position, Vector3 direction)
@@ -116,5 +142,6 @@ public class ShowPointerEditor : Editor
             Event.current.Use();
         }
     }
+
 }
 
