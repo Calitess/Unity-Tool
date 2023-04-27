@@ -5,6 +5,14 @@ using UnityEngine;
 [ExecuteInEditMode]
 public class ShowMousePosition : MonoBehaviour
 {
+
+
+    // use mouse down event and mouse up event to know ehen the player is holding it down
+    // while eit is being held down, and moving, instantiate prefab every 1 unit
+    // also create another script for all the instantiated prefabs, this script holds what type of wall to display
+
+
+
     [Tooltip("When enabled, this will allow you to paint walls on an object. It will NOT allow you to select anything in the scene view")]
     [SerializeField] public bool creatingWall = true;
 
