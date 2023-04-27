@@ -30,15 +30,26 @@ public class ShowMousePosition : MonoBehaviour
 
         if (useGrid)
         {
+
             Vector3 startPoint = SnapPosition(GetMouseWorldPosition());
+
+            GameObject WallSegment = new GameObject("WallSegment");
+            WallSegment.transform.SetParent(transform);
+            WallSegment.transform.position = startPoint;
+
             Vector3 offset = new Vector3(0, walls[0].transform.localScale.y * 0.5f, 0);
-            currentWall = Instantiate(walls[0], startPoint + offset, Quaternion.identity, transform);
+            currentWall = Instantiate(walls[0], startPoint + offset, Quaternion.identity, WallSegment.transform);
         }
         else if (!useGrid)
         {
             Vector3 startPoint = GetMouseWorldPosition();
+
+            GameObject WallSegment = new GameObject("WallSegment");
+            WallSegment.transform.SetParent(transform);
+            WallSegment.transform.position = startPoint;
+
             Vector3 offset = new Vector3(0, walls[0].transform.localScale.y * 0.5f, 0);
-            currentWall = Instantiate(walls[0], startPoint + offset, Quaternion.identity, transform);
+            currentWall = Instantiate(walls[0], startPoint + offset, Quaternion.identity, WallSegment.transform);
         }
         
         lastWall = currentWall;
@@ -100,6 +111,7 @@ public class ShowMousePosition : MonoBehaviour
 
     private void CreateWallSegment(Vector3 curPoint)
     {
+        
 
         // apply the new offset value to the transform
         Vector3 offset = new Vector3(0, currentWall.transform.localScale.y * 0.5f, 0);
@@ -108,13 +120,15 @@ public class ShowMousePosition : MonoBehaviour
         //Debug.Log(distance+"  "+ currentWall.transform.position + "  "+ curPoint);
 
         
-        if (distance >= currentWall.transform.localScale.z-0.05f)
+        if (distance >= currentWall.transform.localScale.z)
         {
 
 
+            GameObject WallSegment = new GameObject("WallSegment");
+            WallSegment.transform.SetParent(transform);
+            WallSegment.transform.position = curPoint;
 
-
-            GameObject newWall = Instantiate(walls[0], curPoint + offset, Quaternion.identity, transform);
+            GameObject newWall = Instantiate(walls[0], curPoint + offset, Quaternion.identity, WallSegment.transform);
 
 
             lastWall.transform.LookAt(currentWall.transform);
@@ -165,7 +179,7 @@ public class ShowMousePosition : MonoBehaviour
     public Vector3 SnapPosition(Vector3 original)
     {
         Vector3 snapped;
-        snapped.x = Mathf.Floor(original.x + 0.5f);
+        snapped.x = Mathf.Floor(original.x+0.5f);
         snapped.y = Mathf.Floor(original.y + 0.5f);
         snapped.z = Mathf.Floor(original.z + 0.5f);
         return snapped;
