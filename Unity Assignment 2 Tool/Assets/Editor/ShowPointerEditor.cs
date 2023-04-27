@@ -35,6 +35,8 @@ public class ShowPointerEditor : Editor
 
     public override void OnInspectorGUI()
     {
+        
+
         // Update the serialized object with any changes made in the inspector
         serializedObject.Update();
 
@@ -65,7 +67,7 @@ public class ShowPointerEditor : Editor
 
             if (gridProperty.boolValue == true)
             {
-                Vector3 snappingPos = targetObject.SnapPosition(GetMouseWorldPosition());
+                Vector3 snappingPos = targetObject.SnapPosition(targetObject.GetMouseWorldPosition());
 
                 //Debug.Log(snappingPos);
 
@@ -110,19 +112,6 @@ public class ShowPointerEditor : Editor
         }
     }
 
-    private Vector3 GetMouseWorldPosition()
-    {
-        Ray ray = HandleUtility.GUIPointToWorldRay(Event.current.mousePosition);
-        RaycastHit hit;
-        if (Physics.Raycast(ray, out hit))
-        {
-            return hit.point;
-        }
-        else
-        {
-            return Vector3.zero;
-        }
-    }
 
     private void HandleMouseEvents()
     {

@@ -3,6 +3,7 @@ using UnityEditor;
 using UnityEngine;
 
 [ExecuteInEditMode]
+[AddComponentMenu("Alysha/Modular Wall",0)]
 public class ShowMousePosition : MonoBehaviour
 {
 
@@ -21,7 +22,7 @@ public class ShowMousePosition : MonoBehaviour
     [Tooltip("Wall prefab goes here")]
     [SerializeField] private GameObject[] walls;
 
-    [SerializeField] private GameObject currentWall,lastWall;
+    [SerializeField] private GameObject currentWall,lastWall, WallSegment;
 
 
     public void CreateWall()
@@ -33,23 +34,29 @@ public class ShowMousePosition : MonoBehaviour
 
             Vector3 startPoint = SnapPosition(GetMouseWorldPosition());
 
-            GameObject WallSegment = new GameObject("WallSegment");
+            WallSegment = new GameObject("WallSegment");
             WallSegment.transform.SetParent(transform);
             WallSegment.transform.position = startPoint;
 
-            Vector3 offset = new Vector3(0, walls[0].transform.localScale.y * 0.5f, 0);
+            WallSegment.AddComponent<ChangeWall>();
+
+            Vector3 offset = new Vector3(0, walls[0].transform.localScale.y * 0.5f, walls[0].transform.localScale.z * 0.5f);
             currentWall = Instantiate(walls[0], startPoint + offset, Quaternion.identity, WallSegment.transform);
+
         }
         else if (!useGrid)
         {
             Vector3 startPoint = GetMouseWorldPosition();
 
-            GameObject WallSegment = new GameObject("WallSegment");
+            WallSegment = new GameObject("WallSegment");
             WallSegment.transform.SetParent(transform);
             WallSegment.transform.position = startPoint;
 
-            Vector3 offset = new Vector3(0, walls[0].transform.localScale.y * 0.5f, 0);
+            WallSegment.AddComponent<ChangeWall>();
+
+            Vector3 offset = new Vector3(0, walls[0].transform.localScale.y * 0.5f, walls[0].transform.localScale.z * 0.5f);
             currentWall = Instantiate(walls[0], startPoint + offset, Quaternion.identity, WallSegment.transform);
+
         }
         
         lastWall = currentWall;
@@ -114,22 +121,29 @@ public class ShowMousePosition : MonoBehaviour
         
 
         // apply the new offset value to the transform
-        Vector3 offset = new Vector3(0, currentWall.transform.localScale.y * 0.5f, 0);
+        Vector3 offset = new Vector3(0, currentWall.transform.localScale.y * 0.5f, currentWall.transform.localScale.z * 0.5f);
 
         float distance = Vector3.Distance(currentWall.transform.position , curPoint + offset);
-        //Debug.Log(distance+"  "+ currentWall.transform.position + "  "+ curPoint);
+        
+        Debug.Log(distance+"  "+ currentWall.transform.position + "  "+ curPoint);
 
         
         if (distance >= currentWall.transform.localScale.z)
         {
 
 
-            GameObject WallSegment = new GameObject("WallSegment");
+            WallSegment = new GameObject("WallSegment");
             WallSegment.transform.SetParent(transform);
             WallSegment.transform.position = curPoint;
+            WallSegment.AddComponent<ChangeWall>();
 
-            GameObject newWall = Instantiate(walls[0], curPoint + offset, Quaternion.identity, WallSegment.transform);
+            GameObject newWall = Instantiate(walls[0], curPoint + offset, WallSegment.transform.rotation, WallSegment.transform);
 
+            //lastWall.transform.LookAt(currentWall.transform);
+            //currentWall.transform.LookAt(newWall.transform);
+            //lastWall = currentWall;
+            //newWall.transform.LookAt(currentWall.transform);
+            //currentWall = newWall;
 
             lastWall.transform.LookAt(currentWall.transform);
             currentWall.transform.LookAt(newWall.transform);
