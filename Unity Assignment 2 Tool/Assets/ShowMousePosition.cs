@@ -1,4 +1,5 @@
 
+using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
 
@@ -17,6 +18,7 @@ public class ShowMousePosition : MonoBehaviour
     [Tooltip("When enabled, this will allow you to paint walls on an object. It will NOT allow you to select anything in the scene view")]
     [SerializeField] public bool creatingWall = true;
 
+    [Tooltip("When enabled, this will allow you to paint walls on a grid. Best for straight walls.")]
     [SerializeField] private bool useGrid = false;
 
     [Tooltip("Wall prefab goes here")]
@@ -31,6 +33,10 @@ public class ShowMousePosition : MonoBehaviour
 
         if (useGrid)
         {
+            // Create new undo group
+            Undo.IncrementCurrentGroup();
+
+
 
             Vector3 startPoint = SnapPosition(GetMouseWorldPosition());
 
@@ -40,8 +46,17 @@ public class ShowMousePosition : MonoBehaviour
 
             WallSegment.AddComponent<ChangeWall>();
 
+
+            Undo.RegisterCreatedObjectUndo(WallSegment, "Create WallSegment");
+
             Vector3 offset = new Vector3(0, walls[0].transform.localScale.y * 0.5f, walls[0].transform.localScale.z * 0.5f);
             currentWall = Instantiate(walls[0], startPoint + offset, Quaternion.identity, WallSegment.transform);
+
+            Undo.RegisterCreatedObjectUndo(currentWall, "Create currentWall");
+            Undo.SetTransformParent(currentWall.transform, WallSegment.transform, "Modify parent");
+
+            // Name undo group
+            Undo.SetCurrentGroupName("Create and Reposition GameObject with Child");
 
         }
         else if (!useGrid)
@@ -54,11 +69,21 @@ public class ShowMousePosition : MonoBehaviour
 
             WallSegment.AddComponent<ChangeWall>();
 
+
+            Undo.RegisterCreatedObjectUndo(WallSegment, "Create WallSegment");
+
             Vector3 offset = new Vector3(0, walls[0].transform.localScale.y * 0.5f, walls[0].transform.localScale.z * 0.5f);
             currentWall = Instantiate(walls[0], startPoint + offset, Quaternion.identity, WallSegment.transform);
 
+            Undo.RegisterCreatedObjectUndo(currentWall, "Create currentWall");
+            Undo.SetTransformParent(currentWall.transform, WallSegment.transform, "Modify parent");
+
+            // Name undo group
+            Undo.SetCurrentGroupName("Create and Reposition GameObject with Child");
+
+
         }
-        
+
         lastWall = currentWall;
         //Debug.Log("Wall is starting");
     }
@@ -125,7 +150,7 @@ public class ShowMousePosition : MonoBehaviour
 
         float distance = Vector3.Distance(currentWall.transform.position , curPoint + offset);
         
-        Debug.Log(distance+"  "+ currentWall.transform.position + "  "+ curPoint);
+        //Debug.Log(distance+"  "+ currentWall.transform.position + "  "+ curPoint);
 
         
         if (distance >= currentWall.transform.localScale.z)
@@ -137,7 +162,17 @@ public class ShowMousePosition : MonoBehaviour
             WallSegment.transform.position = curPoint;
             WallSegment.AddComponent<ChangeWall>();
 
+            Undo.RegisterCreatedObjectUndo(WallSegment, "Create WallSegment");
+
+
             GameObject newWall = Instantiate(walls[0], curPoint + offset, WallSegment.transform.rotation, WallSegment.transform);
+
+
+            Undo.RegisterCreatedObjectUndo(newWall, "Create currentWall");
+            Undo.SetTransformParent(newWall.transform, WallSegment.transform, "Modify parent");
+
+            // Name undo group
+            Undo.SetCurrentGroupName("Create and Reposition GameObject with Child");
 
             //lastWall.transform.LookAt(currentWall.transform);
             //currentWall.transform.LookAt(newWall.transform);
@@ -150,6 +185,7 @@ public class ShowMousePosition : MonoBehaviour
             lastWall = currentWall;
             newWall.transform.LookAt(currentWall.transform);
             currentWall = newWall;
+
 
 
 
