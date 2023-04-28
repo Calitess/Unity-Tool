@@ -26,6 +26,9 @@ public class ShowMousePosition : MonoBehaviour
 
     [SerializeField] private GameObject currentWall,lastWall, WallSegment;
 
+    [SerializeField]
+    private Vector3 startPoint, curPoint, endPoint;
+
 
     public void CreateWall()
     {
@@ -36,10 +39,11 @@ public class ShowMousePosition : MonoBehaviour
             // Create new undo group
             Undo.IncrementCurrentGroup();
 
-
+            //startPoint = SnapPosition(GetMouseWorldPosition());
+            //Debug.Log(startPoint);
 
             Vector3 startPoint = SnapPosition(GetMouseWorldPosition());
-
+            
             WallSegment = new GameObject("WallSegment");
             WallSegment.transform.SetParent(transform);
             WallSegment.transform.position = startPoint;
@@ -57,12 +61,16 @@ public class ShowMousePosition : MonoBehaviour
 
             // Name undo group
             Undo.SetCurrentGroupName("Create and Reposition GameObject with Child");
-
+            
         }
         else if (!useGrid)
         {
+            
+            Undo.IncrementCurrentGroup();
+            //startPoint = GetMouseWorldPosition();
+            //Debug.Log(startPoint);
             Vector3 startPoint = GetMouseWorldPosition();
-
+            
             WallSegment = new GameObject("WallSegment");
             WallSegment.transform.SetParent(transform);
             WallSegment.transform.position = startPoint;
@@ -80,7 +88,7 @@ public class ShowMousePosition : MonoBehaviour
 
             // Name undo group
             Undo.SetCurrentGroupName("Create and Reposition GameObject with Child");
-
+            
 
         }
 
@@ -94,21 +102,35 @@ public class ShowMousePosition : MonoBehaviour
 
         if (useGrid)
         {
-            Vector3 curPoint = SnapPosition(GetMouseWorldPosition());
+
+            //curPoint = SnapPosition(GetMouseWorldPosition());
+
+            //Debug.Log(curPoint);
+           Vector3 curPoint = SnapPosition(GetMouseWorldPosition());
+            
             if (!curPoint.Equals(currentWall.transform.position))
             {
                 CreateWallSegment(curPoint);
 
             }
+            
         }
         else if (!useGrid)
         {
-                Vector3 curPoint = GetMouseWorldPosition();
+
+            //curPoint = GetMouseWorldPosition();
+
+            //Debug.Log(curPoint);
+
+            Vector3 curPoint = GetMouseWorldPosition();
+            
                 if (!curPoint.Equals(currentWall.transform.position))
                 {
                     CreateWallSegment(curPoint);
 
                 }
+            
+            //Debug.Log("Wall is finished");
         }
 
     }
@@ -120,6 +142,14 @@ public class ShowMousePosition : MonoBehaviour
         currentWall = null;
 
         //Debug.Log("Wall is finished");
+
+        //endPoint = GetMouseWorldPosition();
+
+        //Debug.Log(endPoint);
+
+        //CreateWallSegments(startPoint, endPoint);
+
+
     }
 
     public Vector3 GetMouseWorldPosition()
@@ -155,6 +185,7 @@ public class ShowMousePosition : MonoBehaviour
         
         if (distance >= currentWall.transform.localScale.z)
         {
+            //Undo.IncrementCurrentGroup();
 
 
             WallSegment = new GameObject("WallSegment");
@@ -194,29 +225,37 @@ public class ShowMousePosition : MonoBehaviour
         
     }
 
-    [MenuItem("Tool/Ground Selection  %g")] //bonus tool that allows users to snap any hierarchy selection to the ground! Yay!
-    public static void Ground()
+
+    private void CreateWallSegments(Vector3 startPoint, Vector3 endPoint)
     {
-        foreach (var transform in Selection.transforms)
-        {
-            var hits = Physics.RaycastAll(transform.position + Vector3.up, Vector3.down, 10f);
-            foreach (var hit in hits)
-            {
-                if (hit.collider.gameObject == transform.gameObject)
-                    continue;
+        Debug.Log("Build wall segments between  " + startPoint + " & " + endPoint );
 
-                Renderer renderer = transform.gameObject.GetComponent<Renderer>();
-                Vector3 offset = Vector3.zero;
-                if (renderer != null)
-                {
-                    offset.y = renderer.bounds.size.y / 2;
-                }
-
-                transform.position = hit.point + offset;
-                break;
-            }
-        }
     }
+
+
+    //[MenuItem("Tool/Ground Selection  %g")] //bonus tool that allows users to snap any hierarchy selection to the ground! Yay!
+    //public static void Ground()
+    //{
+    //    foreach (var transform in Selection.transforms)
+    //    {
+    //        var hits = Physics.RaycastAll(transform.position + Vector3.up, Vector3.down, 10f);
+    //        foreach (var hit in hits)
+    //        {
+    //            if (hit.collider.gameObject == transform.gameObject)
+    //                continue;
+
+    //            Renderer renderer = transform.gameObject.GetComponent<Renderer>();
+    //            Vector3 offset = Vector3.zero;
+    //            if (renderer != null)
+    //            {
+    //                offset.y = renderer.bounds.size.y / 2;
+    //            }
+
+    //            transform.position = hit.point + offset;
+    //            break;
+    //        }
+    //    }
+    //}
 
     public void deleteAllChildren()
     {
