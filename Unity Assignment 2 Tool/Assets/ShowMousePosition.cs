@@ -1,9 +1,6 @@
 
-using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
-using System;
-using UnityEngine.UIElements;
 
 [ExecuteInEditMode]
 [AddComponentMenu("Alysha/Modular Wall",0)] // change the name of the script in th inspector
@@ -31,9 +28,6 @@ public class ShowMousePosition : MonoBehaviour
 
     [SerializeField] private GameObject currentWall,lastWall, WallSegment;
 
-    [SerializeField]
-    private Vector3 startPoint, curPoint, endPoint;
-
 
 
 
@@ -45,9 +39,6 @@ public class ShowMousePosition : MonoBehaviour
         {
             // Create new undo group
             Undo.IncrementCurrentGroup();
-
-            //startPoint = SnapPosition(GetMouseWorldPosition());
-            //Debug.Log(startPoint);
 
             Vector3 startPoint = SnapPosition(GetMouseWorldPosition());
 
@@ -81,10 +72,9 @@ public class ShowMousePosition : MonoBehaviour
         {
             
             Undo.IncrementCurrentGroup();
-            //startPoint = GetMouseWorldPosition();
-            //Debug.Log(startPoint);
+
             Vector3 startPoint = GetMouseWorldPosition();
-            
+
             WallSegment = new GameObject("WallSegment");
             WallSegment.transform.SetParent(transform);
             WallSegment.transform.position = startPoint;
@@ -125,10 +115,6 @@ public class ShowMousePosition : MonoBehaviour
 
         if (useGrid)
         {
-
-            //curPoint = SnapPosition(GetMouseWorldPosition());
-
-            //Debug.Log(curPoint);
            Vector3 curPoint = SnapPosition(GetMouseWorldPosition());
             
             if (!curPoint.Equals(currentWall.transform.position))
@@ -140,11 +126,6 @@ public class ShowMousePosition : MonoBehaviour
         }
         else if (!useGrid)
         {
-
-            //curPoint = GetMouseWorldPosition();
-
-            //Debug.Log(curPoint);
-
             Vector3 curPoint = GetMouseWorldPosition();
             
                 if (!curPoint.Equals(currentWall.transform.position))
@@ -163,15 +144,6 @@ public class ShowMousePosition : MonoBehaviour
         if (currentWall == null) return;
 
         currentWall = null;
-
-        //Debug.Log("Wall is finished");
-
-        //endPoint = GetMouseWorldPosition();
-
-        //Debug.Log(endPoint);
-
-        //CreateWallSegments(startPoint, endPoint);
-
 
     }
 
@@ -214,11 +186,6 @@ public class ShowMousePosition : MonoBehaviour
             // Name undo group
             Undo.SetCurrentGroupName("Create and Reposition GameObject with Child");
 
-            //lastWall.transform.LookAt(currentWall.transform);
-            //currentWall.transform.LookAt(newWall.transform);
-            //lastWall = currentWall;
-            //newWall.transform.LookAt(currentWall.transform);
-            //currentWall = newWall;
 
             lastWall.transform.LookAt(currentWall.transform);
             currentWall.transform.LookAt(newWall.transform);
@@ -235,11 +202,47 @@ public class ShowMousePosition : MonoBehaviour
     }
 
 
-    private void CreateWallSegments(Vector3 startPoint, Vector3 endPoint)
+    public Vector3 GetMouseWorldPosition()
     {
-        Debug.Log("Build wall segments between  " + startPoint + " & " + endPoint );
+        //if (Event.current == null)
+        //{
+        //    return Vector3.down;
+        //}
+
+        Ray ray = HandleUtility.GUIPointToWorldRay(Event.current.mousePosition);
+        RaycastHit hit;
+        if (Physics.Raycast(ray, out hit))
+        {
+
+            return hit.point;
+        }
+        else
+        {
+            return Vector3.down;
+        }
+    }
+
+
+    public Vector3 SnapPosition(Vector3 original)
+    {
+        Vector3 snapped;
+        snapped.x = Mathf.Floor(original.x);
+        snapped.y = original.y;
+        snapped.z = Mathf.Floor(original.z);
+        return snapped;
 
     }
+
+
+    public void deleteAllChildren()
+    {
+        while (transform.childCount > 0)
+        {
+            DestroyImmediate(transform.GetChild(0).gameObject);
+        }
+    }
+
+
 
     [MenuItem("Tool/Snap To Ground %g")]
     public static void Ground()
@@ -272,44 +275,6 @@ public class ShowMousePosition : MonoBehaviour
                 transform.position = hit.point + offset;
                 break;
             }
-        }
-    }
-
-    public void deleteAllChildren()
-    {
-        while (transform.childCount > 0)
-        {
-            DestroyImmediate(transform.GetChild(0).gameObject);
-        }
-    }
-
-    public Vector3 SnapPosition(Vector3 original)
-    {
-        Vector3 snapped;
-        snapped.x = Mathf.Floor(original.x);
-        snapped.y = original.y;
-        snapped.z = Mathf.Floor(original.z);
-        return snapped;
-
-    }
-
-    public Vector3 GetMouseWorldPosition()
-    {
-        if (Event.current == null)
-        {
-            return Vector3.down;
-        }
-
-        Ray ray = HandleUtility.GUIPointToWorldRay(Event.current.mousePosition);
-        RaycastHit hit;
-        if (Physics.Raycast(ray, out hit))
-        {
-
-            return hit.point;
-        }
-        else
-        {
-            return Vector3.down;
         }
     }
 

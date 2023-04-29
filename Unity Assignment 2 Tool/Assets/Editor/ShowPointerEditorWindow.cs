@@ -4,7 +4,6 @@ using UnityEngine;
 public class ShowPointerEditorWindow : EditorWindow
 {
     //giving player the ability to instatiate a container with creating wall straight away
-    //[Tooltip("When enabled, this will allow you to paint walls straight away after clicking 'Create Wall Container' button")]
     public bool creatingWallBool = false;
 
     //So tht player can choose n open window from menu bar
@@ -20,17 +19,27 @@ public class ShowPointerEditorWindow : EditorWindow
 
     private void OnGUI()
     {
+        //Shows tooltip in the editor window
         GUIContent content = new GUIContent("Start creating wall", "When enabled, this will allow you to paint walls straight away after clicking 'Create Wall Container' button");
+
+        //Make a toggle bool
         creatingWallBool = EditorGUILayout.Toggle(content, creatingWallBool);
 
         //Make a button that creates the container
         if (GUILayout.Button("Create Wall Container"))
         {
             GameObject go = new GameObject("Wall Container");
+
+            //attaching a script on the wall container
             go.AddComponent<ShowMousePosition>();
+
+            //getting the bool from the window 
             ShowMousePosition myScript = go.GetComponent<ShowMousePosition>();
+
+            //assigning the bool to the script
             myScript.creatingWall = creatingWallBool;
 
+            //automatically select wallcontainer in the hierarchy
             Selection.activeGameObject = go;
         }
 
