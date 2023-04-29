@@ -298,59 +298,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &674518752
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 674518754}
-  - component: {fileID: 674518753}
-  m_Layer: 0
-  m_Name: Wall Container
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &674518753
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 674518752}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c748157089f17ff46852bdac70f7b645, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  creatingWall: 0
-  useGrid: 0
-  undoIndividualWalls: 0
-  walls:
-  - {fileID: 1801076491682508069, guid: 8cc597b61477de145b45acbffe930850, type: 3}
-  - {fileID: 6598494070502743620, guid: 99dd77f490952c94e96b74a8f2adda47, type: 3}
-  currentWall: {fileID: 0}
-  lastWall: {fileID: 0}
-  WallSegment: {fileID: 0}
---- !u!4 &674518754
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 674518752}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -445,6 +392,62 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &841857990
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 841857992}
+  - component: {fileID: 841857991}
+  m_Layer: 0
+  m_Name: Wall Container
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &841857991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 841857990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c748157089f17ff46852bdac70f7b645, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  creatingWall: 0
+  useGrid: 0
+  undoIndividualWalls: 0
+  randomWall: 0
+  walls:
+  - {fileID: 1801076491682508069, guid: 8cc597b61477de145b45acbffe930850, type: 3}
+  - {fileID: 6598494070502743620, guid: 99dd77f490952c94e96b74a8f2adda47, type: 3}
+  - {fileID: 6939904451443576548, guid: 60fd9fe15b10bd94c92a4593be0cdee7, type: 3}
+  - {fileID: 8989737525019981695, guid: eeb8d797bab9d634eb31a6e4fda96fe7, type: 3}
+  currentWall: {fileID: 0}
+  lastWall: {fileID: 0}
+  WallSegment: {fileID: 0}
+--- !u!4 &841857992
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 841857990}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0

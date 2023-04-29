@@ -23,8 +23,11 @@ public class ShowMousePosition : MonoBehaviour
     [Tooltip("When enabled, this will allow you to undo (ctrl+z) the creation of individual walls. If disabled, it will undo creation of a wall group")]
     [SerializeField] private bool undoIndividualWalls = false;
 
+    [Tooltip("When enabled, this will randomize what prefab to instantiate for the walls that are drawn.")]
+    [SerializeField] private bool randomWall = false;
+
     [Tooltip("Wall prefab goes here")]
-    [SerializeField] private GameObject[] walls;
+    [SerializeField] public GameObject[] walls;
 
     [SerializeField] private GameObject currentWall,lastWall, WallSegment;
 
@@ -53,8 +56,18 @@ public class ShowMousePosition : MonoBehaviour
 
             try
             {
-                Vector3 offset = new Vector3(0, walls[0].transform.localScale.y * 0.5f, 0);
-                currentWall = Instantiate(walls[0], startPoint + offset, Quaternion.identity, WallSegment.transform);
+
+                if (!randomWall)
+                {
+                    Vector3 offset = new Vector3(0, walls[0].transform.localScale.y * 0.5f, 0);
+                    currentWall = Instantiate(walls[0], startPoint + offset, Quaternion.identity, WallSegment.transform);
+                }
+                else if (randomWall)
+                {
+                    int randomNum = Random.Range(0, walls.Length);
+                    Vector3 offset = new Vector3(0, walls[randomNum].transform.localScale.y * 0.5f, 0);
+                    currentWall = Instantiate(walls[randomNum], startPoint + offset, Quaternion.identity, WallSegment.transform);
+                }
 
                 Undo.RegisterCreatedObjectUndo(currentWall, "Create currentWall");
                 Undo.SetTransformParent(currentWall.transform, WallSegment.transform, "Modify parent");
@@ -87,9 +100,19 @@ public class ShowMousePosition : MonoBehaviour
 
             try
             {
-                Vector3 offset = new Vector3(0, walls[0].transform.localScale.y * 0.5f, 0);
-                
-                currentWall = Instantiate(walls[0], startPoint + offset, Quaternion.identity, WallSegment.transform);
+                if (!randomWall)
+                {
+                    Vector3 offset = new Vector3(0, walls[0].transform.localScale.y * 0.5f, 0);
+
+                    currentWall = Instantiate(walls[0], startPoint + offset, Quaternion.identity, WallSegment.transform);
+                }
+
+                else if (randomWall)
+                {
+                    int randomNum = Random.Range(0, walls.Length);
+                    Vector3 offset = new Vector3(0, walls[randomNum].transform.localScale.y * 0.5f, 0);
+                    currentWall = Instantiate(walls[randomNum], startPoint + offset, Quaternion.identity, WallSegment.transform);
+                }
 
                 Undo.RegisterCreatedObjectUndo(currentWall, "Create currentWall");
                 Undo.SetTransformParent(currentWall.transform, WallSegment.transform, "Modify parent");
@@ -176,22 +199,45 @@ public class ShowMousePosition : MonoBehaviour
 
             Undo.RegisterCreatedObjectUndo(WallSegment, "Create WallSegment");
 
+            if (!randomWall)
+            {
+                GameObject newWall = Instantiate(walls[0], curPoint + offset, WallSegment.transform.rotation, WallSegment.transform);
 
-            GameObject newWall = Instantiate(walls[0], curPoint + offset, WallSegment.transform.rotation, WallSegment.transform);
+                Undo.RegisterCreatedObjectUndo(newWall, "Create currentWall");
+                Undo.SetTransformParent(newWall.transform, WallSegment.transform, "Modify parent");
+
+                // Name undo group
+                Undo.SetCurrentGroupName("Create and Reposition GameObject with Child");
 
 
-            Undo.RegisterCreatedObjectUndo(newWall, "Create currentWall");
-            Undo.SetTransformParent(newWall.transform, WallSegment.transform, "Modify parent");
+                lastWall.transform.LookAt(currentWall.transform);
+                currentWall.transform.LookAt(newWall.transform);
+                lastWall = currentWall;
+                newWall.transform.LookAt(currentWall.transform);
+                currentWall = newWall;
+            }
+            else if(randomWall)
+            {
+                int randomNum = Random.Range(0, walls.Length);
 
-            // Name undo group
-            Undo.SetCurrentGroupName("Create and Reposition GameObject with Child");
+                GameObject newWall = Instantiate(walls[randomNum], curPoint + offset, WallSegment.transform.rotation, WallSegment.transform);
+
+                Undo.RegisterCreatedObjectUndo(newWall, "Create currentWall");
+                Undo.SetTransformParent(newWall.transform, WallSegment.transform, "Modify parent");
+
+                // Name undo group
+                Undo.SetCurrentGroupName("Create and Reposition GameObject with Child");
 
 
-            lastWall.transform.LookAt(currentWall.transform);
-            currentWall.transform.LookAt(newWall.transform);
-            lastWall = currentWall;
-            newWall.transform.LookAt(currentWall.transform);
-            currentWall = newWall;
+                lastWall.transform.LookAt(currentWall.transform);
+                currentWall.transform.LookAt(newWall.transform);
+                lastWall = currentWall;
+                newWall.transform.LookAt(currentWall.transform);
+                currentWall = newWall;
+            }
+
+
+
 
 
 

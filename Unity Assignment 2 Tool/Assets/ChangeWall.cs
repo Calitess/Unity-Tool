@@ -20,11 +20,12 @@ public class ChangeWall : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //get the instantiated wall and asign it to curwalltype
-        curWallType = transform.GetChild(0).gameObject;
+            //get the instantiated wall and asign it to curwalltype
+            curWallType = transform.GetChild(0).gameObject;
 
-        //assign curwalltype to wall type so that player can see the wall type
-        WallType = curWallType;
+            //assign curwalltype to wall type so that player can see the wall type
+            WallType = curWallType;
+        
 
         
     }

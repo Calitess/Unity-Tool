@@ -2,11 +2,12 @@
 
 using UnityEngine;
 using UnityEditor;
+using System.Linq;
 
 [CustomEditor(typeof(ShowMousePosition))]
 public class ShowPointerEditor : Editor
 {
-    private SerializedProperty creatingWallProperty,gridProperty,wallsProperty, undoProperty;
+    private SerializedProperty creatingWallProperty,gridProperty,wallsProperty, undoProperty, randomProperty;
     private ShowMousePosition targetObject;
 
 
@@ -23,6 +24,7 @@ public class ShowPointerEditor : Editor
         // Get the serialized bool field from the target object
         creatingWallProperty = serializedObject.FindProperty("creatingWall");
         undoProperty = serializedObject.FindProperty("undoIndividualWalls");
+        randomProperty = serializedObject.FindProperty("randomWall");
         gridProperty = serializedObject.FindProperty("useGrid");
         wallsProperty = serializedObject.FindProperty("walls");
         
@@ -44,7 +46,9 @@ public class ShowPointerEditor : Editor
 
         EditorGUILayout.PropertyField(gridProperty);
 
-        EditorGUILayout.PropertyField(wallsProperty, true);
+        EditorGUILayout.PropertyField(randomProperty);
+
+        EditorGUILayout.PropertyField(wallsProperty);
 
         //Make a delete button that deletes all the children
         if (GUILayout.Button("Delete All Walls"))
@@ -98,9 +102,12 @@ public class ShowPointerEditor : Editor
             // Draw a sphere to represent the end of the raycast pointer
             Handles.DrawWireDisc(hit.point, hit.normal, 0.5f);
 
+            
+                // Handle mouse events
+                HandleMouseEvents();
+            
 
-            // Handle mouse events
-            HandleMouseEvents();
+
 
             return hit.point;
         }
@@ -112,23 +119,36 @@ public class ShowPointerEditor : Editor
 
     private void HandleMouseEvents()
     {
-        if (Event.current.type == EventType.MouseDown && Event.current.button == 0)
+        if (targetObject.walls != null && targetObject.walls.Length > 0)
         {
+            if (Event.current.type == EventType.MouseDown && Event.current.button == 0)
+            {
 
-            targetObject.CreateWall();
-            Event.current.Use();
+                targetObject.CreateWall();
+                Event.current.Use();
 
+            }
+            else if (Event.current.type == EventType.MouseDrag && Event.current.button == 0)
+            {
+                targetObject.ContinueWall();
+                Event.current.Use();
+            }
+            else if (Event.current.type == EventType.MouseUp && Event.current.button == 0)
+            {
+                targetObject.FinishWall();
+                Event.current.Use();
+            }
         }
-        else if (Event.current.type == EventType.MouseDrag && Event.current.button == 0)
+        else
         {
-            targetObject.ContinueWall();
-            Event.current.Use();
+            if (Event.current.type == EventType.MouseDown && Event.current.button == 0)
+            {
+
+                Debug.LogWarning("Please put in a prefab in the walls array!");
+
+            }
         }
-        else if (Event.current.type == EventType.MouseUp && Event.current.button == 0)
-        {
-            targetObject.FinishWall();
-            Event.current.Use();
-        }
+        
     }
 
 
