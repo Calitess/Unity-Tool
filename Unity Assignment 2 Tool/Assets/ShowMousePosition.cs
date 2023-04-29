@@ -2,9 +2,11 @@
 using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
+using System;
+using UnityEngine.UIElements;
 
 [ExecuteInEditMode]
-[AddComponentMenu("Alysha/Modular Wall",0)]
+[AddComponentMenu("Alysha/Modular Wall",0)] // change the name of the script in th inspector
 public class ShowMousePosition : MonoBehaviour
 {
 
@@ -21,6 +23,9 @@ public class ShowMousePosition : MonoBehaviour
     [Tooltip("When enabled, this will allow you to paint walls on a grid. Best for straight walls.")]
     [SerializeField] private bool useGrid = false;
 
+    [Tooltip("When enabled, this will allow you to undo (ctrl+z) the creation of individual walls. If disabled, it will undo creation of a wall group")]
+    [SerializeField] private bool undoIndividualWalls = false;
+
     [Tooltip("Wall prefab goes here")]
     [SerializeField] private GameObject[] walls;
 
@@ -28,6 +33,7 @@ public class ShowMousePosition : MonoBehaviour
 
     [SerializeField]
     private Vector3 startPoint, curPoint, endPoint;
+
 
 
     public void CreateWall()
@@ -43,7 +49,7 @@ public class ShowMousePosition : MonoBehaviour
             //Debug.Log(startPoint);
 
             Vector3 startPoint = SnapPosition(GetMouseWorldPosition());
-            
+
             WallSegment = new GameObject("WallSegment");
             WallSegment.transform.SetParent(transform);
             WallSegment.transform.position = startPoint;
@@ -53,15 +59,22 @@ public class ShowMousePosition : MonoBehaviour
 
             Undo.RegisterCreatedObjectUndo(WallSegment, "Create WallSegment");
 
-            Vector3 offset = new Vector3(0, walls[0].transform.localScale.y * 0.5f, walls[0].transform.localScale.z * 0.5f);
-            currentWall = Instantiate(walls[0], startPoint + offset, Quaternion.identity, WallSegment.transform);
+            try
+            {
+                Vector3 offset = new Vector3(0, walls[0].transform.localScale.y * 0.5f, walls[0].transform.localScale.z * 0.5f);
+                currentWall = Instantiate(walls[0], startPoint + offset, Quaternion.identity, WallSegment.transform);
 
-            Undo.RegisterCreatedObjectUndo(currentWall, "Create currentWall");
-            Undo.SetTransformParent(currentWall.transform, WallSegment.transform, "Modify parent");
+                Undo.RegisterCreatedObjectUndo(currentWall, "Create currentWall");
+                Undo.SetTransformParent(currentWall.transform, WallSegment.transform, "Modify parent");
 
-            // Name undo group
-            Undo.SetCurrentGroupName("Create and Reposition GameObject with Child");
-            
+                // Name undo group
+                Undo.SetCurrentGroupName("Create and Reposition GameObject with Child");
+            }
+            catch
+            {
+                Debug.LogWarning("Please put in a prefab in the walls array! Click 'Delete All Walls' to remove the empty wall segments");
+            }
+
         }
         else if (!useGrid)
         {
@@ -80,14 +93,23 @@ public class ShowMousePosition : MonoBehaviour
 
             Undo.RegisterCreatedObjectUndo(WallSegment, "Create WallSegment");
 
-            Vector3 offset = new Vector3(0, walls[0].transform.localScale.y * 0.5f, walls[0].transform.localScale.z * 0.5f);
-            currentWall = Instantiate(walls[0], startPoint + offset, Quaternion.identity, WallSegment.transform);
 
-            Undo.RegisterCreatedObjectUndo(currentWall, "Create currentWall");
-            Undo.SetTransformParent(currentWall.transform, WallSegment.transform, "Modify parent");
+            try
+            {
+                Vector3 offset = new Vector3(0, walls[0].transform.localScale.y * 0.5f, walls[0].transform.localScale.z * 0.5f);
+                
+                currentWall = Instantiate(walls[0], startPoint + offset, Quaternion.identity, WallSegment.transform);
 
-            // Name undo group
-            Undo.SetCurrentGroupName("Create and Reposition GameObject with Child");
+                Undo.RegisterCreatedObjectUndo(currentWall, "Create currentWall");
+                Undo.SetTransformParent(currentWall.transform, WallSegment.transform, "Modify parent");
+
+                // Name undo group
+                Undo.SetCurrentGroupName("Create and Reposition GameObject with Child");
+            }
+            catch
+            {
+                Debug.LogWarning("Please put in a prefab in the walls array! Click 'Delete All Walls' to remove the empty wall segments");
+            }
             
 
         }
@@ -152,24 +174,7 @@ public class ShowMousePosition : MonoBehaviour
 
     }
 
-    public Vector3 GetMouseWorldPosition()
-    {
-        if (Event.current == null)
-        {
-            return Vector3.down;
-        }
-
-        Ray ray = HandleUtility.GUIPointToWorldRay(Event.current.mousePosition);
-        RaycastHit hit;
-        if (Physics.Raycast(ray, out hit))
-        {
-            return hit.point;
-        }
-        else
-        {
-            return Vector3.down;
-        }
-    }
+   
 
     private void CreateWallSegment(Vector3 curPoint)
     {
@@ -185,7 +190,10 @@ public class ShowMousePosition : MonoBehaviour
         
         if (distance >= currentWall.transform.localScale.z)
         {
-            //Undo.IncrementCurrentGroup();
+            if (undoIndividualWalls)
+            {
+                Undo.IncrementCurrentGroup();
+            }
 
 
             WallSegment = new GameObject("WallSegment");
@@ -232,30 +240,39 @@ public class ShowMousePosition : MonoBehaviour
 
     }
 
+    [MenuItem("Tool/Snap To Ground %g")]
+    public static void Ground()
+    {
 
-    //[MenuItem("Tool/Ground Selection  %g")] //bonus tool that allows users to snap any hierarchy selection to the ground! Yay!
-    //public static void Ground()
-    //{
-    //    foreach (var transform in Selection.transforms)
-    //    {
-    //        var hits = Physics.RaycastAll(transform.position + Vector3.up, Vector3.down, 10f);
-    //        foreach (var hit in hits)
-    //        {
-    //            if (hit.collider.gameObject == transform.gameObject)
-    //                continue;
 
-    //            Renderer renderer = transform.gameObject.GetComponent<Renderer>();
-    //            Vector3 offset = Vector3.zero;
-    //            if (renderer != null)
-    //            {
-    //                offset.y = renderer.bounds.size.y / 2;
-    //            }
 
-    //            transform.position = hit.point + offset;
-    //            break;
-    //        }
-    //    }
-    //}
+        foreach (var transform in Selection.transforms)
+        {
+
+
+            var hits = Physics.RaycastAll(transform.position + Vector3.up, Vector3.down, 10f);
+
+            foreach (var hit in hits)
+            {
+
+
+                if (hit.collider.gameObject == transform.gameObject)
+                    continue;
+
+
+
+                Renderer renderer = transform.gameObject.GetComponent<Renderer>();
+                Vector3 offset = Vector3.zero;
+                if (renderer != null)
+                {
+                    offset.y = renderer.bounds.size.y / 2;
+                }
+
+                transform.position = hit.point + offset;
+                break;
+            }
+        }
+    }
 
     public void deleteAllChildren()
     {
@@ -268,11 +285,31 @@ public class ShowMousePosition : MonoBehaviour
     public Vector3 SnapPosition(Vector3 original)
     {
         Vector3 snapped;
-        snapped.x = Mathf.Floor(original.x+0.5f);
-        snapped.y = Mathf.Floor(original.y + 0.5f);
-        snapped.z = Mathf.Floor(original.z + 0.5f);
+        snapped.x = Mathf.Floor(original.x);
+        snapped.y = original.y;
+        snapped.z = Mathf.Floor(original.z);
         return snapped;
 
+    }
+
+    public Vector3 GetMouseWorldPosition()
+    {
+        if (Event.current == null)
+        {
+            return Vector3.down;
+        }
+
+        Ray ray = HandleUtility.GUIPointToWorldRay(Event.current.mousePosition);
+        RaycastHit hit;
+        if (Physics.Raycast(ray, out hit))
+        {
+
+            return hit.point;
+        }
+        else
+        {
+            return Vector3.down;
+        }
     }
 
 

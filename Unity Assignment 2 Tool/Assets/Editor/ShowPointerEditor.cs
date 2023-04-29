@@ -6,7 +6,7 @@ using UnityEditor;
 [CustomEditor(typeof(ShowMousePosition))]
 public class ShowPointerEditor : Editor
 {
-    private SerializedProperty creatingWallProperty,gridProperty,wallsProperty;
+    private SerializedProperty creatingWallProperty,gridProperty,wallsProperty, undoProperty;
     private ShowMousePosition targetObject;
 
 
@@ -20,13 +20,9 @@ public class ShowPointerEditor : Editor
             return;
         }
 
-        //if (target == null)
-        //{
-        //    return;
-        //}
-
         // Get the serialized bool field from the target object
         creatingWallProperty = serializedObject.FindProperty("creatingWall");
+        undoProperty = serializedObject.FindProperty("undoIndividualWalls");
         gridProperty = serializedObject.FindProperty("useGrid");
         wallsProperty = serializedObject.FindProperty("walls");
         
@@ -40,13 +36,17 @@ public class ShowPointerEditor : Editor
         // Update the serialized object with any changes made in the inspector
         serializedObject.Update();
 
-        // Draw the bool field for creatingWall
+
+        // Draw the fields for all the property
         EditorGUILayout.PropertyField(creatingWallProperty);
+
+        EditorGUILayout.PropertyField(undoProperty);
 
         EditorGUILayout.PropertyField(gridProperty);
 
         EditorGUILayout.PropertyField(wallsProperty, true);
 
+        //Make a delete button that deletes all the children
         if (GUILayout.Button("Delete All Walls"))
         {
             targetObject.deleteAllChildren();
@@ -59,33 +59,15 @@ public class ShowPointerEditor : Editor
 
     private void OnSceneGUI()
     {
+
+
         if (creatingWallProperty.boolValue == true)
         {
 
             //Make everything else in scene not selectable
             HandleUtility.AddDefaultControl(GUIUtility.GetControlID(FocusType.Passive));
 
-            if (gridProperty.boolValue == true)
-            {
-                Vector3 snappingPos = targetObject.SnapPosition(targetObject.GetMouseWorldPosition());
-
-                //Debug.Log(snappingPos);
-
-                // Draw the raycast pointer
-                DrawRaycastPointer(snappingPos, Vector3.down);
-            }
-            else if (gridProperty.boolValue == false)
-            {
-                Vector3 snappingPos = targetObject.GetMouseWorldPosition();
-
-                //Debug.Log(snappingPos);
-
-                // Draw the raycast pointer
-                DrawRaycastPointer(snappingPos, Vector3.down);
-            }
-
-            // Handle mouse events
-            HandleMouseEvents();
+            GetMouseWorldPosition();
 
             // Repaint the scene view
             SceneView.RepaintAll();
@@ -94,31 +76,48 @@ public class ShowPointerEditor : Editor
 
     }
 
-    private void DrawRaycastPointer(Vector3 position, Vector3 direction)
+    public Vector3 GetMouseWorldPosition()
     {
-        // Perform a raycast in the scene
-        Ray ray = new Ray(position, direction);
+        if (Event.current == null)
+        {
+            return Vector3.down;
+        }
+
+        Ray ray = HandleUtility.GUIPointToWorldRay(Event.current.mousePosition);
         RaycastHit hit;
         if (Physics.Raycast(ray, out hit))
         {
+
+
             // Draw a line to represent the raycast
             Handles.color = Color.red;
 
             //Draw dotted line going up 
-            Handles.DrawDottedLine(position + new Vector3(0, 10, 0), hit.point, 10);
+            Handles.DrawDottedLine(hit.point + new Vector3(0, 10, 0), hit.point, 10);
 
             // Draw a sphere to represent the end of the raycast pointer
             Handles.DrawWireDisc(hit.point, hit.normal, 0.5f);
+
+
+            // Handle mouse events
+            HandleMouseEvents();
+
+            return hit.point;
+        }
+        else
+        {
+            return Vector3.down;
         }
     }
-
 
     private void HandleMouseEvents()
     {
         if (Event.current.type == EventType.MouseDown && Event.current.button == 0)
         {
+
             targetObject.CreateWall();
             Event.current.Use();
+
         }
         else if (Event.current.type == EventType.MouseDrag && Event.current.button == 0)
         {
@@ -131,6 +130,8 @@ public class ShowPointerEditor : Editor
             Event.current.Use();
         }
     }
+
+
 
 }
 
