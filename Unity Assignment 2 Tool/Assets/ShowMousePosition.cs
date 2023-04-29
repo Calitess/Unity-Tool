@@ -36,6 +36,7 @@ public class ShowMousePosition : MonoBehaviour
 
 
 
+
     public void CreateWall()
     {
         if (currentWall != null) return;
@@ -61,7 +62,7 @@ public class ShowMousePosition : MonoBehaviour
 
             try
             {
-                Vector3 offset = new Vector3(0, walls[0].transform.localScale.y * 0.5f, walls[0].transform.localScale.z * 0.5f);
+                Vector3 offset = new Vector3(0, walls[0].transform.localScale.y * 0.5f, 0);
                 currentWall = Instantiate(walls[0], startPoint + offset, Quaternion.identity, WallSegment.transform);
 
                 Undo.RegisterCreatedObjectUndo(currentWall, "Create currentWall");
@@ -96,7 +97,7 @@ public class ShowMousePosition : MonoBehaviour
 
             try
             {
-                Vector3 offset = new Vector3(0, walls[0].transform.localScale.y * 0.5f, walls[0].transform.localScale.z * 0.5f);
+                Vector3 offset = new Vector3(0, walls[0].transform.localScale.y * 0.5f, 0);
                 
                 currentWall = Instantiate(walls[0], startPoint + offset, Quaternion.identity, WallSegment.transform);
 
@@ -181,7 +182,7 @@ public class ShowMousePosition : MonoBehaviour
         
 
         // apply the new offset value to the transform
-        Vector3 offset = new Vector3(0, currentWall.transform.localScale.y * 0.5f, currentWall.transform.localScale.z * 0.5f);
+        Vector3 offset = new Vector3(0, currentWall.transform.localScale.y * 0.5f, 0);
 
         float distance = Vector3.Distance(currentWall.transform.position , curPoint + offset);
         

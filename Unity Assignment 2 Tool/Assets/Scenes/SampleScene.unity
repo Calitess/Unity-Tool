@@ -328,8 +328,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   creatingWall: 1
-  useGrid: 1
-  undoIndividualWalls: 1
+  useGrid: 0
+  undoIndividualWalls: 0
   walls:
   - {fileID: 1801076491682508069, guid: 8cc597b61477de145b45acbffe930850, type: 3}
   currentWall: {fileID: 0}
