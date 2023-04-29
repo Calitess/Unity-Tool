@@ -1,4 +1,4 @@
-
+/*
 using UnityEngine;
 using UnityEditor;
 
@@ -37,4 +37,4 @@ public class ChangeWallEditor : Editor
         serializedObject.ApplyModifiedProperties();
     }
 
-}
+}*/

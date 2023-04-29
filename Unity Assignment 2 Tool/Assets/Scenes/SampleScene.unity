@@ -327,17 +327,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c748157089f17ff46852bdac70f7b645, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  creatingWall: 1
+  creatingWall: 0
   useGrid: 0
   undoIndividualWalls: 0
   walls:
   - {fileID: 1801076491682508069, guid: 8cc597b61477de145b45acbffe930850, type: 3}
+  - {fileID: 6598494070502743620, guid: 99dd77f490952c94e96b74a8f2adda47, type: 3}
   currentWall: {fileID: 0}
   lastWall: {fileID: 0}
   WallSegment: {fileID: 0}
-  startPoint: {x: 0, y: 0, z: 0}
-  curPoint: {x: 0, y: 0, z: 0}
-  endPoint: {x: 0, y: 0, z: 0}
 --- !u!4 &674518754
 Transform:
   m_ObjectHideFlags: 0

@@ -1,18 +1,21 @@
 
 using UnityEngine;
-
+using System.Collections.Generic;
+using UnityEditor;
+using Unity.VisualScripting;
 
 [ExecuteInEditMode]
 [AddComponentMenu("Alysha/WallType", 0)] // change the name of the script in th inspector
 public class ChangeWall : MonoBehaviour
 {
     
-    [SerializeField]GameObject curWallType;
+    [SerializeField] GameObject curWallType;
 
     [Tooltip("You can change wall type by dragging and dropping new prefab in here!")]
     [SerializeField] GameObject WallType;
 
-
+    //saving all the modified rotations
+    [SerializeField] private List <Quaternion> originalRot = new List<Quaternion> ();
 
     // Start is called before the first frame update
     void Start()
@@ -22,15 +25,25 @@ public class ChangeWall : MonoBehaviour
 
         //assign curwalltype to wall type so that player can see the wall type
         WallType = curWallType;
+
+        
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (originalRot.Count <= 1)
+        {
+            Transform t = transform.GetChild(0); // assuming the cube is the first child
+            originalRot.Add(t.localRotation);
+        }
+
         //if walltype isnt empty and wall type is different from cur wall type, change it
         if (WallType != null && WallType != curWallType)
         {
             ChangeWallType();
+
+            Debug.Log(" changing wall type ");
         }
     }
 
@@ -38,16 +51,26 @@ public class ChangeWall : MonoBehaviour
     private void ChangeWallType()
     {
 
+        Debug.Log(" changing wall type void entered ");
+
         if (WallType != curWallType)
         {
-            WallType.transform.rotation = curWallType.transform.rotation; 
+                WallType.transform.rotation = curWallType.transform.rotation;
 
-            DestroyImmediate(transform.GetChild(0).gameObject);
+                //Debug.Log(WallType.transform.rotation + " = " + curWallType.transform.rotation);
 
-            Vector3 offset = new Vector3(0,WallType.transform.localScale.y * 0.5f,0);
+                DestroyImmediate(transform.GetChild(0).gameObject);
+                
+                Vector3 offset = new Vector3(0, WallType.transform.localScale.y * 0.5f, 0);
 
-            Instantiate(WallType, transform.position + offset, WallType.transform.rotation, transform);
-            curWallType = WallType;
+                Quaternion oriRot = originalRot[originalRot.Count - 1];
+
+                Instantiate(WallType, transform.position + offset, oriRot, transform);
+
+                curWallType = WallType;
+
+
         }
+
     }
 }
