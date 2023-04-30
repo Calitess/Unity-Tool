@@ -7,7 +7,7 @@ using System.Linq;
 [CustomEditor(typeof(ShowMousePosition))]
 public class ShowPointerEditor : Editor
 {
-    private SerializedProperty creatingWallProperty,gridProperty,wallsProperty, undoProperty, randomProperty;
+    private SerializedProperty creatingWallProperty,gridProperty,wallsProperty, undoProperty, randomProperty, raycastProperty;
     private ShowMousePosition targetObject;
 
 
@@ -27,7 +27,8 @@ public class ShowPointerEditor : Editor
         randomProperty = serializedObject.FindProperty("randomWall");
         gridProperty = serializedObject.FindProperty("useGrid");
         wallsProperty = serializedObject.FindProperty("walls");
-        
+        raycastProperty = serializedObject.FindProperty("considerRaycast");
+
 
     }
 
@@ -48,12 +49,34 @@ public class ShowPointerEditor : Editor
 
         EditorGUILayout.PropertyField(randomProperty);
 
+
+        EditorGUILayout.PropertyField(raycastProperty);
+
         EditorGUILayout.PropertyField(wallsProperty);
+
 
         //Make a delete button that deletes all the children
         if (GUILayout.Button("Delete All Walls"))
         {
             targetObject.deleteAllChildren();
+        }
+
+        if (targetObject.walls != null && targetObject.walls.Length > 0)
+        {
+            if (targetObject.considerRaycast == false)
+            {
+                for (int i = 0; i < targetObject.walls.Length; i++)
+                {
+                    targetObject.walls[i].layer = LayerMask.NameToLayer("Ignore Raycast");
+                }
+            }
+            else if (targetObject.considerRaycast == true)
+            {
+                for (int i = 0; i < targetObject.walls.Length; i++)
+                {
+                    targetObject.walls[i].layer = LayerMask.NameToLayer("Default");
+                }
+            }
         }
 
 
@@ -63,7 +86,7 @@ public class ShowPointerEditor : Editor
 
     private void OnSceneGUI()
     {
-
+        serializedObject.Update();
 
         if (creatingWallProperty.boolValue == true)
         {
@@ -77,6 +100,10 @@ public class ShowPointerEditor : Editor
             SceneView.RepaintAll();
         }
         else { }
+
+
+
+        serializedObject.ApplyModifiedProperties();
 
     }
 
@@ -103,8 +130,8 @@ public class ShowPointerEditor : Editor
             Handles.DrawWireDisc(hit.point, hit.normal, 0.5f);
 
             
-                // Handle mouse events
-                HandleMouseEvents();
+            // Handle mouse events
+            HandleMouseEvents();
             
 
 
@@ -125,12 +152,14 @@ public class ShowPointerEditor : Editor
             {
 
                 targetObject.CreateWall();
+
                 Event.current.Use();
 
             }
             else if (Event.current.type == EventType.MouseDrag && Event.current.button == 0)
             {
                 targetObject.ContinueWall();
+
                 Event.current.Use();
             }
             else if (Event.current.type == EventType.MouseUp && Event.current.button == 0)

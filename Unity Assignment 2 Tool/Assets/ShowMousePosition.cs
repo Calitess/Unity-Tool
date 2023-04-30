@@ -1,4 +1,6 @@
 
+using System.Collections.Generic;
+using System.Threading;
 using UnityEditor;
 using UnityEngine;
 
@@ -26,10 +28,15 @@ public class ShowMousePosition : MonoBehaviour
     [Tooltip("When enabled, this will randomize what prefab to instantiate for the walls that are drawn.")]
     [SerializeField] private bool randomWall = false;
 
+    [Tooltip("When enabled, this will let you draw prefabs on top of prefabs, best to create demolished walls/debris.")]
+    [SerializeField] public bool considerRaycast = false;
+
     [Tooltip("Wall prefab goes here")]
     [SerializeField] public GameObject[] walls;
 
-    [SerializeField] private GameObject currentWall,lastWall, WallSegment;
+    [SerializeField] private GameObject currentWall,lastWall, secondLastWall,newWall, WallSegment;
+
+    public Vector3 direction;
 
 
 
@@ -128,6 +135,7 @@ public class ShowMousePosition : MonoBehaviour
 
         }
 
+
         lastWall = currentWall;
         //Debug.Log("Wall is starting");
     }
@@ -166,7 +174,11 @@ public class ShowMousePosition : MonoBehaviour
     {
         if (currentWall == null) return;
 
+
         currentWall = null;
+        lastWall = null;
+        secondLastWall = null;
+        newWall = null;
 
     }
 
@@ -197,11 +209,15 @@ public class ShowMousePosition : MonoBehaviour
             WallSegment.transform.position = curPoint;
             WallSegment.AddComponent<ChangeWall>();
 
+
             Undo.RegisterCreatedObjectUndo(WallSegment, "Create WallSegment");
 
             if (!randomWall)
             {
-                GameObject newWall = Instantiate(walls[0], curPoint + offset, WallSegment.transform.rotation, WallSegment.transform);
+                
+
+                newWall = Instantiate(walls[0], curPoint + offset, WallSegment.transform.rotation, WallSegment.transform);
+              
 
                 Undo.RegisterCreatedObjectUndo(newWall, "Create currentWall");
                 Undo.SetTransformParent(newWall.transform, WallSegment.transform, "Modify parent");
@@ -209,18 +225,34 @@ public class ShowMousePosition : MonoBehaviour
                 // Name undo group
                 Undo.SetCurrentGroupName("Create and Reposition GameObject with Child");
 
+                if (secondLastWall != null)
+                {
+                    lastWall = currentWall;
+                    direction = newWall.transform.position - secondLastWall.transform.position;
 
-                lastWall.transform.LookAt(currentWall.transform);
-                currentWall.transform.LookAt(newWall.transform);
-                lastWall = currentWall;
+                    Quaternion rotation = Quaternion.LookRotation(direction, Vector3.up);
+
+                    lastWall.transform.rotation = rotation;
+
+                    //lastWall.transform.LookAt(currentWall.transform);
+                    secondLastWall = lastWall;
+                }
+                else if (secondLastWall == null)
+                {
+                    lastWall.transform.LookAt(newWall.transform);
+                    secondLastWall = lastWall;
+                }
+
                 newWall.transform.LookAt(currentWall.transform);
                 currentWall = newWall;
+
+                newWall.transform.forward = -newWall.transform.forward;
             }
             else if(randomWall)
             {
                 int randomNum = Random.Range(0, walls.Length);
 
-                GameObject newWall = Instantiate(walls[randomNum], curPoint + offset, WallSegment.transform.rotation, WallSegment.transform);
+                 newWall = Instantiate(walls[randomNum], curPoint + offset, WallSegment.transform.rotation, WallSegment.transform);
 
                 Undo.RegisterCreatedObjectUndo(newWall, "Create currentWall");
                 Undo.SetTransformParent(newWall.transform, WallSegment.transform, "Modify parent");
@@ -229,11 +261,28 @@ public class ShowMousePosition : MonoBehaviour
                 Undo.SetCurrentGroupName("Create and Reposition GameObject with Child");
 
 
-                lastWall.transform.LookAt(currentWall.transform);
-                currentWall.transform.LookAt(newWall.transform);
-                lastWall = currentWall;
+                if (secondLastWall != null)
+                {
+                    lastWall = currentWall;
+                    direction = newWall.transform.position - secondLastWall.transform.position;
+
+                    Quaternion rotation = Quaternion.LookRotation(direction, Vector3.up);
+
+                    lastWall.transform.rotation = rotation;
+
+                    //lastWall.transform.LookAt(currentWall.transform);
+                    secondLastWall = lastWall;
+                }
+                else if (secondLastWall == null)
+                {
+                    lastWall.transform.LookAt(newWall.transform);
+                    secondLastWall = lastWall;
+                }
+
                 newWall.transform.LookAt(currentWall.transform);
                 currentWall = newWall;
+
+                newWall.transform.forward = -newWall.transform.forward;
             }
 
 
@@ -323,6 +372,9 @@ public class ShowMousePosition : MonoBehaviour
             }
         }
     }
+
+
+
 
 
 }

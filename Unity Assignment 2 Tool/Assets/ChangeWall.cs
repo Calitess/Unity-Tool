@@ -20,11 +20,18 @@ public class ChangeWall : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        try
+        {
             //get the instantiated wall and asign it to curwalltype
             curWallType = transform.GetChild(0).gameObject;
 
             //assign curwalltype to wall type so that player can see the wall type
             WallType = curWallType;
+        }
+        catch 
+        {
+            Debug.LogWarning("You have not put in a prefab. Click 'Delete All Walls' button to delete empty wall segments");
+        }
         
 
         
@@ -33,18 +40,24 @@ public class ChangeWall : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (originalRot.Count <= 1)
+        try
         {
-            Transform t = transform.GetChild(0); // assuming the cube is the first child
-            originalRot.Add(t.localRotation);
+            if (originalRot.Count <= 1)
+            {
+                Transform t = transform.GetChild(0); // assuming the cube is the first child
+                originalRot.Add(t.localRotation);
+            }
+
+            //if walltype isnt empty and wall type is different from cur wall type, change it
+            if (WallType != null && WallType != curWallType)
+            {
+                ChangeWallType();
+                Debug.Log(" changing wall type ");
+            }
         }
-
-        //if walltype isnt empty and wall type is different from cur wall type, change it
-        if (WallType != null && WallType != curWallType)
+        catch
         {
-            ChangeWallType();
-
-            Debug.Log(" changing wall type ");
+            Debug.LogWarning("You have not put in a prefab. Click 'Delete All Walls' button to delete empty wall segments");
         }
     }
 
