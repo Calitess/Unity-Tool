@@ -3,12 +3,14 @@
 using UnityEngine;
 using UnityEditor;
 using System.Linq;
+using UnityEngine.UIElements;
 
 [CustomEditor(typeof(ShowMousePosition))]
 public class ShowPointerEditor : Editor
 {
     private SerializedProperty creatingWallProperty,gridProperty,wallsProperty, undoProperty, randomProperty, raycastProperty, useCustomDistanceProperty, customDistanceProperty;
     private ShowMousePosition targetObject;
+    private bool showTips = true;
 
 
 
@@ -41,16 +43,28 @@ public class ShowPointerEditor : Editor
         // Update the serialized object with any changes made in the inspector
         serializedObject.Update();
 
+        EditorGUILayout.LabelField("Modular Wall Tool", EditorStyles.boldLabel) ;
+
+
+        EditorGUILayout.Space();
+
+        EditorGUILayout.LabelField("Wall Creation", EditorStyles.boldLabel);
+
+
 
         // Draw the fields for all the property
         EditorGUILayout.PropertyField(creatingWallProperty);
-
-        EditorGUILayout.PropertyField(undoProperty);
 
         EditorGUILayout.PropertyField(gridProperty);
 
         EditorGUILayout.PropertyField(randomProperty);
 
+        EditorGUILayout.Space();
+
+        EditorGUILayout.LabelField("Custom Properties", EditorStyles.boldLabel);
+
+
+        EditorGUILayout.PropertyField(undoProperty);
 
         EditorGUILayout.PropertyField(raycastProperty);
 
@@ -62,19 +76,45 @@ public class ShowPointerEditor : Editor
             EditorGUILayout.PropertyField(customDistanceProperty);
         }
 
-        
 
+
+        EditorGUILayout.Space(20);
 
         if (GUILayout.Button("Remove All Prefabs"))
         {
             targetObject.walls = null;
         }
 
+        EditorGUILayout.Space();
+
         //Make a delete button that deletes all the children
         if (GUILayout.Button("Delete All Walls"))
         {
             targetObject.deleteAllChildren();
         }
+        EditorGUILayout.Space();
+
+        showTips = EditorGUILayout.BeginToggleGroup("Tips", showTips);
+        if (showTips) // only show the tips if the toggle is set to true
+        {
+            GUIStyle italic = new GUIStyle(GUI.skin.label);
+            italic.fontStyle = FontStyle.Italic;
+
+            GUILayout.Label("Hover over elements to get more info", italic);
+
+            EditorGUILayout.Space();
+
+            GUILayout.Label("Alt-C to select parents", italic); 
+            GUILayout.Label("Alt-V to select child", italic);
+            GUILayout.Label("Alt-B to ground transform for walls created", italic);
+            GUILayout.Label("Ctrl-G to ground selection", italic);
+            
+        }
+        EditorGUILayout.EndToggleGroup();
+
+        EditorGUILayout.Space(20);
+
+
 
         EditorGUILayout.PropertyField(wallsProperty);
 

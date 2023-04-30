@@ -5,6 +5,7 @@ public class ShowPointerEditorWindow : EditorWindow
 {
     //giving player the ability to instatiate a container with creating wall straight away
     public bool creatingWallBool = false;
+    private bool showTips = true;
 
     //So tht player can choose n open window from menu bar
     [MenuItem("Tool/Modular Wall")]
@@ -19,6 +20,10 @@ public class ShowPointerEditorWindow : EditorWindow
 
     private void OnGUI()
     {
+        EditorGUILayout.LabelField("Modular Wall Tool", EditorStyles.boldLabel);
+
+
+        EditorGUILayout.Space();
         //Shows tooltip in the editor window
         GUIContent content = new GUIContent("Start creating wall", "When enabled, this will allow you to paint walls straight away after clicking 'Create Wall Container' button");
 
@@ -46,6 +51,29 @@ public class ShowPointerEditorWindow : EditorWindow
 
         // Save the state of the toggle in EditorPrefs
         EditorPrefs.SetBool("CreatingWall", creatingWallBool);
+
+
+
+        EditorGUILayout.Space(20);
+
+        showTips = EditorGUILayout.BeginToggleGroup("Tips", showTips);
+        if (showTips) // only show the tips if the toggle is set to true
+        {
+            GUIStyle italic = new GUIStyle(GUI.skin.label);
+            italic.fontStyle = FontStyle.Italic;
+
+            GUILayout.Label("Hover over elements to get more info", italic);
+
+            EditorGUILayout.Space();
+
+
+            GUILayout.Label("Alt-C to select parents", italic);
+            GUILayout.Label("Alt-V to select child", italic);
+            GUILayout.Label("Alt-B to ground transform for walls created", italic);
+            GUILayout.Label("Ctrl-G to ground selection", italic);
+
+        }
+        EditorGUILayout.EndToggleGroup();
     }
 
     private void OnEnable()

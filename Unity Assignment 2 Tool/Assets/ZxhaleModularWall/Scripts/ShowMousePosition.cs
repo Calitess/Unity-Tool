@@ -31,7 +31,7 @@ public class ShowMousePosition : MonoBehaviour
     [Tooltip("When enabled, this will let you draw prefabs on top of prefabs, best to create demolished walls/debris.")]
     [SerializeField] public bool considerRaycast = false;
 
-    [Tooltip("Wall prefab goes here")]
+    [Tooltip("Wall prefab goes here. Only prefab in Element 0 will be drawn, unless 'Random Wall' is enabled")]
     [SerializeField] public GameObject[] walls;
 
     [SerializeField] private GameObject currentWall,lastWall, secondLastWall,newWall, WallSegment;

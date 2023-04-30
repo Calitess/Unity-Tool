@@ -34,9 +34,16 @@ public class ChangeWallEditor : Editor
         // Update the serialized object with any changes made in the inspector
         serializedObject.Update();
 
+        EditorGUILayout.LabelField("Change Wall Type", EditorStyles.boldLabel);
+
+
+        EditorGUILayout.Space();
+
 
         // Draw the fields for all the property
         EditorGUILayout.PropertyField(WallTypeProperty);
+
+        EditorGUILayout.Space();
 
         if (GUILayout.Button("Rotate 90Deg"))
         {
@@ -56,7 +63,10 @@ public class ChangeWallEditor : Editor
                     EditorCoroutineUtility.StartCoroutine(targetObject.RefreshRot(), targetObject);
                 }
             }
+
+            
         }
+
 
 
         // Apply any changes made to the serialized object
