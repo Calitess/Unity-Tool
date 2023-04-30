@@ -36,7 +36,14 @@ public class ShowMousePosition : MonoBehaviour
 
     [SerializeField] private GameObject currentWall,lastWall, secondLastWall,newWall, WallSegment;
 
+    private Mesh mesh;
     public Vector3 direction;
+
+    [Tooltip("When enabled, it used custom distance float")]
+    [SerializeField] public bool useCustomDistance = false;
+
+    [Tooltip("Custom distance between instantiated walls")]
+    [SerializeField] private float customDistance, prefabDistance;
 
 
 
@@ -192,11 +199,33 @@ public class ShowMousePosition : MonoBehaviour
         Vector3 offset = new Vector3(0, currentWall.transform.localScale.y * 0.5f, 0);
 
         float distance = Vector3.Distance(currentWall.transform.position , curPoint + offset);
-        
+
         //Debug.Log(distance+"  "+ currentWall.transform.position + "  "+ curPoint);
 
+        if (useCustomDistance)
+        {
+            prefabDistance = customDistance;
+        }
+        else
+        {
+            try
+            {
+                mesh = walls[0].GetComponent<MeshFilter>().sharedMesh;
+                prefabDistance = mesh.bounds.size.z;
+            }
+            catch
+            {
+                Debug.LogWarning("Prefab is an empty gameObject with no mesh filter as it's parent, using custom distance.");
+
+                useCustomDistance = true;
+                prefabDistance = customDistance;
+
+
+            }
+        }
         
-        if (distance >= currentWall.transform.localScale.z)
+
+        if (distance >= prefabDistance)
         {
             if (undoIndividualWalls)
             {
@@ -373,6 +402,51 @@ public class ShowMousePosition : MonoBehaviour
         }
     }
 
+    [MenuItem("Tool/Select Parent &c")]
+    static void SelectParentOfObjects()
+    {
+        List<GameObject> newSelection = new List<GameObject>();
+        foreach (var s in Selection.objects)
+        {
+            newSelection.Add((s as GameObject).transform.parent?.gameObject);
+        }
+        Selection.objects = newSelection.ToArray();
+    }
+
+    [MenuItem("Tool/Select Child &v")]
+    static void SelectChild()
+    {
+        List<GameObject> newSelection = new List<GameObject>();
+        foreach (var s in Selection.gameObjects)
+        {
+            Transform[] children = s.GetComponentsInChildren<Transform>();
+            foreach (Transform child in children)
+            {
+                if (child.gameObject != s) // Exclude the parent object
+                {
+                    newSelection.Add(child.gameObject);
+                }
+            }
+        }
+        Selection.objects = newSelection.ToArray();
+    }
+
+    [MenuItem("Tool/Ground Transform &b")]
+    static void SameParentOfObjects()
+    {
+        List<GameObject> newSelection = new List<GameObject>();
+        foreach (var s in Selection.objects)
+        {
+            GameObject parentObject = (s as GameObject).transform.parent?.gameObject;
+            if (parentObject != null)
+            {
+                newSelection.Add(parentObject);
+                Transform childTransform = parentObject.transform.GetChild(0);
+                childTransform.position = new Vector3(childTransform.position.x, parentObject.transform.position.y, childTransform.position.z); // Set child's y position to parent's y position
+            }
+        }
+        Selection.objects = newSelection.ToArray();
+    }
 
 
 

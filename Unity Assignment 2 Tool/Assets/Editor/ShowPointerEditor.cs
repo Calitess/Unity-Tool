@@ -7,7 +7,7 @@ using System.Linq;
 [CustomEditor(typeof(ShowMousePosition))]
 public class ShowPointerEditor : Editor
 {
-    private SerializedProperty creatingWallProperty,gridProperty,wallsProperty, undoProperty, randomProperty, raycastProperty;
+    private SerializedProperty creatingWallProperty,gridProperty,wallsProperty, undoProperty, randomProperty, raycastProperty, useCustomDistanceProperty, customDistanceProperty;
     private ShowMousePosition targetObject;
 
 
@@ -28,6 +28,8 @@ public class ShowPointerEditor : Editor
         gridProperty = serializedObject.FindProperty("useGrid");
         wallsProperty = serializedObject.FindProperty("walls");
         raycastProperty = serializedObject.FindProperty("considerRaycast");
+        useCustomDistanceProperty = serializedObject.FindProperty("useCustomDistance");
+        customDistanceProperty = serializedObject.FindProperty("customDistance");
 
 
     }
@@ -51,6 +53,14 @@ public class ShowPointerEditor : Editor
 
 
         EditorGUILayout.PropertyField(raycastProperty);
+
+        EditorGUILayout.PropertyField(useCustomDistanceProperty);
+
+        if (targetObject.useCustomDistance)
+        {
+
+            EditorGUILayout.PropertyField(customDistanceProperty);
+        }
 
         EditorGUILayout.PropertyField(wallsProperty);
 

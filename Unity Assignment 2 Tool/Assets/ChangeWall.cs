@@ -22,17 +22,20 @@ public class ChangeWall : MonoBehaviour
     {
         try
         {
+            
             //get the instantiated wall and asign it to curwalltype
             curWallType = transform.GetChild(0).gameObject;
 
             //assign curwalltype to wall type so that player can see the wall type
             WallType = curWallType;
+
         }
         catch 
         {
             Debug.LogWarning("You have not put in a prefab. Click 'Delete All Walls' button to delete empty wall segments");
         }
         
+
 
         
     }
@@ -52,7 +55,7 @@ public class ChangeWall : MonoBehaviour
             if (WallType != null && WallType != curWallType)
             {
                 ChangeWallType();
-                Debug.Log(" changing wall type ");
+                //Debug.Log(" changing wall type ");
             }
         }
         catch
@@ -65,7 +68,7 @@ public class ChangeWall : MonoBehaviour
     private void ChangeWallType()
     {
 
-        Debug.Log(" changing wall type void entered ");
+        //Debug.Log(" changing wall type void entered ");
 
         if (WallType != curWallType)
         {
