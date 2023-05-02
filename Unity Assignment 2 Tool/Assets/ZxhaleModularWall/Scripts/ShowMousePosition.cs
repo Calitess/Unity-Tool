@@ -31,6 +31,9 @@ public class ShowMousePosition : MonoBehaviour
     [Tooltip("When enabled, this will let you draw prefabs on top of prefabs, best to create demolished walls/debris.")]
     [SerializeField] public bool considerRaycast = false;
 
+    [Tooltip("When enabled, this will make your prefabs to consider raycast after you release RMB.")]
+    [SerializeField] public bool backToDefault = true;
+
     [Tooltip("Wall prefab goes here. Only prefab in Element 0 will be drawn, unless 'Random Wall' is enabled")]
     [SerializeField] public GameObject[] walls;
 
@@ -179,6 +182,32 @@ public class ShowMousePosition : MonoBehaviour
 
     public void FinishWall()
     {
+        
+
+        if (backToDefault == true)
+        {
+            List<Transform> children = new List<Transform>();
+            Stack<Transform> tempList = new Stack<Transform>();
+
+            tempList.Push(transform);
+
+            do
+            {
+                Transform t = tempList.Pop();
+                children.Add(t);
+                for (int n = 0; n < t.childCount; n++)
+                {
+                    tempList.Push(t.GetChild(n));
+                }
+
+            } while (tempList.Count > 0);
+
+            foreach (Transform child in children)
+            {
+                child.gameObject.layer = LayerMask.NameToLayer("Default");
+            }
+        }
+
         if (currentWall == null) return;
 
 
@@ -186,28 +215,6 @@ public class ShowMousePosition : MonoBehaviour
         lastWall = null;
         secondLastWall = null;
         newWall = null;
-
-
-        List<Transform> children = new List<Transform>();
-        Stack<Transform> tempList = new Stack<Transform>();
-
-        tempList.Push(transform);
-
-        do
-        {
-            Transform t = tempList.Pop();
-            children.Add(t);
-            for (int n = 0; n < t.childCount; n++)
-            {
-                tempList.Push(t.GetChild(n));
-            }
-
-        } while (tempList.Count > 0);
-
-        foreach (Transform child in children)
-        {
-            child.gameObject.layer = LayerMask.NameToLayer("Default");
-        }
 
     }
 

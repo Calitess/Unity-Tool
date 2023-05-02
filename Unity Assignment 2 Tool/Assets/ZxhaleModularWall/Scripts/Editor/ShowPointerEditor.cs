@@ -9,7 +9,7 @@ using UnityEngine.UIElements;
 [CustomEditor(typeof(ShowMousePosition))]
 public class ShowPointerEditor : Editor
 {
-    private SerializedProperty creatingWallProperty,gridProperty,wallsProperty, undoProperty, randomProperty, raycastProperty, useCustomDistanceProperty, customDistanceProperty;
+    private SerializedProperty creatingWallProperty,gridProperty,wallsProperty, undoProperty, randomProperty, raycastProperty, useCustomDistanceProperty, customDistanceProperty, backToDefaultProperty;
     private ShowMousePosition targetObject;
     private bool showTips = true;
 
@@ -33,6 +33,7 @@ public class ShowPointerEditor : Editor
         raycastProperty = serializedObject.FindProperty("considerRaycast");
         useCustomDistanceProperty = serializedObject.FindProperty("useCustomDistance");
         customDistanceProperty = serializedObject.FindProperty("customDistance");
+        backToDefaultProperty = serializedObject.FindProperty("backToDefault");
 
 
     }
@@ -69,6 +70,11 @@ public class ShowPointerEditor : Editor
 
         EditorGUILayout.PropertyField(raycastProperty);
 
+        if (targetObject.considerRaycast == false)
+        {
+            EditorGUILayout.PropertyField(backToDefaultProperty);
+        }
+
         EditorGUILayout.PropertyField(useCustomDistanceProperty);
 
         if (targetObject.useCustomDistance)
@@ -95,12 +101,6 @@ public class ShowPointerEditor : Editor
         }
         EditorGUILayout.Space();
 
-        if (GUILayout.Button("Make Wall Segment to Default Layer"))
-        {
-            targetObject.DefaultLayer();
-           
-        }
-        EditorGUILayout.Space();
 
         showTips = EditorGUILayout.BeginToggleGroup("Tips", showTips);
         if (showTips) // only show the tips if the toggle is set to true
