@@ -65447,10 +65447,10 @@ MonoBehaviour:
   secondLastWall: {fileID: 0}
   newWall: {fileID: 0}
   WallSegment: {fileID: 0}
-  direction: {x: -1.710002, y: 0, z: -0.3842697}
+  direction: {x: -3.9460073, y: 0.048429966, z: 1.045126}
   useCustomDistance: 1
-  customDistance: 1
-  prefabDistance: 1
+  customDistance: 2.08
+  prefabDistance: 2.08
 --- !u!4 &999718299
 Transform:
   m_ObjectHideFlags: 0
@@ -65459,7 +65459,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 999718297}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.19943655, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

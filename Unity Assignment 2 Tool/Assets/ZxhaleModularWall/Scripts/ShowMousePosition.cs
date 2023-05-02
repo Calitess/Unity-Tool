@@ -187,6 +187,28 @@ public class ShowMousePosition : MonoBehaviour
         secondLastWall = null;
         newWall = null;
 
+
+        List<Transform> children = new List<Transform>();
+        Stack<Transform> tempList = new Stack<Transform>();
+
+        tempList.Push(transform);
+
+        do
+        {
+            Transform t = tempList.Pop();
+            children.Add(t);
+            for (int n = 0; n < t.childCount; n++)
+            {
+                tempList.Push(t.GetChild(n));
+            }
+
+        } while (tempList.Count > 0);
+
+        foreach (Transform child in children)
+        {
+            child.gameObject.layer = LayerMask.NameToLayer("Default");
+        }
+
     }
 
    
@@ -449,7 +471,31 @@ public class ShowMousePosition : MonoBehaviour
         Selection.objects = newSelection.ToArray();
     }
 
+    public void DefaultLayer()
+    {
+            List<Transform> children = new List<Transform>();
+            Stack<Transform> tempList = new Stack<Transform>();
 
+            tempList.Push(transform);
+
+            do
+            {
+                Transform t = tempList.Pop();
+                children.Add(t);
+                for (int n = 0; n < t.childCount; n++)
+                {
+                    tempList.Push(t.GetChild(n));
+                }
+
+            } while (tempList.Count > 0);
+
+            foreach (Transform child in children)
+            {
+                child.gameObject.layer = LayerMask.NameToLayer("Default");
+            }
+            //targetObject.walls[i].layer = LayerMask.NameToLayer("Default");
+        
+    }
 
 
 }

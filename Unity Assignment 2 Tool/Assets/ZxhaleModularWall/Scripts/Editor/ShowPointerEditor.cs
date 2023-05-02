@@ -95,6 +95,13 @@ public class ShowPointerEditor : Editor
         }
         EditorGUILayout.Space();
 
+        if (GUILayout.Button("Make Wall Segment to Default Layer"))
+        {
+            targetObject.DefaultLayer();
+           
+        }
+        EditorGUILayout.Space();
+
         showTips = EditorGUILayout.BeginToggleGroup("Tips", showTips);
         if (showTips) // only show the tips if the toggle is set to true
         {
@@ -155,7 +162,27 @@ public class ShowPointerEditor : Editor
                 {
                     for (int i = 0; i < targetObject.walls.Length; i++)
                     {
-                        targetObject.walls[i].layer = LayerMask.NameToLayer("Default");
+                        List<Transform> children = new List<Transform>();
+                        Stack<Transform> tempList = new Stack<Transform>();
+
+                        tempList.Push(targetObject.walls[i].transform);
+
+                        do
+                        {
+                            Transform t = tempList.Pop();
+                            children.Add(t);
+                            for (int n = 0; n < t.childCount; n++)
+                            {
+                                tempList.Push(t.GetChild(n));
+                            }
+
+                        } while (tempList.Count > 0);
+
+                        foreach (Transform child in children)
+                        {
+                            child.gameObject.layer = LayerMask.NameToLayer("Default");
+                        }
+                        //targetObject.walls[i].layer = LayerMask.NameToLayer("Default");
                     }
                 }
             }
@@ -164,6 +191,8 @@ public class ShowPointerEditor : Editor
         {
             Debug.LogWarning("Please put in a prefab in the walls array!");
         }
+
+
 
 
         // Apply any changes made to the serialized object
