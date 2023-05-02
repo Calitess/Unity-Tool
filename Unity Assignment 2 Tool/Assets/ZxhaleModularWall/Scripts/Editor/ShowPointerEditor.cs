@@ -1,5 +1,6 @@
 
-
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 using System.Linq;
@@ -126,7 +127,28 @@ public class ShowPointerEditor : Editor
                 {
                     for (int i = 0; i < targetObject.walls.Length; i++)
                     {
-                        targetObject.walls[i].layer = LayerMask.NameToLayer("Ignore Raycast");
+                        List<Transform> children = new List<Transform>();
+                        Stack<Transform> tempList = new Stack<Transform>();
+
+                        tempList.Push(targetObject.walls[i].transform);
+
+                        do
+                        {
+                            Transform t = tempList.Pop();
+                            children.Add(t);
+                            for(int n = 0; n < t.childCount; n++)
+                            {
+                                tempList.Push(t.GetChild(n));
+                            }
+
+                        } while (tempList.Count > 0);
+
+                        foreach(Transform child in children)
+                        {
+                            child.gameObject.layer = LayerMask.NameToLayer("Ignore Raycast");
+                        }
+
+                        //targetObject.walls[i].layer = LayerMask.NameToLayer("Ignore Raycast");
                     }
                 }
                 else if (targetObject.considerRaycast == true)

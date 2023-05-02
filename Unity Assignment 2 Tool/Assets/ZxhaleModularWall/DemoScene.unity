@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641275, b: 0.5748172, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -268,6 +268,7 @@ MonoBehaviour:
   curWallType: {fileID: 2038465445}
   WallType: {fileID: 2038465445}
   originalRot:
+  - {x: -0, y: 0.973249, z: -0, w: -0.22975296}
   - {x: -0, y: 0.973249, z: -0, w: -0.22975296}
   - {x: -0, y: 0.973249, z: -0, w: -0.22975296}
   refreshRotation: 0
@@ -610,6 +611,7 @@ MonoBehaviour:
   curWallType: {fileID: 749576908}
   WallType: {fileID: 749576908}
   originalRot:
+  - {x: -0, y: 0.2326581, z: -0, w: 0.9725586}
   - {x: -0, y: 0.2326581, z: -0, w: 0.9725586}
   - {x: -0, y: 0.2326581, z: -0, w: 0.9725586}
   refreshRotation: 0
@@ -1037,6 +1039,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: -0, z: -0, w: 1}
   - {x: -0, y: -0, z: -0, w: 1}
+  - {x: -0, y: -0, z: -0, w: 1}
   refreshRotation: 0
 --- !u!1 &12780817
 GameObject:
@@ -1086,6 +1089,7 @@ MonoBehaviour:
   curWallType: {fileID: 118414935}
   WallType: {fileID: 118414935}
   originalRot:
+  - {x: -0, y: 0.6022797, z: -0, w: 0.7982851}
   - {x: -0, y: 0.6022797, z: -0, w: 0.7982851}
   - {x: -0, y: 0.6022797, z: -0, w: 0.7982851}
   refreshRotation: 0
@@ -1139,6 +1143,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: -0, z: -0, w: 1}
   - {x: -0, y: -0, z: -0, w: 1}
+  - {x: -0, y: -0, z: -0, w: 1}
   refreshRotation: 0
 --- !u!1 &13898010
 GameObject:
@@ -1188,6 +1193,7 @@ MonoBehaviour:
   curWallType: {fileID: 701710250}
   WallType: {fileID: 701710250}
   originalRot:
+  - {x: -0, y: 0.7964002, z: -0, w: 0.60477}
   - {x: -0, y: 0.7964002, z: -0, w: 0.60477}
   - {x: -0, y: 0.7964002, z: -0, w: 0.60477}
   refreshRotation: 0
@@ -1336,7 +1342,6 @@ MonoBehaviour:
   curWallType: {fileID: 1175671547}
   WallType: {fileID: 1175671547}
   originalRot:
-  - {x: -0, y: -0.02274369, z: -0, w: 0.9997414}
   - {x: -0, y: -0.02274369, z: -0, w: 0.9997414}
   - {x: -0, y: -0.02274369, z: -0, w: 0.9997414}
   refreshRotation: 0
@@ -1913,7 +1918,6 @@ MonoBehaviour:
   originalRot:
   - {x: 0.12896423, y: 0.79126394, z: -0.1789283, w: 0.5703108}
   - {x: 0.12896423, y: 0.79126394, z: -0.1789283, w: 0.5703108}
-  - {x: 0.12896423, y: 0.79126394, z: -0.1789283, w: 0.5703108}
   refreshRotation: 0
 --- !u!1 &23099051
 GameObject:
@@ -2014,6 +2018,7 @@ MonoBehaviour:
   curWallType: {fileID: 346663804}
   WallType: {fileID: 346663804}
   originalRot:
+  - {x: 0.25272548, y: -0.4389052, z: 0.13013218, w: 0.8523835}
   - {x: 0.25272548, y: -0.4389052, z: 0.13013218, w: 0.8523835}
   - {x: 0.25272548, y: -0.4389052, z: 0.13013218, w: 0.8523835}
   refreshRotation: 0
@@ -2441,7 +2446,6 @@ MonoBehaviour:
   curWallType: {fileID: 326299205}
   WallType: {fileID: 326299205}
   originalRot:
-  - {x: 0.037511326, y: 0.5252197, z: -0.023183273, w: 0.84982336}
   - {x: 0.037511326, y: 0.5252197, z: -0.023183273, w: 0.84982336}
   - {x: 0.037511326, y: 0.5252197, z: -0.023183273, w: 0.84982336}
   refreshRotation: 0
@@ -2883,6 +2887,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0.00000025702184, y: 0.56922454, z: 0.00000017794491, w: 0.8221821}
   - {x: -0.00000025702184, y: 0.56922454, z: 0.00000017794491, w: 0.8221821}
+  - {x: -0.00000025702184, y: 0.56922454, z: 0.00000017794491, w: 0.8221821}
   refreshRotation: 0
 --- !u!1 &43245943
 GameObject:
@@ -3225,7 +3230,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.9255905, z: -0, w: 0.37852642}
   - {x: -0, y: 0.9255905, z: -0, w: 0.37852642}
-  - {x: -0, y: 0.9255905, z: -0, w: 0.37852642}
   refreshRotation: 0
 --- !u!1 &46074149
 GameObject:
@@ -3372,6 +3376,7 @@ MonoBehaviour:
   curWallType: {fileID: 1886888573}
   WallType: {fileID: 1886888573}
   originalRot:
+  - {x: -0, y: -0, z: -0, w: 1}
   - {x: -0, y: -0, z: -0, w: 1}
   - {x: -0, y: -0, z: -0, w: 1}
   refreshRotation: 0
@@ -3572,7 +3577,6 @@ MonoBehaviour:
   curWallType: {fileID: 955932046}
   WallType: {fileID: 955932046}
   originalRot:
-  - {x: -0, y: -0, z: -0, w: 1}
   - {x: -0, y: -0, z: -0, w: 1}
   - {x: -0, y: -0, z: -0, w: 1}
   refreshRotation: 0
@@ -3819,7 +3823,6 @@ MonoBehaviour:
   curWallType: {fileID: 925536239}
   WallType: {fileID: 925536239}
   originalRot:
-  - {x: -0, y: 0.7197367, z: -0, w: 0.6942472}
   - {x: -0, y: 0.7197367, z: -0, w: 0.6942472}
   - {x: -0, y: 0.7197367, z: -0, w: 0.6942472}
   refreshRotation: 0
@@ -4783,7 +4786,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: -0.41598222, z: -0, w: 0.9093728}
   - {x: -0, y: -0.41598222, z: -0, w: 0.9093728}
-  - {x: -0, y: -0.41598222, z: -0, w: 0.9093728}
   refreshRotation: 0
 --- !u!1 &62965853
 GameObject:
@@ -5178,7 +5180,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.08660187, z: -0, w: 0.996243}
   - {x: -0, y: 0.08660187, z: -0, w: 0.996243}
-  - {x: -0, y: 0.08660187, z: -0, w: 0.996243}
   refreshRotation: 0
 --- !u!1 &68157767
 GameObject:
@@ -5424,7 +5425,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: -0, z: -0, w: 1}
   - {x: -0, y: -0, z: -0, w: 1}
-  - {x: -0, y: -0, z: -0, w: 1}
   refreshRotation: 0
 --- !u!1 &70996345
 GameObject:
@@ -5573,7 +5573,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.9349886, z: -0, w: 0.35467777}
   - {x: -0, y: 0.9349886, z: -0, w: 0.35467777}
-  - {x: -0, y: 0.9349886, z: -0, w: 0.35467777}
   refreshRotation: 0
 --- !u!1 &74662701
 GameObject:
@@ -5623,7 +5622,6 @@ MonoBehaviour:
   curWallType: {fileID: 1768063221}
   WallType: {fileID: 1768063221}
   originalRot:
-  - {x: -0, y: 0.92387956, z: -0, w: 0.38268346}
   - {x: -0, y: 0.92387956, z: -0, w: 0.38268346}
   - {x: -0, y: 0.92387956, z: -0, w: 0.38268346}
   refreshRotation: 0
@@ -5774,6 +5772,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0.35177636, y: -0.61339504, z: -0.35177636, w: 0.613395}
   - {x: -0.35177636, y: -0.61339504, z: -0.35177636, w: 0.613395}
+  - {x: -0.35177636, y: -0.61339504, z: -0.35177636, w: 0.613395}
   refreshRotation: 0
 --- !u!1 &76254543
 GameObject:
@@ -5920,6 +5919,7 @@ MonoBehaviour:
   curWallType: {fileID: 1376717337}
   WallType: {fileID: 1376717337}
   originalRot:
+  - {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   - {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   - {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   refreshRotation: 0
@@ -6613,7 +6613,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: -0, z: -0, w: 1}
   - {x: -0, y: -0, z: -0, w: 1}
-  - {x: -0, y: -0, z: -0, w: 1}
   refreshRotation: 0
 --- !u!1 &93377346
 GameObject:
@@ -6760,6 +6759,7 @@ MonoBehaviour:
   curWallType: {fileID: 277205249}
   WallType: {fileID: 277205249}
   originalRot:
+  - {x: -0, y: 0.7071067, z: -0, w: 0.7071068}
   - {x: -0, y: 0.7071067, z: -0, w: 0.7071068}
   - {x: -0, y: 0.7071067, z: -0, w: 0.7071068}
   refreshRotation: 0
@@ -7090,7 +7090,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.584519, z: -0, w: 0.81138}
   - {x: -0, y: 0.584519, z: -0, w: 0.81138}
-  - {x: -0, y: 0.584519, z: -0, w: 0.81138}
   refreshRotation: 0
 --- !u!1 &105014672
 GameObject:
@@ -7237,6 +7236,7 @@ MonoBehaviour:
   curWallType: {fileID: 409032044}
   WallType: {fileID: 409032044}
   originalRot:
+  - {x: -0, y: -0, z: -0, w: 1}
   - {x: -0, y: -0, z: -0, w: 1}
   - {x: -0, y: -0, z: -0, w: 1}
   refreshRotation: 0
@@ -7484,7 +7484,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: -0.050374232, z: -0, w: 0.9987304}
   - {x: -0, y: -0.050374232, z: -0, w: 0.9987304}
-  - {x: -0, y: -0.050374232, z: -0, w: 0.9987304}
   refreshRotation: 0
 --- !u!1 &113713632
 GameObject:
@@ -7631,7 +7630,6 @@ MonoBehaviour:
   curWallType: {fileID: 1370076447}
   WallType: {fileID: 1370076447}
   originalRot:
-  - {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
   - {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
   - {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
   refreshRotation: 0
@@ -7879,6 +7877,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: -0, z: -0, w: 1}
   - {x: -0, y: -0, z: -0, w: 1}
+  - {x: -0, y: -0, z: -0, w: 1}
   refreshRotation: 0
 --- !u!1 &116660628
 GameObject:
@@ -7930,6 +7929,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.22654308, z: -0, w: 0.97400117}
   - {x: -0, y: 0.22654308, z: -0, w: 0.97400117}
+  - {x: -0, y: 0.22654308, z: -0, w: 0.97400117}
   refreshRotation: 0
 --- !u!1 &116746307
 GameObject:
@@ -7979,7 +7979,6 @@ MonoBehaviour:
   curWallType: {fileID: 941942638}
   WallType: {fileID: 941942638}
   originalRot:
-  - {x: -0, y: 0.635461, z: -0, w: 0.772133}
   - {x: -0, y: 0.635461, z: -0, w: 0.772133}
   - {x: -0, y: 0.635461, z: -0, w: 0.772133}
   refreshRotation: 0
@@ -8886,6 +8885,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 1, z: -0, w: 0}
   - {x: -0, y: 1, z: -0, w: 0}
+  - {x: -0, y: 1, z: -0, w: 0}
   refreshRotation: 0
 --- !u!1 &142064014
 GameObject:
@@ -8935,7 +8935,6 @@ MonoBehaviour:
   curWallType: {fileID: 1924197645}
   WallType: {fileID: 1924197645}
   originalRot:
-  - {x: -0.014145494, y: 0.98316675, z: -0.1601229, w: -0.08685441}
   - {x: -0.014145494, y: 0.98316675, z: -0.1601229, w: -0.08685441}
   - {x: -0.014145494, y: 0.98316675, z: -0.1601229, w: -0.08685441}
   refreshRotation: 0
@@ -9136,7 +9135,6 @@ MonoBehaviour:
   curWallType: {fileID: 113713632}
   WallType: {fileID: 113713632}
   originalRot:
-  - {x: -0, y: 0.006263791, z: -0, w: 0.9999804}
   - {x: -0, y: 0.006263791, z: -0, w: 0.9999804}
   - {x: -0, y: 0.006263791, z: -0, w: 0.9999804}
   refreshRotation: 0
@@ -9368,6 +9366,7 @@ MonoBehaviour:
   curWallType: {fileID: 1540377246}
   WallType: {fileID: 1540377246}
   originalRot:
+  - {x: -0, y: 0.9531576, z: -0.30247414, w: 0}
   - {x: -0, y: 0.9531576, z: -0.30247414, w: 0}
   - {x: -0, y: 0.9531576, z: -0.30247414, w: 0}
   refreshRotation: 0
@@ -9712,7 +9711,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: -0.11770354, z: -0, w: 0.9930488}
   - {x: -0, y: -0.11770354, z: -0, w: 0.9930488}
-  - {x: -0, y: -0.11770354, z: -0, w: 0.9930488}
   refreshRotation: 0
 --- !u!1 &152205671
 GameObject:
@@ -9762,7 +9760,6 @@ MonoBehaviour:
   curWallType: {fileID: 1974084792}
   WallType: {fileID: 1974084792}
   originalRot:
-  - {x: -0, y: -0.46848825, z: -0, w: 0.88346976}
   - {x: -0, y: -0.46848825, z: -0, w: 0.88346976}
   - {x: -0, y: -0.46848825, z: -0, w: 0.88346976}
   refreshRotation: 0
@@ -10255,6 +10252,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   - {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  - {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   refreshRotation: 0
 --- !u!1 &159887655
 GameObject:
@@ -10403,6 +10401,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.046091076, z: -0, w: 0.9989373}
   - {x: -0, y: 0.046091076, z: -0, w: 0.9989373}
+  - {x: -0, y: 0.046091076, z: -0, w: 0.9989373}
   refreshRotation: 0
 --- !u!1 &161203491
 GameObject:
@@ -10452,7 +10451,6 @@ MonoBehaviour:
   curWallType: {fileID: 904386070}
   WallType: {fileID: 904386070}
   originalRot:
-  - {x: -0, y: -0, z: -0, w: 1}
   - {x: -0, y: -0, z: -0, w: 1}
   - {x: -0, y: -0, z: -0, w: 1}
   refreshRotation: 0
@@ -10750,7 +10748,6 @@ MonoBehaviour:
   curWallType: {fileID: 334808510}
   WallType: {fileID: 334808510}
   originalRot:
-  - {x: -0.22066914, y: 0.3526477, z: 0.08595943, w: 0.90529317}
   - {x: -0.22066914, y: 0.3526477, z: 0.08595943, w: 0.90529317}
   - {x: -0.22066914, y: 0.3526477, z: 0.08595943, w: 0.90529317}
   refreshRotation: 0
@@ -11437,6 +11434,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: -0.14107831, z: -0, w: 0.98999846}
   - {x: -0, y: -0.14107831, z: -0, w: 0.98999846}
+  - {x: -0, y: -0.14107831, z: -0, w: 0.98999846}
   refreshRotation: 0
 --- !u!1 &183035255
 GameObject:
@@ -11682,6 +11680,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: -0, z: -0, w: 1}
   - {x: -0, y: -0, z: -0, w: 1}
+  - {x: -0, y: -0, z: -0, w: 1}
   refreshRotation: 0
 --- !u!1 &185142550
 GameObject:
@@ -11828,7 +11827,6 @@ MonoBehaviour:
   curWallType: {fileID: 1415133537}
   WallType: {fileID: 1415133537}
   originalRot:
-  - {x: -0, y: -0, z: -0, w: 1}
   - {x: -0, y: -0, z: -0, w: 1}
   - {x: -0, y: -0, z: -0, w: 1}
   refreshRotation: 0
@@ -12076,7 +12074,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0.2528058, y: -0.4520448, z: -0.13529754, w: 0.84465337}
   - {x: -0.2528058, y: -0.4520448, z: -0.13529754, w: 0.84465337}
-  - {x: -0.2528058, y: -0.4520448, z: -0.13529754, w: 0.84465337}
   refreshRotation: 0
 --- !u!1 &189734044
 GameObject:
@@ -12275,8 +12272,7 @@ MonoBehaviour:
   curWallType: {fileID: 1326034985}
   WallType: {fileID: 1326034985}
   originalRot:
-  - {x: -0, y: 0.72340965, z: -0, w: -0.6904191}
-  - {x: -0, y: 0.023327861, z: -0, w: -0.9997279}
+  - {x: -0, y: -0.6904191, z: -0, w: -0.72340965}
   - {x: -0, y: -0.6904191, z: -0, w: -0.72340965}
   refreshRotation: 0
 --- !u!1 &191867212
@@ -12507,7 +12503,6 @@ MonoBehaviour:
   curWallType: {fileID: 1490233887}
   WallType: {fileID: 1490233887}
   originalRot:
-  - {x: -0, y: 0.13656826, z: -0, w: 0.9906307}
   - {x: -0, y: 0.13656826, z: -0, w: 0.9906307}
   - {x: -0, y: 0.13656826, z: -0, w: 0.9906307}
   refreshRotation: 0
@@ -12858,6 +12853,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: -0.83865887, z: -0, w: 0.5446571}
   - {x: -0, y: -0.83865887, z: -0, w: 0.5446571}
+  - {x: -0, y: -0.83865887, z: -0, w: 0.5446571}
   refreshRotation: 0
 --- !u!1 &200074126
 GameObject:
@@ -13101,7 +13097,8 @@ MonoBehaviour:
   curWallType: {fileID: 31471423}
   WallType: {fileID: 31471423}
   originalRot:
-  - {x: -0, y: 0.16238338, z: -0, w: 0.9867278}
+  - {x: -0, y: 0.8125443, z: -0, w: 0.5828995}
+  - {x: -0, y: 0.8125443, z: -0, w: 0.5828995}
   - {x: -0, y: 0.8125443, z: -0, w: 0.5828995}
   refreshRotation: 0
 --- !u!1 &202980790
@@ -14035,7 +14032,6 @@ MonoBehaviour:
   originalRot:
   - {x: 0.17345808, y: 0.82352257, z: -0.41876486, w: 0.34111422}
   - {x: 0.17345808, y: 0.82352257, z: -0.41876486, w: 0.34111422}
-  - {x: 0.17345808, y: 0.82352257, z: -0.41876486, w: 0.34111422}
   refreshRotation: 0
 --- !u!1 &221640720
 GameObject:
@@ -14085,8 +14081,7 @@ MonoBehaviour:
   curWallType: {fileID: 54954052}
   WallType: {fileID: 54954052}
   originalRot:
-  - {x: -0, y: 0.9998752, z: -0, w: 0.015803088}
-  - {x: -0, y: 0.718193, z: -0, w: -0.69584405}
+  - {x: -0, y: 0.015803088, z: -0, w: -0.9998752}
   - {x: -0, y: 0.015803088, z: -0, w: -0.9998752}
   refreshRotation: 0
 --- !u!1 &222469427
@@ -14137,7 +14132,6 @@ MonoBehaviour:
   curWallType: {fileID: 360580717}
   WallType: {fileID: 360580717}
   originalRot:
-  - {x: -0, y: 0.042289406, z: -0, w: 0.99910545}
   - {x: -0, y: 0.042289406, z: -0, w: 0.99910545}
   - {x: -0, y: 0.042289406, z: -0, w: 0.99910545}
   refreshRotation: 0
@@ -14584,6 +14578,7 @@ MonoBehaviour:
   originalRot:
   - {x: 0.42142457, y: -0.207097, z: 0.09948484, w: 0.877277}
   - {x: 0.42142457, y: -0.207097, z: 0.09948484, w: 0.877277}
+  - {x: 0.42142457, y: -0.207097, z: 0.09948484, w: 0.877277}
   refreshRotation: 0
 --- !u!1 &227760635
 GameObject:
@@ -14815,6 +14810,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.9961662, z: -0, w: -0.087480746}
   - {x: -0, y: 0.9961662, z: -0, w: -0.087480746}
+  - {x: -0, y: 0.9961662, z: -0, w: -0.087480746}
   refreshRotation: 0
 --- !u!1 &229592297
 GameObject:
@@ -14864,6 +14860,7 @@ MonoBehaviour:
   curWallType: {fileID: 1891531065}
   WallType: {fileID: 1891531065}
   originalRot:
+  - {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   - {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   - {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   refreshRotation: 0
@@ -15070,7 +15067,6 @@ MonoBehaviour:
   curWallType: {fileID: 1975758934}
   WallType: {fileID: 1975758934}
   originalRot:
-  - {x: -0, y: -0, z: -0, w: 1}
   - {x: -0, y: -0, z: -0, w: 1}
   - {x: -0, y: -0, z: -0, w: 1}
   refreshRotation: 0
@@ -15318,6 +15314,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: -0, z: -0, w: 1}
   - {x: -0, y: -0, z: -0, w: 1}
+  - {x: -0, y: -0, z: -0, w: 1}
   refreshRotation: 0
 --- !u!1 &240620100
 GameObject:
@@ -15367,7 +15364,6 @@ MonoBehaviour:
   curWallType: {fileID: 1551835336}
   WallType: {fileID: 1551835336}
   originalRot:
-  - {x: -0, y: -0, z: -0, w: 1}
   - {x: -0, y: -0, z: -0, w: 1}
   - {x: -0, y: -0, z: -0, w: 1}
   refreshRotation: 0
@@ -15807,8 +15803,7 @@ MonoBehaviour:
   curWallType: {fileID: 514436278}
   WallType: {fileID: 514436278}
   originalRot:
-  - {x: -0, y: 0.99986583, z: -0, w: -0.016381258}
-  - {x: -0, y: 0.6954286, z: -0, w: -0.7185952}
+  - {x: -0, y: -0.016381258, z: -0, w: -0.99986583}
   - {x: -0, y: -0.016381258, z: -0, w: -0.99986583}
   refreshRotation: 0
 --- !u!1 &246880881
@@ -16093,7 +16088,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.49253434, z: -0, w: 0.870293}
   - {x: -0, y: 0.49253434, z: -0, w: 0.870293}
-  - {x: -0, y: 0.49253434, z: -0, w: 0.870293}
   refreshRotation: 0
 --- !u!1 &253057826
 GameObject:
@@ -16143,7 +16137,6 @@ MonoBehaviour:
   curWallType: {fileID: 1983039646}
   WallType: {fileID: 1983039646}
   originalRot:
-  - {x: -0, y: 0.973249, z: -0, w: 0.22975296}
   - {x: -0, y: 0.973249, z: -0, w: 0.22975296}
   - {x: -0, y: 0.973249, z: -0, w: 0.22975296}
   refreshRotation: 0
@@ -16294,6 +16287,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.8248604, z: -0, w: 0.5653365}
   - {x: -0, y: 0.8248604, z: -0, w: 0.5653365}
+  - {x: -0, y: 0.8248604, z: -0, w: 0.5653365}
   refreshRotation: 0
 --- !u!1 &256792659
 GameObject:
@@ -16427,6 +16421,7 @@ MonoBehaviour:
   curWallType: {fileID: 529237584}
   WallType: {fileID: 529237584}
   originalRot:
+  - {x: -0, y: 0.92387956, z: -0, w: 0.38268346}
   - {x: -0, y: 0.92387956, z: -0, w: 0.38268346}
   - {x: -0, y: 0.92387956, z: -0, w: 0.38268346}
   refreshRotation: 0
@@ -16674,6 +16669,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: -0.78820544, z: -0, w: 0.61541224}
   - {x: -0, y: -0.78820544, z: -0, w: 0.61541224}
+  - {x: -0, y: -0.78820544, z: -0, w: 0.61541224}
   refreshRotation: 0
 --- !u!1 &261376400
 GameObject:
@@ -16777,7 +16773,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.9931927, z: -0, w: -0.11648337}
   - {x: -0, y: 0.9931927, z: -0, w: -0.11648337}
-  - {x: -0, y: 0.9931927, z: -0, w: -0.11648337}
   refreshRotation: 0
 --- !u!1 &262267918
 GameObject:
@@ -16827,6 +16822,7 @@ MonoBehaviour:
   curWallType: {fileID: 2048597247}
   WallType: {fileID: 2048597247}
   originalRot:
+  - {x: -0, y: -0, z: -0, w: 1}
   - {x: -0, y: -0, z: -0, w: 1}
   - {x: -0, y: -0, z: -0, w: 1}
   refreshRotation: 0
@@ -16935,7 +16931,6 @@ MonoBehaviour:
   curWallType: {fileID: 1789870447}
   WallType: {fileID: 1789870447}
   originalRot:
-  - {x: -0, y: 0.38268346, z: -0, w: 0.92387956}
   - {x: -0, y: 0.38268346, z: -0, w: 0.92387956}
   - {x: -0, y: 0.38268346, z: -0, w: 0.92387956}
   refreshRotation: 0
@@ -17085,7 +17080,6 @@ MonoBehaviour:
   curWallType: {fileID: 523059320}
   WallType: {fileID: 523059320}
   originalRot:
-  - {x: -0, y: 0.60788673, z: -0, w: 0.79402375}
   - {x: -0, y: 0.60788673, z: -0, w: 0.79402375}
   - {x: -0, y: 0.60788673, z: -0, w: 0.79402375}
   refreshRotation: 0
@@ -17517,9 +17511,8 @@ MonoBehaviour:
   curWallType: {fileID: 1147803628}
   WallType: {fileID: 1147803628}
   originalRot:
-  - {x: -0, y: -0, z: -0, w: 1}
-  - {x: -0, y: -0, z: -0, w: 1}
-  - {x: -0, y: -0, z: -0, w: 1}
+  - {x: -0, y: 0.39271396, z: -0, w: 0.91966075}
+  - {x: -0, y: 0.39271396, z: -0, w: 0.91966075}
   refreshRotation: 0
 --- !u!1 &274376047
 GameObject:
@@ -17763,6 +17756,7 @@ MonoBehaviour:
   curWallType: {fileID: 1126427877}
   WallType: {fileID: 1126427877}
   originalRot:
+  - {x: -0, y: 0.92387956, z: -0, w: 0.38268346}
   - {x: -0, y: 0.92387956, z: -0, w: 0.38268346}
   - {x: -0, y: 0.92387956, z: -0, w: 0.38268346}
   refreshRotation: 0
@@ -18053,6 +18047,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.9548283, z: -0, w: -0.2971579}
   - {x: -0, y: 0.9548283, z: -0, w: -0.2971579}
+  - {x: -0, y: 0.9548283, z: -0, w: -0.2971579}
   refreshRotation: 0
 --- !u!1 &284314556
 GameObject:
@@ -18298,7 +18293,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: -0, z: -0, w: 1}
   - {x: -0, y: -0, z: -0, w: 1}
-  - {x: -0, y: -0, z: -0, w: 1}
   refreshRotation: 0
 --- !u!1 &289207746
 GameObject:
@@ -18499,6 +18493,7 @@ MonoBehaviour:
   originalRot:
   - {x: 0.26791734, y: -0.22087614, z: 0.063246705, w: 0.9356463}
   - {x: 0.26791734, y: -0.22087614, z: 0.063246705, w: 0.9356463}
+  - {x: 0.26791734, y: -0.22087614, z: 0.063246705, w: 0.9356463}
   refreshRotation: 0
 --- !u!1 &290354546
 GameObject:
@@ -18548,7 +18543,8 @@ MonoBehaviour:
   curWallType: {fileID: 1388674683}
   WallType: {fileID: 1388674683}
   originalRot:
-  - {x: -0.0025291652, y: 0.9740976, z: 0.010908327, w: 0.22585073}
+  - {x: -0.009501742, y: 0.8484916, z: 0.005924962, w: -0.5290904}
+  - {x: -0.009501742, y: 0.8484916, z: 0.005924962, w: -0.5290904}
   - {x: -0.009501742, y: 0.8484916, z: 0.005924962, w: -0.5290904}
   refreshRotation: 0
 --- !u!1 &292156830
@@ -18696,8 +18692,7 @@ MonoBehaviour:
   curWallType: {fileID: 1063316724}
   WallType: {fileID: 1063316724}
   originalRot:
-  - {x: -0, y: 0.76649845, z: -0, w: -0.6422461}
-  - {x: -0, y: 0.08785965, z: -0, w: -0.99613285}
+  - {x: -0, y: -0.6422461, z: -0, w: -0.76649845}
   - {x: -0, y: -0.6422461, z: -0, w: -0.76649845}
   refreshRotation: 0
 --- !u!1 &296168945
@@ -18847,7 +18842,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.5160147, z: -0, w: 0.8565797}
   - {x: -0, y: 0.5160147, z: -0, w: 0.8565797}
-  - {x: -0, y: 0.5160147, z: -0, w: 0.8565797}
   refreshRotation: 0
 --- !u!1 &298395618
 GameObject:
@@ -18897,7 +18891,6 @@ MonoBehaviour:
   curWallType: {fileID: 736018711}
   WallType: {fileID: 736018711}
   originalRot:
-  - {x: -0, y: -0.2462633, z: -0, w: 0.969203}
   - {x: -0, y: -0.2462633, z: -0, w: 0.969203}
   - {x: -0, y: -0.2462633, z: -0, w: 0.969203}
   refreshRotation: 0
@@ -19048,6 +19041,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0.21945749, y: 0.7120046, z: 0.2532237, w: 0.61706215}
   - {x: -0.21945749, y: 0.7120046, z: 0.2532237, w: 0.61706215}
+  - {x: -0.21945749, y: 0.7120046, z: 0.2532237, w: 0.61706215}
   refreshRotation: 0
 --- !u!1 &300479017
 GameObject:
@@ -19097,7 +19091,6 @@ MonoBehaviour:
   curWallType: {fileID: 292156830}
   WallType: {fileID: 292156830}
   originalRot:
-  - {x: -0, y: 1, z: -0, w: 0}
   - {x: -0, y: 1, z: -0, w: 0}
   - {x: -0, y: 1, z: -0, w: 0}
   refreshRotation: 0
@@ -19382,7 +19375,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 1, z: -0, w: 0}
   - {x: -0, y: 1, z: -0, w: 0}
-  - {x: -0, y: 1, z: -0, w: 0}
   refreshRotation: 0
 --- !u!1 &307036459
 GameObject:
@@ -19434,7 +19426,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   - {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  - {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   refreshRotation: 0
 --- !u!1 &307570458
 GameObject:
@@ -19484,7 +19475,6 @@ MonoBehaviour:
   curWallType: {fileID: 1245939179}
   WallType: {fileID: 1245939179}
   originalRot:
-  - {x: -0, y: 0.38268346, z: -0, w: 0.92387956}
   - {x: -0, y: 0.38268346, z: -0, w: 0.92387956}
   - {x: -0, y: 0.38268346, z: -0, w: 0.92387956}
   refreshRotation: 0
@@ -19834,7 +19824,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0.012572711, y: 0.9228425, z: 0.030232241, w: 0.3837834}
   - {x: -0.012572711, y: 0.9228425, z: 0.030232241, w: 0.3837834}
-  - {x: -0.012572711, y: 0.9228425, z: 0.030232241, w: 0.3837834}
   refreshRotation: 0
 --- !u!1 &314217436
 GameObject:
@@ -20080,7 +20069,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.53785825, z: -0, w: 0.84303534}
   - {x: -0, y: 0.53785825, z: -0, w: 0.84303534}
-  - {x: -0, y: 0.53785825, z: -0, w: 0.84303534}
   refreshRotation: 0
 --- !u!1 &316282046
 GameObject:
@@ -20130,6 +20118,7 @@ MonoBehaviour:
   curWallType: {fileID: 782719061}
   WallType: {fileID: 782719061}
   originalRot:
+  - {x: -0, y: -0.09637986, z: -0, w: 0.99534464}
   - {x: -0, y: -0.09637986, z: -0, w: 0.99534464}
   - {x: -0, y: -0.09637986, z: -0, w: 0.99534464}
   refreshRotation: 0
@@ -20235,7 +20224,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.27942777, z: -0, w: 0.96016675}
   - {x: -0, y: 0.27942777, z: -0, w: 0.96016675}
-  - {x: -0, y: 0.27942777, z: -0, w: 0.96016675}
   refreshRotation: 0
 --- !u!1 &319883914
 GameObject:
@@ -20337,7 +20325,6 @@ MonoBehaviour:
   curWallType: {fileID: 65976763}
   WallType: {fileID: 65976763}
   originalRot:
-  - {x: -0, y: 0.59368116, z: -0, w: 0.8047004}
   - {x: -0, y: 0.59368116, z: -0, w: 0.8047004}
   - {x: -0, y: 0.59368116, z: -0, w: 0.8047004}
   refreshRotation: 0
@@ -20486,7 +20473,6 @@ MonoBehaviour:
   curWallType: {fileID: 755572325}
   WallType: {fileID: 755572325}
   originalRot:
-  - {x: 0.055148788, y: 0.828882, z: -0.08304147, w: 0.5504701}
   - {x: 0.09771527, y: 0.97534925, z: -0.019723104, w: -0.19686693}
   - {x: 0.09771527, y: 0.97534925, z: -0.019723104, w: -0.19686693}
   refreshRotation: 0
@@ -20538,6 +20524,7 @@ MonoBehaviour:
   curWallType: {fileID: 1105844014}
   WallType: {fileID: 1105844014}
   originalRot:
+  - {x: 0.17171052, y: 0.788271, z: -0.2536221, w: 0.53368545}
   - {x: 0.17171052, y: 0.788271, z: -0.2536221, w: 0.53368545}
   - {x: 0.17171052, y: 0.788271, z: -0.2536221, w: 0.53368545}
   refreshRotation: 0
@@ -20834,6 +20821,7 @@ MonoBehaviour:
   curWallType: {fileID: 366880950}
   WallType: {fileID: 366880950}
   originalRot:
+  - {x: -0, y: 0.090723865, z: -0, w: 0.99587613}
   - {x: -0, y: 0.090723865, z: -0, w: 0.99587613}
   - {x: -0, y: 0.090723865, z: -0, w: 0.99587613}
   refreshRotation: 0
@@ -21133,6 +21121,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: -0.74837965, z: -0, w: 0.66327065}
   - {x: -0, y: -0.74837965, z: -0, w: 0.66327065}
+  - {x: -0, y: -0.74837965, z: -0, w: 0.66327065}
   refreshRotation: 0
 --- !u!1 &329513717
 GameObject:
@@ -21279,6 +21268,7 @@ MonoBehaviour:
   curWallType: {fileID: 524372829}
   WallType: {fileID: 524372829}
   originalRot:
+  - {x: -0, y: 1, z: -0, w: 0}
   - {x: -0, y: 1, z: -0, w: 0}
   - {x: -0, y: 1, z: -0, w: 0}
   refreshRotation: 0
@@ -21623,6 +21613,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.08449435, z: -0, w: 0.99642396}
   - {x: -0, y: 0.08449435, z: -0, w: 0.99642396}
+  - {x: -0, y: 0.08449435, z: -0, w: 0.99642396}
   refreshRotation: 0
 --- !u!1 &335036969
 GameObject:
@@ -21672,7 +21663,6 @@ MonoBehaviour:
   curWallType: {fileID: 1742925340}
   WallType: {fileID: 1742925340}
   originalRot:
-  - {x: -0, y: 0.78781456, z: -0, w: 0.6159125}
   - {x: -0, y: 0.78781456, z: -0, w: 0.6159125}
   - {x: -0, y: 0.78781456, z: -0, w: 0.6159125}
   refreshRotation: 0
@@ -22057,7 +22047,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.9434924, z: -0, w: 0.33139417}
   - {x: -0, y: 0.9434924, z: -0, w: 0.33139417}
-  - {x: -0, y: 0.9434924, z: -0, w: 0.33139417}
   refreshRotation: 0
 --- !u!1 &339091138
 GameObject:
@@ -22400,6 +22389,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.92387956, z: -0, w: -0.38268346}
   - {x: -0, y: 0.92387956, z: -0, w: -0.38268346}
+  - {x: -0, y: 0.92387956, z: -0, w: -0.38268346}
   refreshRotation: 0
 --- !u!1 &345457629
 GameObject:
@@ -22449,6 +22439,7 @@ MonoBehaviour:
   curWallType: {fileID: 883659197}
   WallType: {fileID: 883659197}
   originalRot:
+  - {x: 0.14724977, y: -0.12083109, z: 0.018127276, w: 0.9815237}
   - {x: 0.14724977, y: -0.12083109, z: 0.018127276, w: 0.9815237}
   - {x: 0.14724977, y: -0.12083109, z: 0.018127276, w: 0.9815237}
   refreshRotation: 0
@@ -22746,6 +22737,7 @@ MonoBehaviour:
   curWallType: {fileID: 1359858506}
   WallType: {fileID: 1359858506}
   originalRot:
+  - {x: -0, y: -0.7347588, z: -0, w: 0.6783286}
   - {x: -0, y: -0.7347588, z: -0, w: 0.6783286}
   - {x: -0, y: -0.7347588, z: -0, w: 0.6783286}
   refreshRotation: 0
@@ -23723,6 +23715,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: -0.14706333, z: -0, w: 0.9891271}
   - {x: -0, y: -0.14706333, z: -0, w: 0.9891271}
+  - {x: -0, y: -0.14706333, z: -0, w: 0.9891271}
   refreshRotation: 0
 --- !u!1 &362110842
 GameObject:
@@ -23772,6 +23765,7 @@ MonoBehaviour:
   curWallType: {fileID: 732158713}
   WallType: {fileID: 732158713}
   originalRot:
+  - {x: -0, y: 0.5690275, z: -0, w: 0.8223185}
   - {x: -0, y: 0.5690275, z: -0, w: 0.8223185}
   - {x: -0, y: 0.5690275, z: -0, w: 0.8223185}
   refreshRotation: 0
@@ -24206,7 +24200,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   - {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  - {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   refreshRotation: 0
 --- !u!1 &366072965
 GameObject:
@@ -24445,7 +24438,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.64081824, z: -0, w: 0.7676927}
   - {x: -0, y: 0.64081824, z: -0, w: 0.7676927}
-  - {x: -0, y: 0.64081824, z: -0, w: 0.7676927}
   refreshRotation: 0
 --- !u!1 &368299634
 GameObject:
@@ -24646,6 +24638,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: -0, z: -0, w: 1}
   - {x: -0, y: -0, z: -0, w: 1}
+  - {x: -0, y: -0, z: -0, w: 1}
   refreshRotation: 0
 --- !u!1 &369038945
 GameObject:
@@ -24695,7 +24688,6 @@ MonoBehaviour:
   curWallType: {fileID: 545332199}
   WallType: {fileID: 545332199}
   originalRot:
-  - {x: -0, y: -0, z: -0, w: 1}
   - {x: -0, y: -0, z: -0, w: 1}
   - {x: -0, y: -0, z: -0, w: 1}
   refreshRotation: 0
@@ -24974,7 +24966,6 @@ MonoBehaviour:
   curWallType: {fileID: 1155971590}
   WallType: {fileID: 1155971590}
   originalRot:
-  - {x: -0, y: 0.08363038, z: -0, w: 0.99649686}
   - {x: -0, y: 0.08363038, z: -0, w: 0.99649686}
   - {x: -0, y: 0.08363038, z: -0, w: 0.99649686}
   refreshRotation: 0
@@ -25712,7 +25703,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   - {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  - {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   refreshRotation: 0
 --- !u!1 &391142236
 GameObject:
@@ -25762,7 +25752,6 @@ MonoBehaviour:
   curWallType: {fileID: 647506673}
   WallType: {fileID: 647506673}
   originalRot:
-  - {x: -0, y: 0.6463749, z: -0, w: 0.76302}
   - {x: -0, y: 0.6463749, z: -0, w: 0.76302}
   - {x: -0, y: 0.6463749, z: -0, w: 0.76302}
   refreshRotation: 0
@@ -26259,7 +26248,8 @@ MonoBehaviour:
   curWallType: {fileID: 1610443270}
   WallType: {fileID: 1610443270}
   originalRot:
-  - {x: 0.082779005, y: 0.8758828, z: -0.16226922, w: 0.4468173}
+  - {x: 0.17327526, y: 0.9352902, z: -0.05620807, w: -0.30339512}
+  - {x: 0.17327526, y: 0.9352902, z: -0.05620807, w: -0.30339512}
   - {x: 0.17327526, y: 0.9352902, z: -0.05620807, w: -0.30339512}
   refreshRotation: 0
 --- !u!1 &396828430
@@ -26603,6 +26593,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.9958372, z: -0, w: -0.09114947}
   - {x: -0, y: 0.9958372, z: -0, w: -0.09114947}
+  - {x: -0, y: 0.9958372, z: -0, w: -0.09114947}
   refreshRotation: 0
 --- !u!1 &404438226
 GameObject:
@@ -26749,6 +26740,7 @@ MonoBehaviour:
   curWallType: {fileID: 677267434}
   WallType: {fileID: 677267434}
   originalRot:
+  - {x: -0, y: -0, z: -0, w: 1}
   - {x: -0, y: -0, z: -0, w: 1}
   - {x: -0, y: -0, z: -0, w: 1}
   refreshRotation: 0
@@ -27727,7 +27719,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: -0, z: -0, w: 1}
   - {x: -0, y: -0, z: -0, w: 1}
-  - {x: -0, y: -0, z: -0, w: 1}
   refreshRotation: 0
 --- !u!1 &418832066
 GameObject:
@@ -27876,7 +27867,6 @@ MonoBehaviour:
   originalRot:
   - {x: 0.43376216, y: 0.46734717, z: -0.282922, w: 0.7165139}
   - {x: 0.43376216, y: 0.46734717, z: -0.282922, w: 0.7165139}
-  - {x: 0.43376216, y: 0.46734717, z: -0.282922, w: 0.7165139}
   refreshRotation: 0
 --- !u!1 &421691082
 GameObject:
@@ -27926,8 +27916,7 @@ MonoBehaviour:
   curWallType: {fileID: 1853824903}
   WallType: {fileID: 1853824903}
   originalRot:
-  - {x: -0, y: 0.77496606, z: -0, w: -0.6320029}
-  - {x: -0, y: 0.10109022, z: -0, w: -0.9948773}
+  - {x: -0, y: -0.6320029, z: -0, w: -0.77496606}
   - {x: -0, y: -0.6320029, z: -0, w: -0.77496606}
   refreshRotation: 0
 --- !u!1 &424725282
@@ -28011,6 +28000,7 @@ MonoBehaviour:
   curWallType: {fileID: 315475661}
   WallType: {fileID: 315475661}
   originalRot:
+  - {x: -0, y: 1, z: -0, w: 0}
   - {x: -0, y: 1, z: -0, w: 0}
   - {x: -0, y: 1, z: -0, w: 0}
   refreshRotation: 0
@@ -28310,7 +28300,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.85317713, z: -0, w: 0.52162135}
   - {x: -0, y: 0.85317713, z: -0, w: 0.52162135}
-  - {x: -0, y: 0.85317713, z: -0, w: 0.52162135}
   refreshRotation: 0
 --- !u!1 &429972481
 GameObject:
@@ -28509,6 +28498,7 @@ MonoBehaviour:
   curWallType: {fileID: 2037779557}
   WallType: {fileID: 2037779557}
   originalRot:
+  - {x: -0.09768789, y: 0.11934051, z: 0.011800133, w: 0.98796546}
   - {x: -0.09768789, y: 0.11934051, z: 0.011800133, w: 0.98796546}
   - {x: -0.09768789, y: 0.11934051, z: 0.011800133, w: 0.98796546}
   refreshRotation: 0
@@ -28754,7 +28744,6 @@ MonoBehaviour:
   curWallType: {fileID: 268652863}
   WallType: {fileID: 268652863}
   originalRot:
-  - {x: -0, y: -0, z: -0, w: 1}
   - {x: -0, y: -0, z: -0, w: 1}
   - {x: -0, y: -0, z: -0, w: 1}
   refreshRotation: 0
@@ -29054,6 +29043,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: -0.38268346, z: -0, w: 0.92387956}
   - {x: -0, y: -0.38268346, z: -0, w: 0.92387956}
+  - {x: -0, y: -0.38268346, z: -0, w: 0.92387956}
   refreshRotation: 0
 --- !u!1 &441157694
 GameObject:
@@ -29103,7 +29093,6 @@ MonoBehaviour:
   curWallType: {fileID: 1024907811}
   WallType: {fileID: 1024907811}
   originalRot:
-  - {x: -0, y: 0.060417596, z: -0, w: 0.9981732}
   - {x: -0, y: 0.060417596, z: -0, w: 0.9981732}
   - {x: -0, y: 0.060417596, z: -0, w: 0.9981732}
   refreshRotation: 0
@@ -29546,7 +29535,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   - {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  - {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   refreshRotation: 0
 --- !u!1 &448110569
 GameObject:
@@ -29648,7 +29636,6 @@ MonoBehaviour:
   curWallType: {fileID: 256792659}
   WallType: {fileID: 256792659}
   originalRot:
-  - {x: -0, y: 0.7555345, z: -0, w: 0.6551089}
   - {x: -0, y: 0.7555345, z: -0, w: 0.6551089}
   - {x: -0, y: 0.7555345, z: -0, w: 0.6551089}
   refreshRotation: 0
@@ -29805,6 +29792,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 1, z: -0, w: 0}
   - {x: -0, y: 1, z: -0, w: 0}
+  - {x: -0, y: 1, z: -0, w: 0}
   refreshRotation: 0
 --- !u!1 &458318656
 GameObject:
@@ -29908,6 +29896,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0.004562883, y: 0.95110524, z: 0.014066777, w: 0.3085129}
   - {x: -0.004562883, y: 0.95110524, z: 0.014066777, w: 0.3085129}
+  - {x: -0.004562883, y: 0.95110524, z: 0.014066777, w: 0.3085129}
   refreshRotation: 0
 --- !u!1 &466074769
 GameObject:
@@ -30009,9 +29998,8 @@ MonoBehaviour:
   curWallType: {fileID: 958208744}
   WallType: {fileID: 958208744}
   originalRot:
-  - {x: -0, y: 0.706093, z: -0, w: 0.7081191}
-  - {x: -0, y: 0.999999, z: -0, w: 0.0014326557}
-  - {x: -0, y: 0.7081191, z: -0, w: -0.706093}
+  - {x: -0, y: 0.0014326557, z: -0, w: -0.999999}
+  - {x: -0, y: 0.0014326557, z: -0, w: -0.999999}
   - {x: -0, y: 0.0014326557, z: -0, w: -0.999999}
   refreshRotation: 0
 --- !u!1 &466399488
@@ -30064,7 +30052,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 1, z: -0, w: 0}
   - {x: -0, y: 1, z: -0, w: 0}
-  - {x: -0, y: 1, z: -0, w: 0}
   refreshRotation: 0
 --- !u!1 &466554534
 GameObject:
@@ -30114,6 +30101,7 @@ MonoBehaviour:
   curWallType: {fileID: 1321190016}
   WallType: {fileID: 1321190016}
   originalRot:
+  - {x: -0, y: 0.103605196, z: -0, w: 0.99461854}
   - {x: -0, y: 0.103605196, z: -0, w: 0.99461854}
   - {x: -0, y: 0.103605196, z: -0, w: 0.99461854}
   refreshRotation: 0
@@ -30603,7 +30591,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0.04249833, y: 0.95645404, z: -0.18002582, w: -0.22578816}
   - {x: -0.04249833, y: 0.95645404, z: -0.18002582, w: -0.22578816}
-  - {x: -0.04249833, y: 0.95645404, z: -0.18002582, w: -0.22578816}
   refreshRotation: 0
 --- !u!1 &474081133
 GameObject:
@@ -30847,7 +30834,6 @@ MonoBehaviour:
   curWallType: {fileID: 788093799}
   WallType: {fileID: 788093799}
   originalRot:
-  - {x: -0, y: 0.85065085, z: -0, w: 0.5257311}
   - {x: -0, y: 0.85065085, z: -0, w: 0.5257311}
   - {x: -0, y: 0.85065085, z: -0, w: 0.5257311}
   refreshRotation: 0
@@ -31096,6 +31082,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.14141145, z: -0, w: 0.98995095}
   - {x: -0, y: 0.14141145, z: -0, w: 0.98995095}
+  - {x: -0, y: 0.14141145, z: -0, w: 0.98995095}
   refreshRotation: 0
 --- !u!1 &482050421
 GameObject:
@@ -31197,6 +31184,7 @@ MonoBehaviour:
   curWallType: {fileID: 78768445}
   WallType: {fileID: 78768445}
   originalRot:
+  - {x: -0, y: -0, z: -0, w: 1}
   - {x: -0, y: -0, z: -0, w: 1}
   - {x: -0, y: -0, z: -0, w: 1}
   refreshRotation: 0
@@ -31347,6 +31335,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.92387956, z: -0, w: 0.38268346}
   - {x: -0, y: 0.92387956, z: -0, w: 0.38268346}
+  - {x: -0, y: 0.92387956, z: -0, w: 0.38268346}
   refreshRotation: 0
 --- !u!1 &487698386
 GameObject:
@@ -31396,7 +31385,6 @@ MonoBehaviour:
   curWallType: {fileID: 1399069036}
   WallType: {fileID: 1399069036}
   originalRot:
-  - {x: -0, y: 0.30830827, z: -0, w: 0.95128655}
   - {x: -0, y: 0.30830827, z: -0, w: 0.95128655}
   - {x: -0, y: 0.30830827, z: -0, w: 0.95128655}
   refreshRotation: 0
@@ -31547,7 +31535,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: -0.056994062, z: -0, w: 0.9983745}
   - {x: -0, y: -0.056994062, z: -0, w: 0.9983745}
-  - {x: -0, y: -0.056994062, z: -0, w: 0.9983745}
   refreshRotation: 0
 --- !u!1 &491566228
 GameObject:
@@ -31597,7 +31584,6 @@ MonoBehaviour:
   curWallType: {fileID: 2146748283}
   WallType: {fileID: 2146748283}
   originalRot:
-  - {x: -0, y: 0.5842481, z: -0, w: 0.81157506}
   - {x: -0, y: 0.5842481, z: -0, w: 0.81157506}
   - {x: -0, y: 0.5842481, z: -0, w: 0.81157506}
   refreshRotation: 0
@@ -31746,7 +31732,6 @@ MonoBehaviour:
   curWallType: {fileID: 268718707}
   WallType: {fileID: 268718707}
   originalRot:
-  - {x: -0, y: 0.4947858, z: -0, w: 0.869015}
   - {x: -0, y: 0.4947858, z: -0, w: 0.869015}
   - {x: -0, y: 0.4947858, z: -0, w: 0.869015}
   refreshRotation: 0
@@ -31946,7 +31931,6 @@ MonoBehaviour:
   curWallType: {fileID: 2005585558}
   WallType: {fileID: 2005585558}
   originalRot:
-  - {x: -0, y: 0.98948586, z: -0, w: 0.14462973}
   - {x: -0, y: 0.98948586, z: -0, w: 0.14462973}
   - {x: -0, y: 0.98948586, z: -0, w: 0.14462973}
   refreshRotation: 0
@@ -32342,6 +32326,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: -0, z: -0, w: 1}
   - {x: -0, y: -0, z: -0, w: 1}
+  - {x: -0, y: -0, z: -0, w: 1}
   refreshRotation: 0
 --- !u!1 &504861810
 GameObject:
@@ -32391,6 +32376,7 @@ MonoBehaviour:
   curWallType: {fileID: 57161784}
   WallType: {fileID: 57161784}
   originalRot:
+  - {x: -0, y: 0.78820544, z: -0, w: 0.61541224}
   - {x: -0, y: 0.78820544, z: -0, w: 0.61541224}
   - {x: -0, y: 0.78820544, z: -0, w: 0.61541224}
   refreshRotation: 0
@@ -32733,6 +32719,7 @@ MonoBehaviour:
   curWallType: {fileID: 557741879}
   WallType: {fileID: 557741879}
   originalRot:
+  - {x: -0, y: 0.38268346, z: -0, w: 0.92387956}
   - {x: -0, y: 0.38268346, z: -0, w: 0.92387956}
   - {x: -0, y: 0.38268346, z: -0, w: 0.92387956}
   refreshRotation: 0
@@ -33128,6 +33115,7 @@ MonoBehaviour:
   curWallType: {fileID: 2021748994}
   WallType: {fileID: 2021748994}
   originalRot:
+  - {x: -0, y: 0.22975293, z: -0, w: 0.973249}
   - {x: -0, y: 0.22975293, z: -0, w: 0.973249}
   - {x: -0, y: 0.22975293, z: -0, w: 0.973249}
   refreshRotation: 0
@@ -33919,6 +33907,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.20461442, z: -0, w: 0.9788427}
   - {x: -0, y: 0.20461442, z: -0, w: 0.9788427}
+  - {x: -0, y: 0.20461442, z: -0, w: 0.9788427}
   refreshRotation: 0
 --- !u!1 &526180984
 GameObject:
@@ -34493,6 +34482,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0.023826085, y: 0.8200285, z: 0.0342292, w: 0.5708012}
   - {x: -0.023826085, y: 0.8200285, z: 0.0342292, w: 0.5708012}
+  - {x: -0.023826085, y: 0.8200285, z: 0.0342292, w: 0.5708012}
   refreshRotation: 0
 --- !u!1 &530770856
 GameObject:
@@ -34542,7 +34532,6 @@ MonoBehaviour:
   curWallType: {fileID: 2091488219}
   WallType: {fileID: 2091488219}
   originalRot:
-  - {x: -0, y: 0.3083093, z: -0, w: 0.9512862}
   - {x: -0, y: 0.3083093, z: -0, w: 0.9512862}
   - {x: -0, y: 0.3083093, z: -0, w: 0.9512862}
   refreshRotation: 0
@@ -35086,6 +35075,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.10433729, z: -0, w: 0.994542}
   - {x: -0, y: 0.10433729, z: -0, w: 0.994542}
+  - {x: -0, y: 0.10433729, z: -0, w: 0.994542}
   refreshRotation: 0
 --- !u!1 &540749792
 GameObject:
@@ -35137,7 +35127,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.85065085, z: -0, w: 0.5257311}
   - {x: -0, y: 0.85065085, z: -0, w: 0.5257311}
-  - {x: -0, y: 0.85065085, z: -0, w: 0.5257311}
   refreshRotation: 0
 --- !u!1 &543826997
 GameObject:
@@ -35187,6 +35176,7 @@ MonoBehaviour:
   curWallType: {fileID: 11003800}
   WallType: {fileID: 11003800}
   originalRot:
+  - {x: -0, y: 0.5257311, z: -0, w: 0.85065085}
   - {x: -0, y: 0.5257311, z: -0, w: 0.85065085}
   - {x: -0, y: 0.5257311, z: -0, w: 0.85065085}
   refreshRotation: 0
@@ -35880,6 +35870,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.09509616, z: -0, w: 0.9954681}
   - {x: -0, y: 0.09509616, z: -0, w: 0.9954681}
+  - {x: -0, y: 0.09509616, z: -0, w: 0.9954681}
   refreshRotation: 0
 --- !u!1 &552922608
 GameObject:
@@ -35929,6 +35920,7 @@ MonoBehaviour:
   curWallType: {fileID: 1790183251}
   WallType: {fileID: 1790183251}
   originalRot:
+  - {x: -0, y: 0.9157075, z: -0, w: -0.40184543}
   - {x: -0, y: 0.9157075, z: -0, w: -0.40184543}
   - {x: -0, y: 0.9157075, z: -0, w: -0.40184543}
   refreshRotation: 0
@@ -36031,7 +36023,6 @@ MonoBehaviour:
   curWallType: {fileID: 1519430230}
   WallType: {fileID: 1519430230}
   originalRot:
-  - {x: -0, y: 0.92387956, z: -0, w: 0.38268346}
   - {x: -0, y: 0.92387956, z: -0, w: 0.38268346}
   - {x: -0, y: 0.92387956, z: -0, w: 0.38268346}
   refreshRotation: 0
@@ -36182,7 +36173,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.59453833, z: -0, w: 0.80406725}
   - {x: -0, y: 0.59453833, z: -0, w: 0.80406725}
-  - {x: -0, y: 0.59453833, z: -0, w: 0.80406725}
   refreshRotation: 0
 --- !u!1 &556331080
 GameObject:
@@ -36232,6 +36222,7 @@ MonoBehaviour:
   curWallType: {fileID: 424725282}
   WallType: {fileID: 424725282}
   originalRot:
+  - {x: -0.20829248, y: 0.76069516, z: 0.2932341, w: 0.5403433}
   - {x: -0.20829248, y: 0.76069516, z: 0.2932341, w: 0.5403433}
   - {x: -0.20829248, y: 0.76069516, z: 0.2932341, w: 0.5403433}
   refreshRotation: 0
@@ -37003,6 +36994,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: -0.024255442, z: -0, w: 0.99970585}
   - {x: -0, y: -0.024255442, z: -0, w: 0.99970585}
+  - {x: -0, y: -0.024255442, z: -0, w: 0.99970585}
   refreshRotation: 0
 --- !u!1 &562083085
 GameObject:
@@ -37547,6 +37539,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.04609108, z: -0, w: 0.99893725}
   - {x: -0, y: 0.04609108, z: -0, w: 0.99893725}
+  - {x: -0, y: 0.04609108, z: -0, w: 0.99893725}
   refreshRotation: 0
 --- !u!1 &567457632
 GameObject:
@@ -37648,7 +37641,8 @@ MonoBehaviour:
   curWallType: {fileID: 131643925}
   WallType: {fileID: 131643925}
   originalRot:
-  - {x: 0.00000023275825, y: 0.1621341, z: -0.000000038244064, w: 0.9867688}
+  - {x: 0.00000019162758, y: 0.812397, z: 0.0000001375423, w: 0.5831048}
+  - {x: 0.00000019162758, y: 0.812397, z: 0.0000001375423, w: 0.5831048}
   - {x: 0.00000019162758, y: 0.812397, z: 0.0000001375423, w: 0.5831048}
   refreshRotation: 0
 --- !u!1 &568382106
@@ -37699,7 +37693,8 @@ MonoBehaviour:
   curWallType: {fileID: 610321786}
   WallType: {fileID: 610321786}
   originalRot:
-  - {x: -0.14905012, y: 0.7776448, z: 0.20095931, w: 0.57677376}
+  - {x: -0.24749404, y: 0.95771855, z: 0.03670534, w: -0.14203727}
+  - {x: -0.24749404, y: 0.95771855, z: 0.03670534, w: -0.14203727}
   - {x: -0.24749404, y: 0.95771855, z: 0.03670534, w: -0.14203727}
   refreshRotation: 0
 --- !u!1 &569645347
@@ -37752,6 +37747,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: -0, z: -0, w: 1}
   - {x: -0, y: -0, z: -0, w: 1}
+  - {x: -0, y: -0, z: -0, w: 1}
   refreshRotation: 0
 --- !u!1 &572096628
 GameObject:
@@ -37801,7 +37797,6 @@ MonoBehaviour:
   curWallType: {fileID: 499675704}
   WallType: {fileID: 499675704}
   originalRot:
-  - {x: -0, y: 0.60390496, z: -0, w: 0.7970563}
   - {x: -0, y: 0.60390496, z: -0, w: 0.7970563}
   - {x: -0, y: 0.60390496, z: -0, w: 0.7970563}
   refreshRotation: 0
@@ -37904,6 +37899,7 @@ MonoBehaviour:
   curWallType: {fileID: 427073304}
   WallType: {fileID: 427073304}
   originalRot:
+  - {x: -0, y: 0.040155172, z: -0, w: 0.9991935}
   - {x: -0, y: 0.040155172, z: -0, w: 0.9991935}
   - {x: -0, y: 0.040155172, z: -0, w: 0.9991935}
   refreshRotation: 0
@@ -38674,6 +38670,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: -0.75190675, z: -0, w: 0.65926945}
   - {x: -0, y: -0.75190675, z: -0, w: 0.65926945}
+  - {x: -0, y: -0.75190675, z: -0, w: 0.65926945}
   refreshRotation: 0
 --- !u!1 &584992422
 GameObject:
@@ -38973,7 +38970,6 @@ MonoBehaviour:
   curWallType: {fileID: 1560296650}
   WallType: {fileID: 1560296650}
   originalRot:
-  - {x: -0, y: 0.12218326, z: -0, w: 0.9925076}
   - {x: -0, y: 0.12218326, z: -0, w: 0.9925076}
   - {x: -0, y: 0.12218326, z: -0, w: 0.9925076}
   refreshRotation: 0
@@ -40007,7 +40003,6 @@ MonoBehaviour:
   curWallType: {fileID: 1105114463}
   WallType: {fileID: 1105114463}
   originalRot:
-  - {x: 0.013942182, y: 0.98595494, z: -0.12463562, w: 0.110292405}
   - {x: 0.09798931, y: 0.77516395, z: -0.07827209, w: -0.61918694}
   - {x: 0.09798931, y: 0.77516395, z: -0.07827209, w: -0.61918694}
   refreshRotation: 0
@@ -40210,7 +40205,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0.3260688, y: -0.35805705, z: -0.13506211, w: 0.86442614}
   - {x: -0.3260688, y: -0.35805705, z: -0.13506211, w: 0.86442614}
-  - {x: -0.3260688, y: -0.35805705, z: -0.13506211, w: 0.86442614}
   refreshRotation: 0
 --- !u!1 &609767561
 GameObject:
@@ -40311,6 +40305,7 @@ MonoBehaviour:
   curWallType: {fileID: 1933064992}
   WallType: {fileID: 1933064992}
   originalRot:
+  - {x: -0, y: -0, z: -0, w: 1}
   - {x: -0, y: -0, z: -0, w: 1}
   - {x: -0, y: -0, z: -0, w: 1}
   refreshRotation: 0
@@ -40607,7 +40602,6 @@ MonoBehaviour:
   curWallType: {fileID: 1590302126}
   WallType: {fileID: 1590302126}
   originalRot:
-  - {x: -0, y: -0, z: -0, w: 1}
   - {x: -0, y: -0, z: -0, w: 1}
   - {x: -0, y: -0, z: -0, w: 1}
   refreshRotation: 0
@@ -40952,6 +40946,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
   - {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
+  - {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
   refreshRotation: 0
 --- !u!1 &620657022
 GameObject:
@@ -41001,6 +40996,7 @@ MonoBehaviour:
   curWallType: {fileID: 887589528}
   WallType: {fileID: 887589528}
   originalRot:
+  - {x: -0, y: -0.38268346, z: -0, w: 0.92387956}
   - {x: -0, y: -0.38268346, z: -0, w: 0.92387956}
   - {x: -0, y: -0.38268346, z: -0, w: 0.92387956}
   refreshRotation: 0
@@ -41106,7 +41102,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.22975293, z: -0, w: 0.973249}
   - {x: -0, y: 0.22975293, z: -0, w: 0.973249}
-  - {x: -0, y: 0.22975293, z: -0, w: 0.973249}
   refreshRotation: 0
 --- !u!1 &624487327
 GameObject:
@@ -41156,7 +41151,6 @@ MonoBehaviour:
   curWallType: {fileID: 1862817276}
   WallType: {fileID: 1862817276}
   originalRot:
-  - {x: -0, y: 0.68658143, z: -0, w: 0.7270529}
   - {x: -0, y: 0.68658143, z: -0, w: 0.7270529}
   - {x: -0, y: 0.68658143, z: -0, w: 0.7270529}
   refreshRotation: 0
@@ -41307,6 +41301,7 @@ MonoBehaviour:
   originalRot:
   - {x: 0.10434268, y: 0.88887405, z: -0.25190553, w: 0.3681837}
   - {x: 0.10434268, y: 0.88887405, z: -0.25190553, w: 0.3681837}
+  - {x: 0.10434268, y: 0.88887405, z: -0.25190553, w: 0.3681837}
   refreshRotation: 0
 --- !u!1 &627801294
 GameObject:
@@ -41356,6 +41351,7 @@ MonoBehaviour:
   curWallType: {fileID: 242612825}
   WallType: {fileID: 242612825}
   originalRot:
+  - {x: -0, y: -0, z: -0, w: 1}
   - {x: -0, y: -0, z: -0, w: 1}
   - {x: -0, y: -0, z: -0, w: 1}
   refreshRotation: 0
@@ -41654,6 +41650,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: -0.0075330134, z: -0, w: 0.9999716}
   - {x: -0, y: -0.0075330134, z: -0, w: 0.9999716}
+  - {x: -0, y: -0.0075330134, z: -0, w: 0.9999716}
   refreshRotation: 0
 --- !u!1 &635207828
 GameObject:
@@ -41705,6 +41702,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.92387956, z: -0, w: 0.38268346}
   - {x: -0, y: 0.92387956, z: -0, w: 0.38268346}
+  - {x: -0, y: 0.92387956, z: -0, w: 0.38268346}
   refreshRotation: 0
 --- !u!1 &635263646
 GameObject:
@@ -41754,7 +41752,6 @@ MonoBehaviour:
   curWallType: {fileID: 583118565}
   WallType: {fileID: 583118565}
   originalRot:
-  - {x: -0, y: 0.78745717, z: -0, w: 0.61636937}
   - {x: -0, y: 0.78745717, z: -0, w: 0.61636937}
   - {x: -0, y: 0.78745717, z: -0, w: 0.61636937}
   refreshRotation: 0
@@ -42054,7 +42051,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: -0.043541975, z: -0, w: 0.99905163}
   - {x: -0, y: -0.043541975, z: -0, w: 0.99905163}
-  - {x: -0, y: -0.043541975, z: -0, w: 0.99905163}
   refreshRotation: 0
 --- !u!1 &639621047
 GameObject:
@@ -42300,6 +42296,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.28978416, z: -0, w: 0.95709205}
   - {x: -0, y: 0.28978416, z: -0, w: 0.95709205}
+  - {x: -0, y: 0.28978416, z: -0, w: 0.95709205}
   refreshRotation: 0
 --- !u!1 &642037438
 GameObject:
@@ -42498,6 +42495,7 @@ MonoBehaviour:
   curWallType: {fileID: 1766324475}
   WallType: {fileID: 1766324475}
   originalRot:
+  - {x: -0, y: 0.89549416, z: -0, w: 0.44507334}
   - {x: -0, y: 0.89549416, z: -0, w: 0.44507334}
   - {x: -0, y: 0.89549416, z: -0, w: 0.44507334}
   refreshRotation: 0
@@ -42699,7 +42697,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.38268346, z: -0, w: 0.92387956}
   - {x: -0, y: 0.38268346, z: -0, w: 0.92387956}
-  - {x: -0, y: 0.38268346, z: -0, w: 0.92387956}
   refreshRotation: 0
 --- !u!1 &649127871
 GameObject:
@@ -42801,7 +42798,6 @@ MonoBehaviour:
   curWallType: {fileID: 1711844674}
   WallType: {fileID: 1711844674}
   originalRot:
-  - {x: -0, y: 0.92387956, z: -0, w: -0.38268346}
   - {x: -0, y: 0.92387956, z: -0, w: -0.38268346}
   - {x: -0, y: 0.92387956, z: -0, w: -0.38268346}
   refreshRotation: 0
@@ -42952,6 +42948,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0.15877408, y: 0.34408712, z: 0.059156176, w: 0.92352337}
   - {x: -0.15877408, y: 0.34408712, z: 0.059156176, w: 0.92352337}
+  - {x: -0.15877408, y: 0.34408712, z: 0.059156176, w: 0.92352337}
   refreshRotation: 0
 --- !u!1 &652551622
 GameObject:
@@ -43052,6 +43049,7 @@ MonoBehaviour:
   curWallType: {fileID: 2080169597}
   WallType: {fileID: 2080169597}
   originalRot:
+  - {x: -0, y: 0.92387956, z: -0, w: 0.38268346}
   - {x: -0, y: 0.92387956, z: -0, w: 0.38268346}
   - {x: -0, y: 0.92387956, z: -0, w: 0.38268346}
   refreshRotation: 0
@@ -43252,6 +43250,7 @@ MonoBehaviour:
   curWallType: {fileID: 31816517}
   WallType: {fileID: 31816517}
   originalRot:
+  - {x: -0, y: 0.13618742, z: -0, w: 0.99068314}
   - {x: -0, y: 0.13618742, z: -0, w: 0.99068314}
   - {x: -0, y: 0.13618742, z: -0, w: 0.99068314}
   refreshRotation: 0
@@ -43551,7 +43550,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.9467579, z: -0, w: -0.3219464}
   - {x: -0, y: 0.9467579, z: -0, w: -0.3219464}
-  - {x: -0, y: 0.9467579, z: -0, w: -0.3219464}
   refreshRotation: 0
 --- !u!1 &661000284
 GameObject:
@@ -43700,6 +43698,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.19987974, z: -0, w: 0.97982043}
   - {x: -0, y: 0.19987974, z: -0, w: 0.97982043}
+  - {x: -0, y: 0.19987974, z: -0, w: 0.97982043}
   refreshRotation: 0
 --- !u!1 &664515795
 GameObject:
@@ -43749,6 +43748,7 @@ MonoBehaviour:
   curWallType: {fileID: 1409665793}
   WallType: {fileID: 1409665793}
   originalRot:
+  - {x: -0, y: -0, z: -0, w: 1}
   - {x: -0, y: -0, z: -0, w: 1}
   - {x: -0, y: -0, z: -0, w: 1}
   refreshRotation: 0
@@ -43897,6 +43897,7 @@ MonoBehaviour:
   curWallType: {fileID: 1224633239}
   WallType: {fileID: 1224633239}
   originalRot:
+  - {x: -0, y: 0.88318074, z: -0, w: -0.46903285}
   - {x: -0, y: 0.88318074, z: -0, w: -0.46903285}
   - {x: -0, y: 0.88318074, z: -0, w: -0.46903285}
   refreshRotation: 0
@@ -44181,6 +44182,7 @@ MonoBehaviour:
   originalRot:
   - {x: 0.43039978, y: 0.33566296, z: -0.17636828, w: 0.8191341}
   - {x: 0.43039978, y: 0.33566296, z: -0.17636828, w: 0.8191341}
+  - {x: 0.43039978, y: 0.33566296, z: -0.17636828, w: 0.8191341}
   refreshRotation: 0
 --- !u!1 &671638417
 GameObject:
@@ -44232,6 +44234,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0.24992396, y: -0.45250353, z: -0.13375524, w: 0.8455106}
   - {x: -0.24992396, y: -0.45250353, z: -0.13375524, w: 0.8455106}
+  - {x: -0.24992396, y: -0.45250353, z: -0.13375524, w: 0.8455106}
   refreshRotation: 0
 --- !u!1 &673065408
 GameObject:
@@ -44281,7 +44284,6 @@ MonoBehaviour:
   curWallType: {fileID: 444058408}
   WallType: {fileID: 444058408}
   originalRot:
-  - {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
   - {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
   - {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
   refreshRotation: 0
@@ -44581,7 +44583,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: -0.7184828, z: -0, w: 0.69554484}
   - {x: -0, y: -0.7184828, z: -0, w: 0.69554484}
-  - {x: -0, y: -0.7184828, z: -0, w: 0.69554484}
   refreshRotation: 0
 --- !u!1 &677267434
 GameObject:
@@ -44827,7 +44828,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: -0.85065085, z: -0, w: 0.5257311}
   - {x: -0, y: -0.85065085, z: -0, w: 0.5257311}
-  - {x: -0, y: -0.85065085, z: -0, w: 0.5257311}
   refreshRotation: 0
 --- !u!1 &680067522
 GameObject:
@@ -44879,6 +44879,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.58263254, z: -0, w: 0.81273574}
   - {x: -0, y: 0.58263254, z: -0, w: 0.81273574}
+  - {x: -0, y: 0.58263254, z: -0, w: 0.81273574}
   refreshRotation: 0
 --- !u!1 &680280886
 GameObject:
@@ -44928,7 +44929,6 @@ MonoBehaviour:
   curWallType: {fileID: 412559718}
   WallType: {fileID: 412559718}
   originalRot:
-  - {x: -0, y: -0.63145155, z: -0, w: 0.77541536}
   - {x: -0, y: -0.63145155, z: -0, w: 0.77541536}
   - {x: -0, y: -0.63145155, z: -0, w: 0.77541536}
   refreshRotation: 0
@@ -45232,7 +45232,6 @@ MonoBehaviour:
   curWallType: {fileID: 631613235}
   WallType: {fileID: 631613235}
   originalRot:
-  - {x: -0.27330273, y: 0.667426, z: 0.28994873, w: 0.6291089}
   - {x: -0.39827892, y: 0.9167886, z: 0.011770498, w: -0.02709427}
   - {x: -0.39827892, y: 0.9167886, z: 0.011770498, w: -0.02709427}
   refreshRotation: 0
@@ -45628,6 +45627,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.5983995, z: -0, w: 0.8011979}
   - {x: -0, y: 0.5983995, z: -0, w: 0.8011979}
+  - {x: -0, y: 0.5983995, z: -0, w: 0.8011979}
   refreshRotation: 0
 --- !u!1 &693101602
 GameObject:
@@ -45873,7 +45873,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: -0.6751559, z: -0, w: 0.7376751}
   - {x: -0, y: -0.6751559, z: -0, w: 0.7376751}
-  - {x: -0, y: -0.6751559, z: -0, w: 0.7376751}
   refreshRotation: 0
 --- !u!1 &694963967
 GameObject:
@@ -46022,6 +46021,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.039399754, z: -0, w: 0.99922353}
   - {x: -0, y: 0.039399754, z: -0, w: 0.99922353}
+  - {x: -0, y: 0.039399754, z: -0, w: 0.99922353}
   refreshRotation: 0
 --- !u!1 &699545345
 GameObject:
@@ -46073,7 +46073,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.6570241, z: -0, w: 0.7538696}
   - {x: -0, y: 0.6570241, z: -0, w: 0.7538696}
-  - {x: -0, y: 0.6570241, z: -0, w: 0.7538696}
   refreshRotation: 0
 --- !u!1 &700204579
 GameObject:
@@ -46123,7 +46122,6 @@ MonoBehaviour:
   curWallType: {fileID: 1747039337}
   WallType: {fileID: 1747039337}
   originalRot:
-  - {x: 0.13308732, y: 0.86620957, z: -0.32130125, w: 0.35879573}
   - {x: 0.13308732, y: 0.86620957, z: -0.32130125, w: 0.35879573}
   - {x: 0.13308732, y: 0.86620957, z: -0.32130125, w: 0.35879573}
   refreshRotation: 0
@@ -46404,6 +46402,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.5104188, z: -0, w: 0.85992604}
   - {x: -0, y: 0.5104188, z: -0, w: 0.85992604}
+  - {x: -0, y: 0.5104188, z: -0, w: 0.85992604}
   refreshRotation: 0
 --- !u!1 &704613100
 GameObject:
@@ -46455,7 +46454,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.7071067, z: -0, w: 0.7071068}
   - {x: -0, y: 0.7071067, z: -0, w: 0.7071068}
-  - {x: -0, y: 0.7071067, z: -0, w: 0.7071068}
   refreshRotation: 0
 --- !u!1 &705636975
 GameObject:
@@ -46505,7 +46503,6 @@ MonoBehaviour:
   curWallType: {fileID: 442744232}
   WallType: {fileID: 442744232}
   originalRot:
-  - {x: -0, y: 0.9332636, z: -0, w: 0.35919228}
   - {x: -0, y: 0.9332636, z: -0, w: 0.35919228}
   - {x: -0, y: 0.9332636, z: -0, w: 0.35919228}
   refreshRotation: 0
@@ -46656,6 +46653,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.9983139, z: -0, w: -0.058045723}
   - {x: -0, y: 0.9983139, z: -0, w: -0.058045723}
+  - {x: -0, y: 0.9983139, z: -0, w: -0.058045723}
   refreshRotation: 0
 --- !u!1 &707153425
 GameObject:
@@ -46802,6 +46800,7 @@ MonoBehaviour:
   curWallType: {fileID: 1495672985}
   WallType: {fileID: 1495672985}
   originalRot:
+  - {x: -0, y: -0.35888633, z: -0, w: 0.9333813}
   - {x: -0, y: -0.35888633, z: -0, w: 0.9333813}
   - {x: -0, y: -0.35888633, z: -0, w: 0.9333813}
   refreshRotation: 0
@@ -48547,7 +48546,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.2269702, z: -0, w: 0.97390175}
   - {x: -0, y: 0.2269702, z: -0, w: 0.97390175}
-  - {x: -0, y: 0.2269702, z: -0, w: 0.97390175}
   refreshRotation: 0
 --- !u!1 &726834966
 GameObject:
@@ -48696,6 +48694,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.9983139, z: -0, w: -0.058045723}
   - {x: -0, y: 0.9983139, z: -0, w: -0.058045723}
+  - {x: -0, y: 0.9983139, z: -0, w: -0.058045723}
   refreshRotation: 0
 --- !u!1 &728967169
 GameObject:
@@ -48747,6 +48746,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: -0, z: -0, w: 1}
   - {x: -0, y: -0, z: -0, w: 1}
+  - {x: -0, y: -0, z: -0, w: 1}
   refreshRotation: 0
 --- !u!1 &730117160
 GameObject:
@@ -48796,6 +48796,7 @@ MonoBehaviour:
   curWallType: {fileID: 1486898593}
   WallType: {fileID: 1486898593}
   originalRot:
+  - {x: -0, y: 0.95086265, z: -0, w: 0.3096131}
   - {x: -0, y: 0.95086265, z: -0, w: 0.3096131}
   - {x: -0, y: 0.95086265, z: -0, w: 0.3096131}
   refreshRotation: 0
@@ -49322,7 +49323,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.7290537, z: -0, w: 0.6844565}
   - {x: -0, y: 0.7290537, z: -0, w: 0.6844565}
-  - {x: -0, y: 0.7290537, z: -0, w: 0.6844565}
   refreshRotation: 0
 --- !u!1 &734251341
 GameObject:
@@ -49762,7 +49762,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: -0.74544096, z: -0, w: 0.6665717}
   - {x: -0, y: -0.74544096, z: -0, w: 0.6665717}
-  - {x: -0, y: -0.74544096, z: -0, w: 0.6665717}
   refreshRotation: 0
 --- !u!1 &744561109
 GameObject:
@@ -49812,7 +49811,8 @@ MonoBehaviour:
   curWallType: {fileID: 576052068}
   WallType: {fileID: 576052068}
   originalRot:
-  - {x: -0.045752715, y: 0.94851, z: -0.26855814, w: -0.16159226}
+  - {x: 0.15754722, y: 0.55643487, z: -0.22225134, w: -0.7849608}
+  - {x: 0.15754722, y: 0.55643487, z: -0.22225134, w: -0.7849608}
   - {x: 0.15754722, y: 0.55643487, z: -0.22225134, w: -0.7849608}
   refreshRotation: 0
 --- !u!1 &744631861
@@ -49863,6 +49863,7 @@ MonoBehaviour:
   curWallType: {fileID: 1782164623}
   WallType: {fileID: 1782164623}
   originalRot:
+  - {x: -0.030530782, y: 0.95670104, z: -0.108907655, w: -0.26819813}
   - {x: -0.030530782, y: 0.95670104, z: -0.108907655, w: -0.26819813}
   - {x: -0.030530782, y: 0.95670104, z: -0.108907655, w: -0.26819813}
   refreshRotation: 0
@@ -51024,7 +51025,8 @@ MonoBehaviour:
   curWallType: {fileID: 1125839699}
   WallType: {fileID: 1125839699}
   originalRot:
-  - {x: 0.08997137, y: 0.90456766, z: -0.34219685, w: 0.23783149}
+  - {x: 0.3055891, y: 0.8077982, z: -0.17835036, w: -0.4714537}
+  - {x: 0.3055891, y: 0.8077982, z: -0.17835036, w: -0.4714537}
   - {x: 0.3055891, y: 0.8077982, z: -0.17835036, w: -0.4714537}
   refreshRotation: 0
 --- !u!1 &762968019
@@ -51075,6 +51077,7 @@ MonoBehaviour:
   curWallType: {fileID: 1903641936}
   WallType: {fileID: 1903641936}
   originalRot:
+  - {x: -0, y: 0.9617176, z: -0, w: 0.2740425}
   - {x: -0, y: 0.9617176, z: -0, w: 0.2740425}
   - {x: -0, y: 0.9617176, z: -0, w: 0.2740425}
   refreshRotation: 0
@@ -51225,7 +51228,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.85065085, z: -0, w: 0.5257311}
   - {x: -0, y: 0.85065085, z: -0, w: 0.5257311}
-  - {x: -0, y: 0.85065085, z: -0, w: 0.5257311}
   refreshRotation: 0
 --- !u!1 &765670332
 GameObject:
@@ -51327,9 +51329,8 @@ MonoBehaviour:
   curWallType: {fileID: 1655010129}
   WallType: {fileID: 1655010129}
   originalRot:
-  - {x: -0, y: 0.99979365, z: -0, w: 0.020315107}
-  - {x: -0, y: 0.7213258, z: -0, w: -0.6925959}
-  - {x: -0, y: 0.02031512, z: -0, w: -0.99979365}
+  - {x: -0, y: -0.6925959, z: -0, w: -0.7213258}
+  - {x: -0, y: -0.6925959, z: -0, w: -0.7213258}
   - {x: -0, y: -0.6925959, z: -0, w: -0.7213258}
   refreshRotation: 0
 --- !u!1 &767646687
@@ -51581,6 +51582,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.7071067, z: -0, w: 0.7071068}
   - {x: -0, y: 0.7071067, z: -0, w: 0.7071068}
+  - {x: -0, y: 0.7071067, z: -0, w: 0.7071068}
   refreshRotation: 0
 --- !u!1 &773535031
 GameObject:
@@ -51826,6 +51828,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.98948586, z: -0, w: 0.14462973}
   - {x: -0, y: 0.98948586, z: -0, w: 0.14462973}
+  - {x: -0, y: 0.98948586, z: -0, w: 0.14462973}
   refreshRotation: 0
 --- !u!1 &776411216
 GameObject:
@@ -52025,7 +52028,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   - {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  - {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   refreshRotation: 0
 --- !u!1 &781162405
 GameObject:
@@ -52075,7 +52077,6 @@ MonoBehaviour:
   curWallType: {fileID: 1499479833}
   WallType: {fileID: 1499479833}
   originalRot:
-  - {x: -0, y: 0.22233346, z: -0, w: 0.9749707}
   - {x: -0, y: 0.22233346, z: -0, w: 0.9749707}
   - {x: -0, y: 0.22233346, z: -0, w: 0.9749707}
   refreshRotation: 0
@@ -52129,7 +52130,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: -0.15774907, z: -0, w: 0.98747927}
   - {x: -0, y: -0.15774907, z: -0, w: 0.98747927}
-  - {x: -0, y: -0.15774907, z: -0, w: 0.98747927}
   refreshRotation: 0
 --- !u!1 &782428461
 GameObject:
@@ -52179,7 +52179,6 @@ MonoBehaviour:
   curWallType: {fileID: 5708695}
   WallType: {fileID: 5708695}
   originalRot:
-  - {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   - {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   - {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   refreshRotation: 0
@@ -52328,9 +52327,8 @@ MonoBehaviour:
   curWallType: {fileID: 1981175763}
   WallType: {fileID: 1981175763}
   originalRot:
-  - {x: -0, y: 0.6961847, z: -0, w: 0.7178627}
-  - {x: -0, y: 0.9998825, z: -0, w: 0.015328682}
-  - {x: -0, y: 0.7178627, z: -0, w: -0.6961847}
+  - {x: -0, y: 0.015328682, z: -0, w: -0.9998825}
+  - {x: -0, y: 0.015328682, z: -0, w: -0.9998825}
   - {x: -0, y: 0.015328682, z: -0, w: -0.9998825}
   refreshRotation: 0
 --- !u!1 &788093799
@@ -53211,6 +53209,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
   - {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
+  - {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
   refreshRotation: 0
 --- !u!1 &801793388
 GameObject:
@@ -53260,7 +53259,6 @@ MonoBehaviour:
   curWallType: {fileID: 373365485}
   WallType: {fileID: 373365485}
   originalRot:
-  - {x: -0, y: 0.99992985, z: -0, w: 0.011844143}
   - {x: -0, y: 0.99992985, z: -0, w: 0.011844143}
   - {x: -0, y: 0.99992985, z: -0, w: 0.011844143}
   refreshRotation: 0
@@ -53753,7 +53751,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.83684236, z: -0, w: 0.547444}
   - {x: -0, y: 0.83684236, z: -0, w: 0.547444}
-  - {x: -0, y: 0.83684236, z: -0, w: 0.547444}
   refreshRotation: 0
 --- !u!1 &814991290
 GameObject:
@@ -53805,6 +53802,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.9997983, z: -0, w: 0.020083567}
   - {x: -0, y: 0.9997983, z: -0, w: 0.020083567}
+  - {x: -0, y: 0.9997983, z: -0, w: 0.020083567}
   refreshRotation: 0
 --- !u!1 &815326788
 GameObject:
@@ -53854,9 +53852,8 @@ MonoBehaviour:
   curWallType: {fileID: 1086842867}
   WallType: {fileID: 1086842867}
   originalRot:
-  - {x: -0, y: 0.9985453, z: -0, w: 0.053918935}
-  - {x: -0, y: 0.74420464, z: -0, w: -0.66795176}
-  - {x: -0, y: 0.053918924, z: -0, w: -0.99854535}
+  - {x: -0, y: -0.66795176, z: -0, w: -0.74420464}
+  - {x: -0, y: -0.66795176, z: -0, w: -0.74420464}
   - {x: -0, y: -0.66795176, z: -0, w: -0.74420464}
   refreshRotation: 0
 --- !u!1 &815667293
@@ -54320,7 +54317,6 @@ MonoBehaviour:
   curWallType: {fileID: 1619246914}
   WallType: {fileID: 1619246914}
   originalRot:
-  - {x: -0, y: 0.461283, z: -0, w: 0.88725305}
   - {x: -0, y: 0.461283, z: -0, w: 0.88725305}
   - {x: -0, y: 0.461283, z: -0, w: 0.88725305}
   refreshRotation: 0
@@ -55259,7 +55255,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: -0, z: -0, w: 1}
   - {x: -0, y: -0, z: -0, w: 1}
-  - {x: -0, y: -0, z: -0, w: 1}
   refreshRotation: 0
 --- !u!1 &827554124
 GameObject:
@@ -55309,7 +55304,6 @@ MonoBehaviour:
   curWallType: {fileID: 1244547170}
   WallType: {fileID: 1244547170}
   originalRot:
-  - {x: 0.001133235, y: 0.97323716, z: -0.0048004608, w: 0.22975014}
   - {x: 0.001133235, y: 0.97323716, z: -0.0048004608, w: 0.22975014}
   - {x: 0.001133235, y: 0.97323716, z: -0.0048004608, w: 0.22975014}
   refreshRotation: 0
@@ -55502,6 +55496,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: -0.27869383, z: -0, w: 0.96038}
   - {x: -0, y: -0.27869383, z: -0, w: 0.96038}
+  - {x: -0, y: -0.27869383, z: -0, w: 0.96038}
   refreshRotation: 0
 --- !u!1 &830142633
 GameObject:
@@ -55602,7 +55597,6 @@ MonoBehaviour:
   curWallType: {fileID: 1864194557}
   WallType: {fileID: 1864194557}
   originalRot:
-  - {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   - {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   - {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   refreshRotation: 0
@@ -55790,7 +55784,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   - {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  - {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   refreshRotation: 0
 --- !u!1 &836093310
 GameObject:
@@ -55840,6 +55833,7 @@ MonoBehaviour:
   curWallType: {fileID: 1782021295}
   WallType: {fileID: 1782021295}
   originalRot:
+  - {x: -0, y: -0.24626416, z: -0, w: 0.9692028}
   - {x: -0, y: -0.24626416, z: -0, w: 0.9692028}
   - {x: -0, y: -0.24626416, z: -0, w: 0.9692028}
   refreshRotation: 0
@@ -56234,7 +56228,8 @@ MonoBehaviour:
   curWallType: {fileID: 364378534}
   WallType: {fileID: 364378534}
   originalRot:
-  - {x: -0.1885808, y: 0.80694884, z: 0.34571972, w: 0.44016886}
+  - {x: -0.37780756, y: 0.8818454, z: 0.11111401, w: -0.25935262}
+  - {x: -0.37780756, y: 0.8818454, z: 0.11111401, w: -0.25935262}
   - {x: -0.37780756, y: 0.8818454, z: 0.11111401, w: -0.25935262}
   refreshRotation: 0
 --- !u!1 &846442760
@@ -56479,6 +56474,7 @@ MonoBehaviour:
   curWallType: {fileID: 1019587390}
   WallType: {fileID: 1019587390}
   originalRot:
+  - {x: -0, y: 0.6697221, z: -0, w: 0.7426118}
   - {x: -0, y: 0.6697221, z: -0, w: 0.7426118}
   - {x: -0, y: 0.6697221, z: -0, w: 0.7426118}
   refreshRotation: 0
@@ -56972,6 +56968,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.9434924, z: -0, w: 0.33139417}
   - {x: -0, y: 0.9434924, z: -0, w: 0.33139417}
+  - {x: -0, y: 0.9434924, z: -0, w: 0.33139417}
   refreshRotation: 0
 --- !u!1 &857683102
 GameObject:
@@ -57268,6 +57265,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: -0, z: -0, w: 1}
   - {x: -0, y: -0, z: -0, w: 1}
+  - {x: -0, y: -0, z: -0, w: 1}
   refreshRotation: 0
 --- !u!1 &860529159
 GameObject:
@@ -57350,6 +57348,7 @@ MonoBehaviour:
   curWallType: {fileID: 1114994738}
   WallType: {fileID: 1114994738}
   originalRot:
+  - {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
   - {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
   - {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
   refreshRotation: 0
@@ -57500,7 +57499,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 1, z: -0, w: 0}
   - {x: -0, y: 1, z: -0, w: 0}
-  - {x: -0, y: 1, z: -0, w: 0}
   refreshRotation: 0
 --- !u!1 &866915958
 GameObject:
@@ -57552,7 +57550,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: -0.20237397, z: -0, w: 0.9793083}
   - {x: -0, y: -0.20237397, z: -0, w: 0.9793083}
-  - {x: -0, y: -0.20237397, z: -0, w: 0.9793083}
   refreshRotation: 0
 --- !u!1 &868148628
 GameObject:
@@ -57602,8 +57599,7 @@ MonoBehaviour:
   curWallType: {fileID: 1221935984}
   WallType: {fileID: 1221935984}
   originalRot:
-  - {x: -0, y: 0.99997187, z: -0, w: -0.007499821}
-  - {x: -0, y: 0.7017837, z: -0, w: -0.71239007}
+  - {x: -0, y: -0.007499821, z: -0, w: -0.99997187}
   - {x: -0, y: -0.007499821, z: -0, w: -0.99997187}
   refreshRotation: 0
 --- !u!1 &872575636
@@ -57654,6 +57650,7 @@ MonoBehaviour:
   curWallType: {fileID: 1808997316}
   WallType: {fileID: 1808997316}
   originalRot:
+  - {x: -0, y: 0.973249, z: -0, w: 0.22975294}
   - {x: -0, y: 0.973249, z: -0, w: 0.22975294}
   - {x: -0, y: 0.973249, z: -0, w: 0.22975294}
   refreshRotation: 0
@@ -57853,7 +57850,6 @@ MonoBehaviour:
   curWallType: {fileID: 335776069}
   WallType: {fileID: 335776069}
   originalRot:
-  - {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   - {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   - {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   refreshRotation: 0
@@ -58153,7 +58149,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.2795875, z: -0, w: 0.96012026}
   - {x: -0, y: 0.2795875, z: -0, w: 0.96012026}
-  - {x: -0, y: 0.2795875, z: -0, w: 0.96012026}
   refreshRotation: 0
 --- !u!1 &883659197
 GameObject:
@@ -58300,6 +58295,7 @@ MonoBehaviour:
   curWallType: {fileID: 472479070}
   WallType: {fileID: 472479070}
   originalRot:
+  - {x: 0.116112515, y: 0.60869807, z: -0.09065791, w: 0.7796061}
   - {x: 0.116112515, y: 0.60869807, z: -0.09065791, w: 0.7796061}
   - {x: 0.116112515, y: 0.60869807, z: -0.09065791, w: 0.7796061}
   refreshRotation: 0
@@ -58501,6 +58497,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.6148399, z: -0, w: 0.788652}
   - {x: -0, y: 0.6148399, z: -0, w: 0.788652}
+  - {x: -0, y: 0.6148399, z: -0, w: 0.788652}
   refreshRotation: 0
 --- !u!1 &886857565
 GameObject:
@@ -58550,7 +58547,6 @@ MonoBehaviour:
   curWallType: {fileID: 1772337807}
   WallType: {fileID: 1772337807}
   originalRot:
-  - {x: -0.15877408, y: 0.34408712, z: 0.059156176, w: 0.92352337}
   - {x: -0.15877408, y: 0.34408712, z: 0.059156176, w: 0.92352337}
   - {x: -0.15877408, y: 0.34408712, z: 0.059156176, w: 0.92352337}
   refreshRotation: 0
@@ -58895,7 +58891,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.973249, z: -0, w: -0.22975294}
   - {x: -0, y: 0.973249, z: -0, w: -0.22975294}
-  - {x: -0, y: 0.973249, z: -0, w: -0.22975294}
   refreshRotation: 0
 --- !u!1 &898141137
 GameObject:
@@ -58945,6 +58940,7 @@ MonoBehaviour:
   curWallType: {fileID: 1164652599}
   WallType: {fileID: 1164652599}
   originalRot:
+  - {x: -0, y: 0.7071067, z: -0, w: 0.7071068}
   - {x: -0, y: 0.7071067, z: -0, w: 0.7071068}
   - {x: -0, y: 0.7071067, z: -0, w: 0.7071068}
   refreshRotation: 0
@@ -59437,6 +59433,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.9467579, z: -0, w: -0.3219464}
   - {x: -0, y: 0.9467579, z: -0, w: -0.3219464}
+  - {x: -0, y: 0.9467579, z: -0, w: -0.3219464}
   refreshRotation: 0
 --- !u!1 &903713581
 GameObject:
@@ -59486,6 +59483,7 @@ MonoBehaviour:
   curWallType: {fileID: 605047517}
   WallType: {fileID: 605047517}
   originalRot:
+  - {x: -0, y: -0, z: -0, w: 1}
   - {x: -0, y: -0, z: -0, w: 1}
   - {x: -0, y: -0, z: -0, w: 1}
   refreshRotation: 0
@@ -59784,6 +59782,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   - {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  - {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   refreshRotation: 0
 --- !u!1 &909491951
 GameObject:
@@ -59930,6 +59929,7 @@ MonoBehaviour:
   curWallType: {fileID: 150262179}
   WallType: {fileID: 150262179}
   originalRot:
+  - {x: -0, y: 1, z: -0, w: 0}
   - {x: -0, y: 1, z: -0, w: 0}
   - {x: -0, y: 1, z: -0, w: 0}
   refreshRotation: 0
@@ -60227,6 +60227,7 @@ MonoBehaviour:
   curWallType: {fileID: 1477149326}
   WallType: {fileID: 1477149326}
   originalRot:
+  - {x: -0.08916955, y: 0.46943846, z: 0.04772209, w: 0.8771539}
   - {x: -0.08916955, y: 0.46943846, z: 0.04772209, w: 0.8771539}
   - {x: -0.08916955, y: 0.46943846, z: 0.04772209, w: 0.8771539}
   refreshRotation: 0
@@ -60674,6 +60675,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   - {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  - {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   refreshRotation: 0
 --- !u!1 &923800278
 GameObject:
@@ -61047,7 +61049,6 @@ MonoBehaviour:
   curWallType: {fileID: 244381383}
   WallType: {fileID: 244381383}
   originalRot:
-  - {x: -0.20357753, y: 0.77768034, z: 0.313042, w: 0.50574124}
   - {x: -0.36530522, y: 0.9075161, z: 0.07740308, w: -0.19229}
   - {x: -0.36530522, y: 0.9075161, z: 0.07740308, w: -0.19229}
   refreshRotation: 0
@@ -61293,7 +61294,6 @@ MonoBehaviour:
   curWallType: {fileID: 301756397}
   WallType: {fileID: 301756397}
   originalRot:
-  - {x: -0, y: 0.019479133, z: -0, w: 0.9998103}
   - {x: -0, y: 0.019479133, z: -0, w: 0.9998103}
   - {x: -0, y: 0.019479133, z: -0, w: 0.9998103}
   refreshRotation: 0
@@ -61839,6 +61839,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: -0.037345346, z: -0, w: 0.99930245}
   - {x: -0, y: -0.037345346, z: -0, w: 0.99930245}
+  - {x: -0, y: -0.037345346, z: -0, w: 0.99930245}
   refreshRotation: 0
 --- !u!1 &948648482
 GameObject:
@@ -61985,7 +61986,6 @@ MonoBehaviour:
   curWallType: {fileID: 1645275213}
   WallType: {fileID: 1645275213}
   originalRot:
-  - {x: -0.0024437986, y: 0.9872884, z: 0.015252467, w: 0.15818647}
   - {x: -0.0125131495, y: 0.8099731, z: 0.009057096, w: -0.58626366}
   - {x: -0.0125131495, y: 0.8099731, z: 0.009057096, w: -0.58626366}
   refreshRotation: 0
@@ -63025,7 +63025,8 @@ MonoBehaviour:
   curWallType: {fileID: 407079496}
   WallType: {fileID: 407079496}
   originalRot:
-  - {x: 0.11442156, y: 0.87504506, z: -0.25221595, w: 0.39697737}
+  - {x: 0.25925186, y: 0.89945567, z: -0.09743535, w: -0.3380449}
+  - {x: 0.25925186, y: 0.89945567, z: -0.09743535, w: -0.3380449}
   - {x: 0.25925186, y: 0.89945567, z: -0.09743535, w: -0.3380449}
   refreshRotation: 0
 --- !u!1 &967399278
@@ -63173,6 +63174,7 @@ MonoBehaviour:
   curWallType: {fileID: 1283026461}
   WallType: {fileID: 1283026461}
   originalRot:
+  - {x: -0.1398433, y: 0.857174, z: 0.3097771, w: 0.38695577}
   - {x: -0.1398433, y: 0.857174, z: 0.3097771, w: 0.38695577}
   - {x: -0.1398433, y: 0.857174, z: 0.3097771, w: 0.38695577}
   refreshRotation: 0
@@ -63650,7 +63652,6 @@ MonoBehaviour:
   curWallType: {fileID: 1638018974}
   WallType: {fileID: 1638018974}
   originalRot:
-  - {x: -0, y: 0.17837599, z: -0, w: 0.9839624}
   - {x: -0, y: 0.17837599, z: -0, w: 0.9839624}
   - {x: -0, y: 0.17837599, z: -0, w: 0.9839624}
   refreshRotation: 0
@@ -64141,6 +64142,7 @@ MonoBehaviour:
   curWallType: {fileID: 192050871}
   WallType: {fileID: 192050871}
   originalRot:
+  - {x: -0, y: -0, z: -0, w: 1}
   - {x: -0, y: -0, z: -0, w: 1}
   - {x: -0, y: -0, z: -0, w: 1}
   refreshRotation: 0
@@ -64962,6 +64964,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   - {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  - {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   refreshRotation: 0
 --- !u!1 &995615868
 GameObject:
@@ -65401,7 +65404,68 @@ MonoBehaviour:
   originalRot:
   - {x: -0.02564813, y: 0.94308937, z: -0.074891634, w: -0.32297975}
   - {x: -0.02564813, y: 0.94308937, z: -0.074891634, w: -0.32297975}
+  - {x: -0.02564813, y: 0.94308937, z: -0.074891634, w: -0.32297975}
   refreshRotation: 0
+--- !u!1 &999718297
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 999718299}
+  - component: {fileID: 999718298}
+  m_Layer: 0
+  m_Name: Wall Container
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &999718298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 999718297}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c748157089f17ff46852bdac70f7b645, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  creatingWall: 1
+  useGrid: 0
+  undoIndividualWalls: 0
+  randomWall: 0
+  considerRaycast: 0
+  walls:
+  - {fileID: 1076018711624916, guid: 2d67746288ab6aa44ab27b152d9b0cf4, type: 3}
+  currentWall: {fileID: 0}
+  lastWall: {fileID: 0}
+  secondLastWall: {fileID: 0}
+  newWall: {fileID: 0}
+  WallSegment: {fileID: 0}
+  direction: {x: -1.710002, y: 0, z: -0.3842697}
+  useCustomDistance: 1
+  customDistance: 1
+  prefabDistance: 1
+--- !u!4 &999718299
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 999718297}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1000497771
 GameObject:
   m_ObjectHideFlags: 0
@@ -65450,6 +65514,7 @@ MonoBehaviour:
   curWallType: {fileID: 930425728}
   WallType: {fileID: 930425728}
   originalRot:
+  - {x: 0.12811598, y: 0.28717613, z: -0.038790397, w: 0.9484785}
   - {x: 0.12811598, y: 0.28717613, z: -0.038790397, w: 0.9484785}
   - {x: 0.12811598, y: 0.28717613, z: -0.038790397, w: 0.9484785}
   refreshRotation: 0
@@ -65889,7 +65954,6 @@ MonoBehaviour:
   curWallType: {fileID: 791776995}
   WallType: {fileID: 791776995}
   originalRot:
-  - {x: -0, y: -0.12906931, z: -0, w: 0.9916356}
   - {x: -0, y: -0.12906931, z: -0, w: 0.9916356}
   - {x: -0, y: -0.12906931, z: -0, w: 0.9916356}
   refreshRotation: 0
@@ -66742,6 +66806,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: -0.27127182, z: -0, w: 0.9625028}
   - {x: -0, y: -0.27127182, z: -0, w: 0.9625028}
+  - {x: -0, y: -0.27127182, z: -0, w: 0.9625028}
   refreshRotation: 0
 --- !u!1 &1024907811
 GameObject:
@@ -67038,6 +67103,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: -0.07061715, z: -0, w: 0.9975035}
   - {x: -0, y: -0.07061715, z: -0, w: 0.9975035}
+  - {x: -0, y: -0.07061715, z: -0, w: 0.9975035}
   refreshRotation: 0
 --- !u!1 &1030938633
 GameObject:
@@ -67087,7 +67153,6 @@ MonoBehaviour:
   curWallType: {fileID: 1686545608}
   WallType: {fileID: 1686545608}
   originalRot:
-  - {x: -0, y: -0.20237398, z: -0, w: 0.9793083}
   - {x: -0, y: -0.20237398, z: -0, w: 0.9793083}
   - {x: -0, y: -0.20237398, z: -0, w: 0.9793083}
   refreshRotation: 0
@@ -67288,6 +67353,7 @@ MonoBehaviour:
   curWallType: {fileID: 1487619356}
   WallType: {fileID: 1487619356}
   originalRot:
+  - {x: -0, y: -0, z: -0, w: 1}
   - {x: -0, y: -0, z: -0, w: 1}
   - {x: -0, y: -0, z: -0, w: 1}
   refreshRotation: 0
@@ -67533,6 +67599,7 @@ MonoBehaviour:
   curWallType: {fileID: 1859293863}
   WallType: {fileID: 1859293863}
   originalRot:
+  - {x: -0, y: 0.7071067, z: -0, w: 0.7071068}
   - {x: -0, y: 0.7071067, z: -0, w: 0.7071068}
   - {x: -0, y: 0.7071067, z: -0, w: 0.7071068}
   refreshRotation: 0
@@ -67829,6 +67896,7 @@ MonoBehaviour:
   curWallType: {fileID: 1051886959}
   WallType: {fileID: 1051886959}
   originalRot:
+  - {x: -0, y: 1, z: -0, w: 0}
   - {x: -0, y: 1, z: -0, w: 0}
   - {x: -0, y: 1, z: -0, w: 0}
   refreshRotation: 0
@@ -68520,7 +68588,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.6680422, z: -0, w: 0.7441234}
   - {x: -0, y: 0.6680422, z: -0, w: 0.7441234}
-  - {x: -0, y: 0.6680422, z: -0, w: 0.7441234}
   refreshRotation: 0
 --- !u!1 &1062945798
 GameObject:
@@ -68570,7 +68637,6 @@ MonoBehaviour:
   curWallType: {fileID: 1370793366}
   WallType: {fileID: 1370793366}
   originalRot:
-  - {x: -0, y: 0.22975293, z: -0, w: 0.973249}
   - {x: -0, y: 0.22975293, z: -0, w: 0.973249}
   - {x: -0, y: 0.22975293, z: -0, w: 0.973249}
   refreshRotation: 0
@@ -69115,6 +69181,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: -0.791295, z: -0, w: 0.61143464}
   - {x: -0, y: -0.791295, z: -0, w: 0.61143464}
+  - {x: -0, y: -0.791295, z: -0, w: 0.61143464}
   refreshRotation: 0
 --- !u!1 &1073563037
 GameObject:
@@ -69313,6 +69380,7 @@ MonoBehaviour:
   curWallType: {fileID: 1525631475}
   WallType: {fileID: 1525631475}
   originalRot:
+  - {x: 0.05166808, y: -0.82652915, z: 0.07691644, w: 0.5552152}
   - {x: 0.05166808, y: -0.82652915, z: 0.07691644, w: 0.5552152}
   - {x: 0.05166808, y: -0.82652915, z: 0.07691644, w: 0.5552152}
   refreshRotation: 0
@@ -69514,7 +69582,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: -0, z: -0, w: 1}
   - {x: -0, y: -0, z: -0, w: 1}
-  - {x: -0, y: -0, z: -0, w: 1}
   refreshRotation: 0
 --- !u!1 &1080657522
 GameObject:
@@ -69564,6 +69631,7 @@ MonoBehaviour:
   curWallType: {fileID: 228109414}
   WallType: {fileID: 228109414}
   originalRot:
+  - {x: -0, y: 0.99398553, z: -0, w: -0.10951194}
   - {x: -0, y: 0.99398553, z: -0, w: -0.10951194}
   - {x: -0, y: 0.99398553, z: -0, w: -0.10951194}
   refreshRotation: 0
@@ -69684,7 +69752,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 1, z: -0, w: 0}
   - {x: -0, y: 1, z: -0, w: 0}
-  - {x: -0, y: 1, z: -0, w: 0}
   refreshRotation: 0
 --- !u!1 &1082451201
 GameObject:
@@ -69734,7 +69801,6 @@ MonoBehaviour:
   curWallType: {fileID: 995440799}
   WallType: {fileID: 995440799}
   originalRot:
-  - {x: -0, y: 0.99122864, z: -0, w: -0.1321582}
   - {x: -0, y: 0.99122864, z: -0, w: -0.1321582}
   - {x: -0, y: 0.99122864, z: -0, w: -0.1321582}
   refreshRotation: 0
@@ -69839,6 +69905,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: -0, z: -0, w: 1}
   - {x: -0, y: -0, z: -0, w: 1}
+  - {x: -0, y: -0, z: -0, w: 1}
   refreshRotation: 0
 --- !u!1 &1086125309
 GameObject:
@@ -69888,6 +69955,7 @@ MonoBehaviour:
   curWallType: {fileID: 1582863674}
   WallType: {fileID: 1582863674}
   originalRot:
+  - {x: -0, y: 0.69678515, z: -0, w: 0.71728}
   - {x: -0, y: 0.69678515, z: -0, w: 0.71728}
   - {x: -0, y: 0.69678515, z: -0, w: 0.71728}
   refreshRotation: 0
@@ -70136,7 +70204,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: -0.1816593, z: -0, w: 0.98336154}
   - {x: -0, y: -0.1816593, z: -0, w: 0.98336154}
-  - {x: -0, y: -0.1816593, z: -0, w: 0.98336154}
   refreshRotation: 0
 --- !u!1 &1089428328
 GameObject:
@@ -70337,7 +70404,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.85065085, z: -0, w: 0.5257311}
   - {x: -0, y: 0.85065085, z: -0, w: 0.5257311}
-  - {x: -0, y: 0.85065085, z: -0, w: 0.5257311}
   refreshRotation: 0
 --- !u!1 &1091537936
 GameObject:
@@ -70439,7 +70505,6 @@ MonoBehaviour:
   curWallType: {fileID: 776411216}
   WallType: {fileID: 776411216}
   originalRot:
-  - {x: -0, y: 0.23990625, z: -0, w: 0.97079605}
   - {x: -0, y: 0.23990625, z: -0, w: 0.97079605}
   - {x: -0, y: 0.23990625, z: -0, w: 0.97079605}
   refreshRotation: 0
@@ -70784,7 +70849,6 @@ MonoBehaviour:
   originalRot:
   - {x: 0.14912647, y: 0.7647142, z: -0.19099766, w: 0.59707075}
   - {x: 0.14912647, y: 0.7647142, z: -0.19099766, w: 0.59707075}
-  - {x: 0.14912647, y: 0.7647142, z: -0.19099766, w: 0.59707075}
   refreshRotation: 0
 --- !u!1 &1098128352
 GameObject:
@@ -70885,7 +70949,6 @@ MonoBehaviour:
   curWallType: {fileID: 396828430}
   WallType: {fileID: 396828430}
   originalRot:
-  - {x: -0.04094955, y: 0.7896398, z: 0.053017292, w: 0.6099028}
   - {x: -0.06644459, y: 0.98962605, z: 0.008533183, w: -0.12709323}
   - {x: -0.06644459, y: 0.98962605, z: 0.008533183, w: -0.12709323}
   refreshRotation: 0
@@ -71476,7 +71539,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: -0.73112404, z: -0, w: 0.68224466}
   - {x: -0, y: -0.73112404, z: -0, w: 0.68224466}
-  - {x: -0, y: -0.73112404, z: -0, w: 0.68224466}
   refreshRotation: 0
 --- !u!1 &1113517488
 GameObject:
@@ -71856,6 +71918,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: -0, z: -0, w: 1}
   - {x: -0, y: -0, z: -0, w: 1}
+  - {x: -0, y: -0, z: -0, w: 1}
   refreshRotation: 0
 --- !u!1 &1115196369
 GameObject:
@@ -71905,7 +71968,6 @@ MonoBehaviour:
   curWallType: {fileID: 1755765040}
   WallType: {fileID: 1755765040}
   originalRot:
-  - {x: -0, y: 0.98927575, z: -0, w: -0.14605978}
   - {x: -0, y: 0.98927575, z: -0, w: -0.14605978}
   - {x: -0, y: 0.98927575, z: -0, w: -0.14605978}
   refreshRotation: 0
@@ -72054,7 +72116,6 @@ MonoBehaviour:
   curWallType: {fileID: 62423676}
   WallType: {fileID: 62423676}
   originalRot:
-  - {x: -0, y: -0, z: -0, w: 1}
   - {x: -0, y: -0, z: -0, w: 1}
   - {x: -0, y: -0, z: -0, w: 1}
   refreshRotation: 0
@@ -72255,7 +72316,6 @@ MonoBehaviour:
   curWallType: {fileID: 398230068}
   WallType: {fileID: 398230068}
   originalRot:
-  - {x: 0.018708333, y: 0.95290846, z: -0.060094472, w: 0.29665503}
   - {x: 0.055722, y: 0.8835748, z: -0.029264418, w: -0.46404123}
   - {x: 0.055722, y: 0.8835748, z: -0.029264418, w: -0.46404123}
   refreshRotation: 0
@@ -72406,6 +72466,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.92387956, z: -0, w: 0.38268346}
   - {x: -0, y: 0.92387956, z: -0, w: 0.38268346}
+  - {x: -0, y: 0.92387956, z: -0, w: 0.38268346}
   refreshRotation: 0
 --- !u!1 &1120474901
 GameObject:
@@ -72509,7 +72570,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.7454907, z: -0, w: 0.6665161}
   - {x: -0, y: 0.7454907, z: -0, w: 0.6665161}
-  - {x: -0, y: 0.7454907, z: -0, w: 0.6665161}
   refreshRotation: 0
 --- !u!1 &1120771963
 GameObject:
@@ -72559,8 +72619,7 @@ MonoBehaviour:
   curWallType: {fileID: 1118419928}
   WallType: {fileID: 1118419928}
   originalRot:
-  - {x: -0, y: 0.7196147, z: -0, w: -0.6943736}
-  - {x: -0, y: 0.017848138, z: -0, w: -0.99984074}
+  - {x: -0, y: -0.6943736, z: -0, w: -0.7196147}
   - {x: -0, y: -0.6943736, z: -0, w: -0.7196147}
   refreshRotation: 0
 --- !u!1 &1123745156
@@ -72662,6 +72721,7 @@ MonoBehaviour:
   curWallType: {fileID: 1996923631}
   WallType: {fileID: 1996923631}
   originalRot:
+  - {x: 0.27207398, y: -0.17155103, z: 0.049361117, w: 0.9455736}
   - {x: 0.27207398, y: -0.17155103, z: 0.049361117, w: 0.9455736}
   - {x: 0.27207398, y: -0.17155103, z: 0.049361117, w: 0.9455736}
   refreshRotation: 0
@@ -72958,6 +73018,7 @@ MonoBehaviour:
   curWallType: {fileID: 1706943409}
   WallType: {fileID: 1706943409}
   originalRot:
+  - {x: -0, y: 0.7454894, z: -0, w: 0.66651756}
   - {x: -0, y: 0.7454894, z: -0, w: 0.66651756}
   - {x: -0, y: 0.7454894, z: -0, w: 0.66651756}
   refreshRotation: 0
@@ -73257,6 +73318,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: -0.0057615405, z: -0, w: 0.99998343}
   - {x: -0, y: -0.0057615405, z: -0, w: 0.99998343}
+  - {x: -0, y: -0.0057615405, z: -0, w: 0.99998343}
   refreshRotation: 0
 --- !u!1 &1131275045
 GameObject:
@@ -73553,6 +73615,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: -0.6350646, z: -0, w: 0.77245903}
   - {x: -0, y: -0.6350646, z: -0, w: 0.77245903}
+  - {x: -0, y: -0.6350646, z: -0, w: 0.77245903}
   refreshRotation: 0
 --- !u!1 &1139324742
 GameObject:
@@ -73602,7 +73665,6 @@ MonoBehaviour:
   curWallType: {fileID: 625365353}
   WallType: {fileID: 625365353}
   originalRot:
-  - {x: -0, y: -0.7370664, z: -0, w: 0.67582035}
   - {x: -0, y: -0.7370664, z: -0, w: 0.67582035}
   - {x: -0, y: -0.7370664, z: -0, w: 0.67582035}
   refreshRotation: 0
@@ -73947,7 +74009,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.3083081, z: -0, w: 0.9512866}
   - {x: -0, y: 0.3083081, z: -0, w: 0.9512866}
-  - {x: -0, y: 0.3083081, z: -0, w: 0.9512866}
   refreshRotation: 0
 --- !u!1 &1148490485
 GameObject:
@@ -73997,6 +74058,7 @@ MonoBehaviour:
   curWallType: {fileID: 1691608260}
   WallType: {fileID: 1691608260}
   originalRot:
+  - {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   - {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   - {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   refreshRotation: 0
@@ -74145,6 +74207,7 @@ MonoBehaviour:
   curWallType: {fileID: 1995919933}
   WallType: {fileID: 1995919933}
   originalRot:
+  - {x: -0, y: 0.12218326, z: -0, w: 0.9925076}
   - {x: -0, y: 0.12218326, z: -0, w: 0.9925076}
   - {x: -0, y: 0.12218326, z: -0, w: 0.9925076}
   refreshRotation: 0
@@ -74586,6 +74649,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.9931927, z: -0, w: -0.11648338}
   - {x: -0, y: 0.9931927, z: -0, w: -0.11648338}
+  - {x: -0, y: 0.9931927, z: -0, w: -0.11648338}
   refreshRotation: 0
 --- !u!1 &1158705479
 GameObject:
@@ -74635,7 +74699,6 @@ MonoBehaviour:
   curWallType: {fileID: 1401831011}
   WallType: {fileID: 1401831011}
   originalRot:
-  - {x: -0.33410767, y: 0.623701, z: 0.33487156, w: 0.6222783}
   - {x: -0.47303975, y: 0.88104033, z: 0.000540154, w: -0.0010060031}
   - {x: -0.47303975, y: 0.88104033, z: 0.000540154, w: -0.0010060031}
   refreshRotation: 0
@@ -74786,6 +74849,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: -0, z: -0, w: 1}
   - {x: -0, y: -0, z: -0, w: 1}
+  - {x: -0, y: -0, z: -0, w: 1}
   refreshRotation: 0
 --- !u!1 &1163969495
 GameObject:
@@ -74918,6 +74982,7 @@ MonoBehaviour:
   curWallType: {fileID: 849882154}
   WallType: {fileID: 849882154}
   originalRot:
+  - {x: -0, y: -0.09676655, z: -0, w: 0.99530715}
   - {x: -0, y: -0.09676655, z: -0, w: 0.99530715}
   - {x: -0, y: -0.09676655, z: -0, w: 0.99530715}
   refreshRotation: 0
@@ -75216,7 +75281,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: -0, z: -0, w: 1}
   - {x: -0, y: -0, z: -0, w: 1}
-  - {x: -0, y: -0, z: -0, w: 1}
   refreshRotation: 0
 --- !u!1 &1168132367
 GameObject:
@@ -75512,6 +75576,7 @@ MonoBehaviour:
   curWallType: {fileID: 839566356}
   WallType: {fileID: 839566356}
   originalRot:
+  - {x: 0.024779202, y: 0.9718827, z: -0.20128407, w: 0.11964423}
   - {x: 0.024779202, y: 0.9718827, z: -0.20128407, w: 0.11964423}
   - {x: 0.024779202, y: 0.9718827, z: -0.20128407, w: 0.11964423}
   refreshRotation: 0
@@ -75953,7 +76018,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0.25194824, y: 0.11818098, z: 0.031016244, w: 0.9599966}
   - {x: -0.25194824, y: 0.11818098, z: 0.031016244, w: 0.9599966}
-  - {x: -0.25194824, y: 0.11818098, z: 0.031016244, w: 0.9599966}
   refreshRotation: 0
 --- !u!1 &1181645637
 GameObject:
@@ -76251,7 +76315,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: -0.055932097, z: -0, w: 0.9984346}
   - {x: -0, y: -0.055932097, z: -0, w: 0.9984346}
-  - {x: -0, y: -0.055932097, z: -0, w: 0.9984346}
   refreshRotation: 0
 --- !u!1 &1187028832
 GameObject:
@@ -76301,7 +76364,6 @@ MonoBehaviour:
   curWallType: {fileID: 948648482}
   WallType: {fileID: 948648482}
   originalRot:
-  - {x: -0.10370776, y: 0.8684571, z: 0.4393131, w: 0.2050149}
   - {x: -0.10370776, y: 0.8684571, z: 0.4393131, w: 0.2050149}
   - {x: -0.10370776, y: 0.8684571, z: 0.4393131, w: 0.2050149}
   refreshRotation: 0
@@ -76549,7 +76611,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.85780406, z: -0, w: 0.5139769}
   - {x: -0, y: 0.85780406, z: -0, w: 0.5139769}
-  - {x: -0, y: 0.85780406, z: -0, w: 0.5139769}
   refreshRotation: 0
 --- !u!1 &1189246742
 GameObject:
@@ -76599,7 +76660,8 @@ MonoBehaviour:
   curWallType: {fileID: 1599203251}
   WallType: {fileID: 1599203251}
   originalRot:
-  - {x: 0.06480272, y: 0.8723717, z: -0.12045595, w: 0.4693173}
+  - {x: 0.13099766, y: 0.94871736, z: -0.039352775, w: -0.28500247}
+  - {x: 0.13099766, y: 0.94871736, z: -0.039352775, w: -0.28500247}
   - {x: 0.13099766, y: 0.94871736, z: -0.039352775, w: -0.28500247}
   refreshRotation: 0
 --- !u!1 &1189675283
@@ -76702,7 +76764,8 @@ MonoBehaviour:
   curWallType: {fileID: 1821351218}
   WallType: {fileID: 1821351218}
   originalRot:
-  - {x: 0.0333192, y: 0.90941024, z: -0.07429364, w: 0.4078521}
+  - {x: 0.07609377, y: 0.9314451, z: -0.028973306, w: -0.35465515}
+  - {x: 0.07609377, y: 0.9314451, z: -0.028973306, w: -0.35465515}
   - {x: 0.07609377, y: 0.9314451, z: -0.028973306, w: -0.35465515}
   refreshRotation: 0
 --- !u!1 &1191552412
@@ -76857,8 +76920,7 @@ MonoBehaviour:
   curWallType: {fileID: 1599707850}
   WallType: {fileID: 1599707850}
   originalRot:
-  - {x: -0, y: 0.9987569, z: -0, w: 0.049846403}
-  - {x: -0, y: 0.7414745, z: -0, w: -0.67098105}
+  - {x: -0, y: 0.049846403, z: -0, w: -0.9987569}
   - {x: -0, y: 0.049846403, z: -0, w: -0.9987569}
   refreshRotation: 0
 --- !u!1 &1195555099
@@ -77596,7 +77658,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0.025678275, y: 0.92179734, z: -0.06199284, w: -0.38182095}
   - {x: -0.025678275, y: 0.92179734, z: -0.06199284, w: -0.38182095}
-  - {x: -0.025678275, y: 0.92179734, z: -0.06199284, w: -0.38182095}
   refreshRotation: 0
 --- !u!1 &1208320709
 GameObject:
@@ -77648,6 +77709,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: -0.08048089, z: -0, w: 0.9967562}
   - {x: -0, y: -0.08048089, z: -0, w: 0.9967562}
+  - {x: -0, y: -0.08048089, z: -0, w: 0.9967562}
   refreshRotation: 0
 --- !u!1 &1211452997
 GameObject:
@@ -77697,7 +77759,6 @@ MonoBehaviour:
   curWallType: {fileID: 407920339}
   WallType: {fileID: 407920339}
   originalRot:
-  - {x: -0, y: -0, z: -0, w: 1}
   - {x: -0, y: -0, z: -0, w: 1}
   - {x: -0, y: -0, z: -0, w: 1}
   refreshRotation: 0
@@ -77903,6 +77964,7 @@ MonoBehaviour:
   curWallType: {fileID: 202980790}
   WallType: {fileID: 202980790}
   originalRot:
+  - {x: -0, y: 1, z: -0, w: 0}
   - {x: -0, y: 1, z: -0, w: 0}
   - {x: -0, y: 1, z: -0, w: 0}
   refreshRotation: 0
@@ -78247,7 +78309,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0.14589927, y: -0.6918912, z: -0.14589927, w: 0.69189125}
   - {x: -0.14589927, y: -0.6918912, z: -0.14589927, w: 0.69189125}
-  - {x: -0.14589927, y: -0.6918912, z: -0.14589927, w: 0.69189125}
   refreshRotation: 0
 --- !u!1 &1217350284
 GameObject:
@@ -78297,7 +78358,6 @@ MonoBehaviour:
   curWallType: {fileID: 1404414600}
   WallType: {fileID: 1404414600}
   originalRot:
-  - {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
   - {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
   - {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
   refreshRotation: 0
@@ -78446,6 +78506,7 @@ MonoBehaviour:
   curWallType: {fileID: 532563003}
   WallType: {fileID: 532563003}
   originalRot:
+  - {x: 0.37204406, y: 0.5435253, z: -0.2915136, w: 0.6936738}
   - {x: 0.37204406, y: 0.5435253, z: -0.2915136, w: 0.6936738}
   - {x: 0.37204406, y: 0.5435253, z: -0.2915136, w: 0.6936738}
   refreshRotation: 0
@@ -79068,7 +79129,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
   - {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  - {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
   refreshRotation: 0
 --- !u!1 &1229047999
 GameObject:
@@ -79314,7 +79374,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0.01535666, y: -0.013222805, z: -0.00020309984, w: 0.99979466}
   - {x: -0.01535666, y: -0.013222805, z: -0.00020309984, w: 0.99979466}
-  - {x: -0.01535666, y: -0.013222805, z: -0.00020309984, w: 0.99979466}
   refreshRotation: 0
 --- !u!1 &1234951762
 GameObject:
@@ -79463,6 +79522,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.82527417, z: -0, w: 0.5647323}
   - {x: -0, y: 0.82527417, z: -0, w: 0.5647323}
+  - {x: -0, y: 0.82527417, z: -0, w: 0.5647323}
   refreshRotation: 0
 --- !u!1 &1236702871
 GameObject:
@@ -79565,7 +79625,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.7071067, z: -0, w: 0.7071068}
   - {x: -0, y: 0.7071067, z: -0, w: 0.7071068}
-  - {x: -0, y: 0.7071067, z: -0, w: 0.7071068}
   refreshRotation: 0
 --- !u!1 &1236972895
 GameObject:
@@ -79615,7 +79674,6 @@ MonoBehaviour:
   curWallType: {fileID: 1863726181}
   WallType: {fileID: 1863726181}
   originalRot:
-  - {x: -0, y: 0.47237983, z: -0, w: 0.8813951}
   - {x: -0, y: 0.47237983, z: -0, w: 0.8813951}
   - {x: -0, y: 0.47237983, z: -0, w: 0.8813951}
   refreshRotation: 0
@@ -79818,6 +79876,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: -0, z: -0, w: 1}
   - {x: -0, y: -0, z: -0, w: 1}
+  - {x: -0, y: -0, z: -0, w: 1}
   refreshRotation: 0
 --- !u!1 &1241102474
 GameObject:
@@ -79966,6 +80025,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.6733061, z: -0, w: 0.73936385}
   - {x: -0, y: 0.6733061, z: -0, w: 0.73936385}
+  - {x: -0, y: 0.6733061, z: -0, w: 0.73936385}
   refreshRotation: 0
 --- !u!1 &1241269848
 GameObject:
@@ -80015,7 +80075,8 @@ MonoBehaviour:
   curWallType: {fileID: 1844921730}
   WallType: {fileID: 1844921730}
   originalRot:
-  - {x: 0.019553738, y: 0.8855566, z: -0.03743113, w: 0.46260804}
+  - {x: 0.040294383, y: 0.9532963, z: -0.012641224, w: -0.29906976}
+  - {x: 0.040294383, y: 0.9532963, z: -0.012641224, w: -0.29906976}
   - {x: 0.040294383, y: 0.9532963, z: -0.012641224, w: -0.29906976}
   refreshRotation: 0
 --- !u!1 &1243697810
@@ -80066,7 +80127,6 @@ MonoBehaviour:
   curWallType: {fileID: 957151375}
   WallType: {fileID: 957151375}
   originalRot:
-  - {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   - {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   - {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   refreshRotation: 0
@@ -80605,6 +80665,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.14279272, z: -0, w: 0.98975265}
   - {x: -0, y: 0.14279272, z: -0, w: 0.98975265}
+  - {x: -0, y: 0.14279272, z: -0, w: 0.98975265}
   refreshRotation: 0
 --- !u!1 &1247936590
 GameObject:
@@ -80654,6 +80715,7 @@ MonoBehaviour:
   curWallType: {fileID: 254136944}
   WallType: {fileID: 254136944}
   originalRot:
+  - {x: -0.2486628, y: -0, z: -0, w: 0.96859014}
   - {x: -0.2486628, y: -0, z: -0, w: 0.96859014}
   - {x: -0.2486628, y: -0, z: -0, w: 0.96859014}
   refreshRotation: 0
@@ -80810,6 +80872,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.22910585, z: -0, w: 0.97340155}
   - {x: -0, y: 0.22910585, z: -0, w: 0.97340155}
+  - {x: -0, y: 0.22910585, z: -0, w: 0.97340155}
   refreshRotation: 0
 --- !u!1 &1254230391
 GameObject:
@@ -80962,6 +81025,7 @@ MonoBehaviour:
   curWallType: {fileID: 1114755987}
   WallType: {fileID: 1114755987}
   originalRot:
+  - {x: -0, y: 0.89468896, z: -0, w: 0.44668972}
   - {x: -0, y: 0.89468896, z: -0, w: 0.44668972}
   - {x: -0, y: 0.89468896, z: -0, w: 0.44668972}
   refreshRotation: 0
@@ -81193,7 +81257,6 @@ MonoBehaviour:
   curWallType: {fileID: 2017848156}
   WallType: {fileID: 2017848156}
   originalRot:
-  - {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   - {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   - {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   refreshRotation: 0
@@ -81477,7 +81540,6 @@ MonoBehaviour:
   curWallType: {fileID: 1296624746}
   WallType: {fileID: 1296624746}
   originalRot:
-  - {x: -0, y: -0.08047833, z: -0, w: 0.9967564}
   - {x: -0, y: -0.08047833, z: -0, w: 0.9967564}
   - {x: -0, y: -0.08047833, z: -0, w: 0.9967564}
   refreshRotation: 0
@@ -81925,6 +81987,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.61273044, z: -0, w: 0.79029197}
   - {x: -0, y: 0.61273044, z: -0, w: 0.79029197}
+  - {x: -0, y: 0.61273044, z: -0, w: 0.79029197}
   refreshRotation: 0
 --- !u!1 &1274006981
 GameObject:
@@ -81974,7 +82037,6 @@ MonoBehaviour:
   curWallType: {fileID: 175762922}
   WallType: {fileID: 175762922}
   originalRot:
-  - {x: 0.32067126, y: -0.15149397, z: 0.052037783, w: 0.93354785}
   - {x: 0.32067126, y: -0.15149397, z: 0.052037783, w: 0.93354785}
   - {x: 0.32067126, y: -0.15149397, z: 0.052037783, w: 0.93354785}
   refreshRotation: 0
@@ -82077,6 +82139,7 @@ MonoBehaviour:
   curWallType: {fileID: 1663175842}
   WallType: {fileID: 1663175842}
   originalRot:
+  - {x: -0, y: 0.92387956, z: -0, w: 0.38268346}
   - {x: -0, y: 0.92387956, z: -0, w: 0.38268346}
   - {x: -0, y: 0.92387956, z: -0, w: 0.38268346}
   refreshRotation: 0
@@ -82227,6 +82290,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.0604177, z: -0, w: 0.9981732}
   - {x: -0, y: 0.0604177, z: -0, w: 0.9981732}
+  - {x: -0, y: 0.0604177, z: -0, w: 0.9981732}
   refreshRotation: 0
 --- !u!1 &1280509222
 GameObject:
@@ -82375,7 +82439,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: -0, z: -0, w: 1}
   - {x: -0, y: -0, z: -0, w: 1}
-  - {x: -0, y: -0, z: -0, w: 1}
   refreshRotation: 0
 --- !u!1 &1281649881
 GameObject:
@@ -82477,6 +82540,7 @@ MonoBehaviour:
   curWallType: {fileID: 336787731}
   WallType: {fileID: 336787731}
   originalRot:
+  - {x: -0.05594031, y: 0.9390897, z: 0.18475829, w: 0.28433347}
   - {x: -0.05594031, y: 0.9390897, z: 0.18475829, w: 0.28433347}
   - {x: -0.05594031, y: 0.9390897, z: 0.18475829, w: 0.28433347}
   refreshRotation: 0
@@ -82658,7 +82722,6 @@ MonoBehaviour:
   curWallType: {fileID: 171481283}
   WallType: {fileID: 171481283}
   originalRot:
-  - {x: -0.15758906, y: 0.71155834, z: 0.168992, w: 0.66354513}
   - {x: -0.23092768, y: 0.972345, z: 0.008063093, w: -0.033950467}
   - {x: -0.23092768, y: 0.972345, z: 0.008063093, w: -0.033950467}
   refreshRotation: 0
@@ -82743,7 +82806,6 @@ MonoBehaviour:
   curWallType: {fileID: 1468699809}
   WallType: {fileID: 1468699809}
   originalRot:
-  - {x: -0, y: -0.38268346, z: -0, w: 0.92387956}
   - {x: -0, y: -0.38268346, z: -0, w: 0.92387956}
   - {x: -0, y: -0.38268346, z: -0, w: 0.92387956}
   refreshRotation: 0
@@ -82946,7 +83008,6 @@ MonoBehaviour:
   originalRot:
   - {x: 0.44378734, y: -0.20447718, z: 0.10476398, w: 0.86617917}
   - {x: 0.44378734, y: -0.20447718, z: 0.10476398, w: 0.86617917}
-  - {x: 0.44378734, y: -0.20447718, z: 0.10476398, w: 0.86617917}
   refreshRotation: 0
 --- !u!1 &1296624746
 GameObject:
@@ -83093,6 +83154,7 @@ MonoBehaviour:
   curWallType: {fileID: 1188710465}
   WallType: {fileID: 1188710465}
   originalRot:
+  - {x: -0, y: 0.92387956, z: -0, w: 0.38268346}
   - {x: -0, y: 0.92387956, z: -0, w: 0.38268346}
   - {x: -0, y: 0.92387956, z: -0, w: 0.38268346}
   refreshRotation: 0
@@ -83739,6 +83801,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.033415847, z: -0, w: 0.99944156}
   - {x: -0, y: 0.033415847, z: -0, w: 0.99944156}
+  - {x: -0, y: 0.033415847, z: -0, w: 0.99944156}
   refreshRotation: 0
 --- !u!1 &1306999218
 GameObject:
@@ -83938,6 +84001,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.9975008, z: -0, w: 0.07065616}
   - {x: -0, y: 0.9975008, z: -0, w: 0.07065616}
+  - {x: -0, y: 0.9975008, z: -0, w: 0.07065616}
   refreshRotation: 0
 --- !u!1 &1309080202
 GameObject:
@@ -83987,6 +84051,7 @@ MonoBehaviour:
   curWallType: {fileID: 820404987}
   WallType: {fileID: 820404987}
   originalRot:
+  - {x: -0, y: 0.7393054, z: -0, w: 0.67337036}
   - {x: -0, y: 0.7393054, z: -0, w: 0.67337036}
   - {x: -0, y: 0.7393054, z: -0, w: 0.67337036}
   refreshRotation: 0
@@ -84674,6 +84739,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: -0.015634004, z: -0, w: 0.9998778}
   - {x: -0, y: -0.015634004, z: -0, w: 0.9998778}
+  - {x: -0, y: -0.015634004, z: -0, w: 0.9998778}
   refreshRotation: 0
 --- !u!1 &1318182557
 GameObject:
@@ -84774,7 +84840,6 @@ MonoBehaviour:
   curWallType: {fileID: 150265111}
   WallType: {fileID: 150265111}
   originalRot:
-  - {x: -0, y: 0.5983995, z: -0, w: 0.8011979}
   - {x: -0, y: 0.5983995, z: -0, w: 0.8011979}
   - {x: -0, y: 0.5983995, z: -0, w: 0.8011979}
   refreshRotation: 0
@@ -85410,6 +85475,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 1, z: -0, w: 0}
   - {x: -0, y: 1, z: -0, w: 0}
+  - {x: -0, y: 1, z: -0, w: 0}
   refreshRotation: 0
 --- !u!1 &1322474367
 GameObject:
@@ -85643,6 +85709,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.6175797, z: -0, w: 0.7865083}
   - {x: -0, y: 0.6175797, z: -0, w: 0.7865083}
+  - {x: -0, y: 0.6175797, z: -0, w: 0.7865083}
   refreshRotation: 0
 --- !u!1 &1326034985
 GameObject:
@@ -85790,6 +85857,7 @@ MonoBehaviour:
   curWallType: {fileID: 1877436574}
   WallType: {fileID: 1877436574}
   originalRot:
+  - {x: -0, y: 0.77746964, z: -0, w: 0.62892044}
   - {x: -0, y: 0.77746964, z: -0, w: 0.62892044}
   - {x: -0, y: 0.77746964, z: -0, w: 0.62892044}
   refreshRotation: 0
@@ -86189,6 +86257,7 @@ MonoBehaviour:
   curWallType: {fileID: 713412027}
   WallType: {fileID: 713412027}
   originalRot:
+  - {x: -0, y: -0, z: -0, w: 1}
   - {x: -0, y: -0, z: -0, w: 1}
   - {x: -0, y: -0, z: -0, w: 1}
   refreshRotation: 0
@@ -86767,7 +86836,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.02172286, z: -0, w: 0.999764}
   - {x: -0, y: 0.02172286, z: -0, w: 0.999764}
-  - {x: -0, y: 0.02172286, z: -0, w: 0.999764}
   refreshRotation: 0
 --- !u!1 &1348630911
 GameObject:
@@ -86819,6 +86887,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.78361905, z: -0, w: 0.6212417}
   - {x: -0, y: 0.78361905, z: -0, w: 0.6212417}
+  - {x: -0, y: 0.78361905, z: -0, w: 0.6212417}
   refreshRotation: 0
 --- !u!1 &1348975891
 GameObject:
@@ -86868,6 +86937,7 @@ MonoBehaviour:
   curWallType: {fileID: 1322123801}
   WallType: {fileID: 1322123801}
   originalRot:
+  - {x: -0, y: -0.38875487, z: -0, w: 0.92134124}
   - {x: -0, y: -0.38875487, z: -0, w: 0.92134124}
   - {x: -0, y: -0.38875487, z: -0, w: 0.92134124}
   refreshRotation: 0
@@ -87115,6 +87185,7 @@ MonoBehaviour:
   originalRot:
   - {x: 0.25007358, y: 0.73617566, z: -0.3543186, w: 0.51958346}
   - {x: 0.25007358, y: 0.73617566, z: -0.3543186, w: 0.51958346}
+  - {x: 0.25007358, y: 0.73617566, z: -0.3543186, w: 0.51958346}
   refreshRotation: 0
 --- !u!1 &1355949977
 GameObject:
@@ -87164,7 +87235,6 @@ MonoBehaviour:
   curWallType: {fileID: 817412861}
   WallType: {fileID: 817412861}
   originalRot:
-  - {x: -0.62123775, y: -0, z: -0, w: 0.7836222}
   - {x: -0.62123775, y: -0, z: -0, w: 0.7836222}
   - {x: -0.62123775, y: -0, z: -0, w: 0.7836222}
   refreshRotation: 0
@@ -87315,6 +87385,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0.23883016, y: 0.5571512, z: 0.17133088, w: 0.77665216}
   - {x: -0.23883016, y: 0.5571512, z: 0.17133088, w: 0.77665216}
+  - {x: -0.23883016, y: 0.5571512, z: 0.17133088, w: 0.77665216}
   refreshRotation: 0
 --- !u!1 &1356597361
 GameObject:
@@ -87366,6 +87437,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.8174492, z: -0, w: 0.5760007}
   - {x: -0, y: 0.8174492, z: -0, w: 0.5760007}
+  - {x: -0, y: 0.8174492, z: -0, w: 0.5760007}
   refreshRotation: 0
 --- !u!1 &1356786957
 GameObject:
@@ -87415,7 +87487,6 @@ MonoBehaviour:
   curWallType: {fileID: 1365433091}
   WallType: {fileID: 1365433091}
   originalRot:
-  - {x: -0, y: 0.38268346, z: -0, w: 0.92387956}
   - {x: -0, y: 0.38268346, z: -0, w: 0.92387956}
   - {x: -0, y: 0.38268346, z: -0, w: 0.92387956}
   refreshRotation: 0
@@ -87893,7 +87964,6 @@ MonoBehaviour:
   curWallType: {fileID: 1222372639}
   WallType: {fileID: 1222372639}
   originalRot:
-  - {x: -0.09446316, y: 0.87809885, z: -0.19428845, w: -0.42693222}
   - {x: 0.070587136, y: 0.319023, z: -0.20417821, w: -0.92279637}
   - {x: 0.070587136, y: 0.319023, z: -0.20417821, w: -0.92279637}
   refreshRotation: 0
@@ -88193,6 +88263,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: -0.33584607, z: -0, w: 0.9419169}
   - {x: -0, y: -0.33584607, z: -0, w: 0.9419169}
+  - {x: -0, y: -0.33584607, z: -0, w: 0.9419169}
   refreshRotation: 0
 --- !u!1 &1373071237
 GameObject:
@@ -88244,6 +88315,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: -0, z: -0, w: 1}
   - {x: -0, y: -0, z: -0, w: 1}
+  - {x: -0, y: -0, z: -0, w: 1}
   refreshRotation: 0
 --- !u!1 &1376175261
 GameObject:
@@ -88293,7 +88365,6 @@ MonoBehaviour:
   curWallType: {fileID: 773535031}
   WallType: {fileID: 773535031}
   originalRot:
-  - {x: -0, y: 0.9995706, z: -0, w: 0.029302675}
   - {x: -0, y: 0.9995706, z: -0, w: 0.029302675}
   - {x: -0, y: 0.9995706, z: -0, w: 0.029302675}
   refreshRotation: 0
@@ -88688,7 +88759,6 @@ MonoBehaviour:
   curWallType: {fileID: 1156636698}
   WallType: {fileID: 1156636698}
   originalRot:
-  - {x: -0.11461136, y: 0.6712535, z: 0.10617705, w: 0.72457534}
   - {x: -0.15612097, y: 0.98700005, z: -0.005963958, w: 0.037704233}
   - {x: -0.15612097, y: 0.98700005, z: -0.005963958, w: 0.037704233}
   refreshRotation: 0
@@ -89137,7 +89207,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0.008260613, y: 0.9377826, z: 0.022363093, w: 0.34640372}
   - {x: -0.008260613, y: 0.9377826, z: 0.022363093, w: 0.34640372}
-  - {x: -0.008260613, y: 0.9377826, z: 0.022363093, w: 0.34640372}
   refreshRotation: 0
 --- !u!1 &1385799743
 GameObject:
@@ -89189,7 +89258,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.13656825, z: -0, w: 0.9906307}
   - {x: -0, y: 0.13656825, z: -0, w: 0.9906307}
-  - {x: -0, y: 0.13656825, z: -0, w: 0.9906307}
   refreshRotation: 0
 --- !u!1 &1386570013
 GameObject:
@@ -89239,6 +89307,7 @@ MonoBehaviour:
   curWallType: {fileID: 824797965}
   WallType: {fileID: 824797965}
   originalRot:
+  - {x: 0.3652398, y: -0.47480407, z: 0.2257306, w: 0.76824915}
   - {x: 0.3652398, y: -0.47480407, z: 0.2257306, w: 0.76824915}
   - {x: 0.3652398, y: -0.47480407, z: 0.2257306, w: 0.76824915}
   refreshRotation: 0
@@ -89732,7 +89801,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.09551991, z: -0, w: 0.99542755}
   - {x: -0, y: 0.09551991, z: -0, w: 0.99542755}
-  - {x: -0, y: 0.09551991, z: -0, w: 0.99542755}
   refreshRotation: 0
 --- !u!1 &1392944574
 GameObject:
@@ -89978,7 +90046,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.22975293, z: -0, w: 0.973249}
   - {x: -0, y: 0.22975293, z: -0, w: 0.973249}
-  - {x: -0, y: 0.22975293, z: -0, w: 0.973249}
   refreshRotation: 0
 --- !u!1 &1395667022
 GameObject:
@@ -90125,6 +90192,7 @@ MonoBehaviour:
   curWallType: {fileID: 1763097948}
   WallType: {fileID: 1763097948}
   originalRot:
+  - {x: -0, y: 1, z: -0, w: 0}
   - {x: -0, y: 1, z: -0, w: 0}
   - {x: -0, y: 1, z: -0, w: 0}
   refreshRotation: 0
@@ -90324,6 +90392,7 @@ MonoBehaviour:
   curWallType: {fileID: 434970080}
   WallType: {fileID: 434970080}
   originalRot:
+  - {x: -0, y: 0.9598605, z: -0, w: -0.28047785}
   - {x: -0, y: 0.9598605, z: -0, w: -0.28047785}
   - {x: -0, y: 0.9598605, z: -0, w: -0.28047785}
   refreshRotation: 0
@@ -90668,6 +90737,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: -0, z: -0, w: 1}
   - {x: -0, y: -0, z: -0, w: 1}
+  - {x: -0, y: -0, z: -0, w: 1}
   refreshRotation: 0
 --- !u!1 &1409665793
 GameObject:
@@ -91008,6 +91078,7 @@ MonoBehaviour:
   curWallType: {fileID: 1094897119}
   WallType: {fileID: 1094897119}
   originalRot:
+  - {x: -0.25579262, y: -0.15471043, z: -0.041509423, w: 0.95336866}
   - {x: -0.25579262, y: -0.15471043, z: -0.041509423, w: 0.95336866}
   - {x: -0.25579262, y: -0.15471043, z: -0.041509423, w: 0.95336866}
   refreshRotation: 0
@@ -91403,7 +91474,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: -0, z: -0, w: 1}
   - {x: -0, y: -0, z: -0, w: 1}
-  - {x: -0, y: -0, z: -0, w: 1}
   refreshRotation: 0
 --- !u!1 &1419934125
 GameObject:
@@ -91701,7 +91771,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0.11291585, y: 0.84759915, z: 0.47831926, w: 0.20009102}
   - {x: -0.11291585, y: 0.84759915, z: 0.47831926, w: 0.20009102}
-  - {x: -0.11291585, y: 0.84759915, z: 0.47831926, w: 0.20009102}
   refreshRotation: 0
 --- !u!1 &1427782233
 GameObject:
@@ -91848,6 +91917,7 @@ MonoBehaviour:
   curWallType: {fileID: 2027745073}
   WallType: {fileID: 2027745073}
   originalRot:
+  - {x: -0.050775312, y: 0.94374555, z: 0.27732688, w: 0.1727888}
   - {x: -0.050775312, y: 0.94374555, z: 0.27732688, w: 0.1727888}
   - {x: -0.050775312, y: 0.94374555, z: 0.27732688, w: 0.1727888}
   refreshRotation: 0
@@ -92095,6 +92165,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.9981644, z: -0, w: 0.06056253}
   - {x: -0, y: 0.9981644, z: -0, w: 0.06056253}
+  - {x: -0, y: 0.9981644, z: -0, w: 0.06056253}
   refreshRotation: 0
 --- !u!1 &1434903085
 GameObject:
@@ -92196,6 +92267,7 @@ MonoBehaviour:
   curWallType: {fileID: 2046559514}
   WallType: {fileID: 2046559514}
   originalRot:
+  - {x: -0.12333284, y: -0.69626796, z: -0.12333284, w: 0.69626796}
   - {x: -0.12333284, y: -0.69626796, z: -0.12333284, w: 0.69626796}
   - {x: -0.12333284, y: -0.69626796, z: -0.12333284, w: 0.69626796}
   refreshRotation: 0
@@ -92637,7 +92709,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: -0.12470803, z: -0, w: 0.9921935}
   - {x: -0, y: -0.12470803, z: -0, w: 0.9921935}
-  - {x: -0, y: -0.12470803, z: -0, w: 0.9921935}
   refreshRotation: 0
 --- !u!1 &1440689612
 GameObject:
@@ -92888,7 +92959,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.973249, z: -0, w: 0.22975296}
   - {x: -0, y: 0.973249, z: -0, w: 0.22975296}
-  - {x: -0, y: 0.973249, z: -0, w: 0.22975296}
   refreshRotation: 0
 --- !u!1 &1445071808
 GameObject:
@@ -93035,6 +93105,7 @@ MonoBehaviour:
   curWallType: {fileID: 1491099081}
   WallType: {fileID: 1491099081}
   originalRot:
+  - {x: -0, y: 0.8991205, z: -0, w: 0.43770117}
   - {x: -0, y: 0.8991205, z: -0, w: 0.43770117}
   - {x: -0, y: 0.8991205, z: -0, w: 0.43770117}
   refreshRotation: 0
@@ -93272,6 +93343,7 @@ MonoBehaviour:
   curWallType: {fileID: 1935055277}
   WallType: {fileID: 1935055277}
   originalRot:
+  - {x: -0, y: -0.4728392, z: -0, w: 0.88114876}
   - {x: -0, y: -0.4728392, z: -0, w: 0.88114876}
   - {x: -0, y: -0.4728392, z: -0, w: 0.88114876}
   refreshRotation: 0
@@ -93568,7 +93640,6 @@ MonoBehaviour:
   curWallType: {fileID: 1711028264}
   WallType: {fileID: 1711028264}
   originalRot:
-  - {x: 0.30576032, y: -0.27459866, z: 0.09257679, w: 0.9069376}
   - {x: 0.30576032, y: -0.27459866, z: 0.09257679, w: 0.9069376}
   - {x: 0.30576032, y: -0.27459866, z: 0.09257679, w: 0.9069376}
   refreshRotation: 0
@@ -94159,6 +94230,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.9174967, z: -0, w: -0.3977434}
   - {x: -0, y: 0.9174967, z: -0, w: -0.3977434}
+  - {x: -0, y: 0.9174967, z: -0, w: -0.3977434}
   refreshRotation: 0
 --- !u!1 &1466428418
 GameObject:
@@ -94208,6 +94280,7 @@ MonoBehaviour:
   curWallType: {fileID: 712148728}
   WallType: {fileID: 712148728}
   originalRot:
+  - {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   - {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   - {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   refreshRotation: 0
@@ -94455,6 +94528,7 @@ MonoBehaviour:
   originalRot:
   - {x: 0.0011056975, y: 0.98706394, z: -0.006813615, w: 0.16017844}
   - {x: 0.0011056975, y: 0.98706394, z: -0.006813615, w: 0.16017844}
+  - {x: 0.0011056975, y: 0.98706394, z: -0.006813615, w: 0.16017844}
   refreshRotation: 0
 --- !u!1 &1472463094
 GameObject:
@@ -94504,7 +94578,6 @@ MonoBehaviour:
   curWallType: {fileID: 1933354755}
   WallType: {fileID: 1933354755}
   originalRot:
-  - {x: -0, y: -0.38268346, z: -0, w: 0.92387956}
   - {x: -0, y: -0.38268346, z: -0, w: 0.92387956}
   - {x: -0, y: -0.38268346, z: -0, w: 0.92387956}
   refreshRotation: 0
@@ -94608,7 +94681,6 @@ MonoBehaviour:
   curWallType: {fileID: 396467535}
   WallType: {fileID: 396467535}
   originalRot:
-  - {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   - {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   - {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   refreshRotation: 0
@@ -95086,7 +95158,6 @@ MonoBehaviour:
   curWallType: {fileID: 1786316575}
   WallType: {fileID: 1786316575}
   originalRot:
-  - {x: -0, y: 0.0721807, z: -0, w: 0.9973916}
   - {x: -0, y: 0.0721807, z: -0, w: 0.9973916}
   - {x: -0, y: 0.0721807, z: -0, w: 0.9973916}
   refreshRotation: 0
@@ -95579,6 +95650,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.67255795, z: -0, w: 0.74004453}
   - {x: -0, y: 0.67255795, z: -0, w: 0.74004453}
+  - {x: -0, y: 0.67255795, z: -0, w: 0.74004453}
   refreshRotation: 0
 --- !u!1 &1486898593
 GameObject:
@@ -95875,6 +95947,7 @@ MonoBehaviour:
   originalRot:
   - {x: 0.43110687, y: -0.2059834, z: 0.10177052, w: 0.8725597}
   - {x: 0.43110687, y: -0.2059834, z: 0.10177052, w: 0.8725597}
+  - {x: 0.43110687, y: -0.2059834, z: 0.10177052, w: 0.8725597}
   refreshRotation: 0
 --- !u!1 &1488227131
 GameObject:
@@ -96021,7 +96094,6 @@ MonoBehaviour:
   curWallType: {fileID: 385216}
   WallType: {fileID: 385216}
   originalRot:
-  - {x: -0.00044821817, y: -0.0788753, z: -0.000035463836, w: 0.9968844}
   - {x: -0.00044821817, y: -0.0788753, z: -0.000035463836, w: 0.9968844}
   - {x: -0.00044821817, y: -0.0788753, z: -0.000035463836, w: 0.9968844}
   refreshRotation: 0
@@ -96253,7 +96325,6 @@ MonoBehaviour:
   curWallType: {fileID: 1095950315}
   WallType: {fileID: 1095950315}
   originalRot:
-  - {x: -0, y: -0.06297288, z: -0, w: 0.9980153}
   - {x: -0, y: -0.06297288, z: -0, w: 0.9980153}
   - {x: -0, y: -0.06297288, z: -0, w: 0.9980153}
   refreshRotation: 0
@@ -96789,7 +96860,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
   - {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
-  - {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
   refreshRotation: 0
 --- !u!1 &1501427067
 GameObject:
@@ -97111,7 +97181,6 @@ MonoBehaviour:
   curWallType: {fileID: 69682825}
   WallType: {fileID: 69682825}
   originalRot:
-  - {x: -0, y: -0.38268346, z: -0, w: 0.92387956}
   - {x: -0, y: -0.38268346, z: -0, w: 0.92387956}
   - {x: -0, y: -0.38268346, z: -0, w: 0.92387956}
   refreshRotation: 0
@@ -97489,7 +97558,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 1, z: -0, w: 0}
   - {x: -0, y: 1, z: -0, w: 0}
-  - {x: -0, y: 1, z: -0, w: 0}
   refreshRotation: 0
 --- !u!1 &1515527508
 GameObject:
@@ -97638,7 +97706,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0.00000025702184, y: 0.56922454, z: 0.00000017794491, w: 0.8221821}
   - {x: -0.00000025702184, y: 0.56922454, z: 0.00000017794491, w: 0.8221821}
-  - {x: -0.00000025702184, y: 0.56922454, z: 0.00000017794491, w: 0.8221821}
   refreshRotation: 0
 --- !u!1 &1519273256
 GameObject:
@@ -97688,6 +97755,7 @@ MonoBehaviour:
   curWallType: {fileID: 44074153}
   WallType: {fileID: 44074153}
   originalRot:
+  - {x: -0, y: -0.13297874, z: -0, w: 0.9911189}
   - {x: -0, y: -0.13297874, z: -0, w: 0.9911189}
   - {x: -0, y: -0.13297874, z: -0, w: 0.9911189}
   refreshRotation: 0
@@ -98030,7 +98098,8 @@ MonoBehaviour:
   curWallType: {fileID: 1981959516}
   WallType: {fileID: 1981959516}
   originalRot:
-  - {x: -0, y: -0, z: -0, w: 1}
+  - {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  - {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   - {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   refreshRotation: 0
 --- !u!1 &1524807374
@@ -98081,6 +98150,7 @@ MonoBehaviour:
   curWallType: {fileID: 1266418703}
   WallType: {fileID: 1266418703}
   originalRot:
+  - {x: 0.262128, y: 0.72131187, z: -0.3535532, w: 0.53478813}
   - {x: 0.262128, y: 0.72131187, z: -0.3535532, w: 0.53478813}
   - {x: 0.262128, y: 0.72131187, z: -0.3535532, w: 0.53478813}
   refreshRotation: 0
@@ -98229,7 +98299,6 @@ MonoBehaviour:
   curWallType: {fileID: 711060661}
   WallType: {fileID: 711060661}
   originalRot:
-  - {x: -0, y: -0.14795016, z: -0, w: 0.98899484}
   - {x: -0, y: -0.14795016, z: -0, w: 0.98899484}
   - {x: -0, y: -0.14795016, z: -0, w: 0.98899484}
   refreshRotation: 0
@@ -98381,6 +98450,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: -0, z: -0, w: 1}
   - {x: -0, y: -0, z: -0, w: 1}
+  - {x: -0, y: -0, z: -0, w: 1}
   refreshRotation: 0
 --- !u!1 &1529620891
 GameObject:
@@ -98432,6 +98502,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   - {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  - {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   refreshRotation: 0
 --- !u!1 &1529971133
 GameObject:
@@ -98481,7 +98552,6 @@ MonoBehaviour:
   curWallType: {fileID: 1645086876}
   WallType: {fileID: 1645086876}
   originalRot:
-  - {x: -0, y: 0.1442426, z: -0, w: 0.98954237}
   - {x: -0, y: 0.1442426, z: -0, w: 0.98954237}
   - {x: -0, y: 0.1442426, z: -0, w: 0.98954237}
   refreshRotation: 0
@@ -98616,7 +98686,6 @@ MonoBehaviour:
   curWallType: {fileID: 1379030670}
   WallType: {fileID: 1379030670}
   originalRot:
-  - {x: -0, y: 0.80808496, z: -0, w: 0.58906597}
   - {x: -0, y: 0.80808496, z: -0, w: 0.58906597}
   - {x: -0, y: 0.80808496, z: -0, w: 0.58906597}
   refreshRotation: 0
@@ -99064,6 +99133,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0.29906416, y: -0, z: -0, w: 0.95423305}
   - {x: -0.29906416, y: -0, z: -0, w: 0.95423305}
+  - {x: -0.29906416, y: -0, z: -0, w: 0.95423305}
   refreshRotation: 0
 --- !u!1 &1540671232
 GameObject:
@@ -99113,6 +99183,7 @@ MonoBehaviour:
   curWallType: {fileID: 901737611}
   WallType: {fileID: 901737611}
   originalRot:
+  - {x: -0.30729756, y: -0, z: -0, w: 0.9516135}
   - {x: -0.30729756, y: -0, z: -0, w: 0.9516135}
   - {x: -0.30729756, y: -0, z: -0, w: 0.9516135}
   refreshRotation: 0
@@ -99457,7 +99528,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: -0, z: -0, w: 1}
   - {x: -0, y: -0, z: -0, w: 1}
-  - {x: -0, y: -0, z: -0, w: 1}
   refreshRotation: 0
 --- !u!1 &1549555918
 GameObject:
@@ -99560,7 +99630,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.9721994, z: -0, w: -0.23415473}
   - {x: -0, y: 0.9721994, z: -0, w: -0.23415473}
-  - {x: -0, y: 0.9721994, z: -0, w: -0.23415473}
   refreshRotation: 0
 --- !u!1 &1549807899
 GameObject:
@@ -99610,7 +99679,6 @@ MonoBehaviour:
   curWallType: {fileID: 1684570682}
   WallType: {fileID: 1684570682}
   originalRot:
-  - {x: -0, y: -0.38268346, z: -0, w: 0.92387956}
   - {x: -0, y: -0.38268346, z: -0, w: 0.92387956}
   - {x: -0, y: -0.38268346, z: -0, w: 0.92387956}
   refreshRotation: 0
@@ -99953,7 +100021,6 @@ MonoBehaviour:
   curWallType: {fileID: 528323932}
   WallType: {fileID: 528323932}
   originalRot:
-  - {x: 0.08813568, y: -0.82215285, z: 0.13257827, w: 0.54655266}
   - {x: -0.031425655, y: -0.19487876, z: 0.15606833, w: 0.96782094}
   - {x: -0.031425655, y: -0.19487876, z: 0.15606833, w: 0.96782094}
   refreshRotation: 0
@@ -100057,7 +100124,6 @@ MonoBehaviour:
   curWallType: {fileID: 1933759972}
   WallType: {fileID: 1933759972}
   originalRot:
-  - {x: -0, y: 0.9997974, z: -0, w: -0.020129908}
   - {x: -0, y: 0.9997974, z: -0, w: -0.020129908}
   - {x: -0, y: 0.9997974, z: -0, w: -0.020129908}
   refreshRotation: 0
@@ -100648,7 +100714,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.38268346, z: -0, w: 0.92387956}
   - {x: -0, y: 0.38268346, z: -0, w: 0.92387956}
-  - {x: -0, y: 0.38268346, z: -0, w: 0.92387956}
   refreshRotation: 0
 --- !u!1 &1566081820
 GameObject:
@@ -100698,7 +100763,6 @@ MonoBehaviour:
   curWallType: {fileID: 185142550}
   WallType: {fileID: 185142550}
   originalRot:
-  - {x: -0.22173677, y: 0.62217367, z: 0.18992013, w: 0.72640425}
   - {x: -0.22173677, y: 0.62217367, z: 0.18992013, w: 0.72640425}
   - {x: -0.22173677, y: 0.62217367, z: 0.18992013, w: 0.72640425}
   refreshRotation: 0
@@ -100884,6 +100948,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0.022571832, y: 0.90084946, z: -0.04718158, w: -0.43096948}
   - {x: -0.022571832, y: 0.90084946, z: -0.04718158, w: -0.43096948}
+  - {x: -0.022571832, y: 0.90084946, z: -0.04718158, w: -0.43096948}
   refreshRotation: 0
 --- !u!1 &1570801431
 GameObject:
@@ -101030,7 +101095,6 @@ MonoBehaviour:
   curWallType: {fileID: 498048733}
   WallType: {fileID: 498048733}
   originalRot:
-  - {x: -0, y: -0.5907879, z: -0, w: 0.80682695}
   - {x: -0, y: -0.5907879, z: -0, w: 0.80682695}
   - {x: -0, y: -0.5907879, z: -0, w: 0.80682695}
   refreshRotation: 0
@@ -101181,6 +101245,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.999866, z: -0, w: -0.016369443}
   - {x: -0, y: 0.999866, z: -0, w: -0.016369443}
+  - {x: -0, y: 0.999866, z: -0, w: -0.016369443}
   refreshRotation: 0
 --- !u!1 &1578669702
 GameObject:
@@ -101327,7 +101392,6 @@ MonoBehaviour:
   curWallType: {fileID: 1879095781}
   WallType: {fileID: 1879095781}
   originalRot:
-  - {x: -0, y: 1, z: -0, w: 0}
   - {x: -0, y: 1, z: -0, w: 0}
   - {x: -0, y: 1, z: -0, w: 0}
   refreshRotation: 0
@@ -101559,7 +101623,6 @@ MonoBehaviour:
   curWallType: {fileID: 556718602}
   WallType: {fileID: 556718602}
   originalRot:
-  - {x: -0, y: 0.5231962, z: -0, w: 0.85221225}
   - {x: -0, y: 0.5231962, z: -0, w: 0.85221225}
   - {x: -0, y: 0.5231962, z: -0, w: 0.85221225}
   refreshRotation: 0
@@ -101902,6 +101965,7 @@ MonoBehaviour:
   curWallType: {fileID: 689485939}
   WallType: {fileID: 689485939}
   originalRot:
+  - {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   - {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   - {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   refreshRotation: 0
@@ -102411,6 +102475,7 @@ MonoBehaviour:
   curWallType: {fileID: 1087038320}
   WallType: {fileID: 1087038320}
   originalRot:
+  - {x: -0, y: -0.23612557, z: -0, w: 0.97172254}
   - {x: -0, y: -0.23612557, z: -0, w: 0.97172254}
   - {x: -0, y: -0.23612557, z: -0, w: 0.97172254}
   refreshRotation: 0
@@ -103099,6 +103164,7 @@ MonoBehaviour:
   originalRot:
   - {x: 0.0075707515, y: 0.8815611, z: 0.014146079, w: -0.47179723}
   - {x: 0.0075707515, y: 0.8815611, z: 0.014146079, w: -0.47179723}
+  - {x: 0.0075707515, y: 0.8815611, z: 0.014146079, w: -0.47179723}
   refreshRotation: 0
 --- !u!1 &1604454712
 GameObject:
@@ -103247,6 +103313,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0.21350081, y: 0.7667324, z: 0.51543653, w: 0.31759098}
   - {x: -0.21350081, y: 0.7667324, z: 0.51543653, w: 0.31759098}
+  - {x: -0.21350081, y: 0.7667324, z: 0.51543653, w: 0.31759098}
   refreshRotation: 0
 --- !u!1 &1605927737
 GameObject:
@@ -103298,6 +103365,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.92387956, z: -0, w: 0.38268346}
   - {x: -0, y: 0.92387956, z: -0, w: 0.38268346}
+  - {x: -0, y: 0.92387956, z: -0, w: 0.38268346}
   refreshRotation: 0
 --- !u!1 &1606002717
 GameObject:
@@ -103347,7 +103415,6 @@ MonoBehaviour:
   curWallType: {fileID: 566898150}
   WallType: {fileID: 566898150}
   originalRot:
-  - {x: -0, y: -0, z: -0, w: 1}
   - {x: -0, y: -0, z: -0, w: 1}
   - {x: -0, y: -0, z: -0, w: 1}
   refreshRotation: 0
@@ -103697,6 +103764,7 @@ MonoBehaviour:
   curWallType: {fileID: 416374530}
   WallType: {fileID: 416374530}
   originalRot:
+  - {x: -0, y: 0.7923315, z: -0, w: 0.6100908}
   - {x: -0, y: 0.7923315, z: -0, w: 0.6100908}
   - {x: -0, y: 0.7923315, z: -0, w: 0.6100908}
   refreshRotation: 0
@@ -104459,7 +104527,6 @@ MonoBehaviour:
   originalRot:
   - {x: 0.094756685, y: -0.121625155, z: 0.011665081, w: 0.9879739}
   - {x: 0.094756685, y: -0.121625155, z: 0.011665081, w: 0.9879739}
-  - {x: 0.094756685, y: -0.121625155, z: 0.011665081, w: 0.9879739}
   refreshRotation: 0
 --- !u!1 &1620823783
 GameObject:
@@ -104659,7 +104726,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   - {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  - {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   refreshRotation: 0
 --- !u!1 &1632615229
 GameObject:
@@ -104709,7 +104775,6 @@ MonoBehaviour:
   curWallType: {fileID: 146319598}
   WallType: {fileID: 146319598}
   originalRot:
-  - {x: -0, y: 0.68537, z: -0, w: 0.7281951}
   - {x: -0, y: 0.68537, z: -0, w: 0.7281951}
   - {x: -0, y: 0.68537, z: -0, w: 0.7281951}
   refreshRotation: 0
@@ -104763,7 +104828,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.525731, z: -0, w: 0.8506509}
   - {x: -0, y: 0.525731, z: -0, w: 0.8506509}
-  - {x: -0, y: 0.525731, z: -0, w: 0.8506509}
   refreshRotation: 0
 --- !u!1 &1635068979
 GameObject:
@@ -104813,7 +104877,8 @@ MonoBehaviour:
   curWallType: {fileID: 994421331}
   WallType: {fileID: 994421331}
   originalRot:
-  - {x: 0.031885765, y: 0.96643585, z: -0.14895903, w: 0.20687263}
+  - {x: 0.12787658, y: 0.8296544, z: -0.0827833, w: -0.53709227}
+  - {x: 0.12787658, y: 0.8296544, z: -0.0827833, w: -0.53709227}
   - {x: 0.12787658, y: 0.8296544, z: -0.0827833, w: -0.53709227}
   refreshRotation: 0
 --- !u!1 &1636442527
@@ -104864,6 +104929,7 @@ MonoBehaviour:
   curWallType: {fileID: 1002896722}
   WallType: {fileID: 1002896722}
   originalRot:
+  - {x: -0, y: 0.38268346, z: -0, w: 0.92387956}
   - {x: -0, y: 0.38268346, z: -0, w: 0.92387956}
   - {x: -0, y: 0.38268346, z: -0, w: 0.92387956}
   refreshRotation: 0
@@ -105574,7 +105640,6 @@ MonoBehaviour:
   originalRot:
   - {x: 0.006523296, y: 0.92374533, z: 0.01574863, w: -0.38262782}
   - {x: 0.006523296, y: 0.92374533, z: 0.01574863, w: -0.38262782}
-  - {x: 0.006523296, y: 0.92374533, z: 0.01574863, w: -0.38262782}
   refreshRotation: 0
 --- !u!1 &1646461023
 GameObject:
@@ -105624,7 +105689,6 @@ MonoBehaviour:
   curWallType: {fileID: 1984698729}
   WallType: {fileID: 1984698729}
   originalRot:
-  - {x: -0.023826087, y: 0.8200284, z: 0.034229204, w: 0.5708013}
   - {x: -0.023826087, y: 0.8200284, z: 0.034229204, w: 0.5708013}
   - {x: -0.023826087, y: 0.8200284, z: 0.034229204, w: 0.5708013}
   refreshRotation: 0
@@ -106149,6 +106213,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: -0, z: -0, w: 1}
   - {x: -0, y: -0, z: -0, w: 1}
+  - {x: -0, y: -0, z: -0, w: 1}
   refreshRotation: 0
 --- !u!1 &1654921676
 GameObject:
@@ -106492,7 +106557,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.92387956, z: -0, w: 0.38268346}
   - {x: -0, y: 0.92387956, z: -0, w: 0.38268346}
-  - {x: -0, y: 0.92387956, z: -0, w: 0.38268346}
   refreshRotation: 0
 --- !u!1 &1656872339
 GameObject:
@@ -106641,6 +106705,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   - {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  - {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   refreshRotation: 0
 --- !u!1 &1657892209
 GameObject:
@@ -106787,6 +106852,7 @@ MonoBehaviour:
   curWallType: {fileID: 474081133}
   WallType: {fileID: 474081133}
   originalRot:
+  - {x: -0, y: 1, z: -0, w: 0}
   - {x: -0, y: 1, z: -0, w: 0}
   - {x: -0, y: 1, z: -0, w: 0}
   refreshRotation: 0
@@ -108204,6 +108270,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: -0.7071067, z: -0, w: 0.7071068}
   - {x: -0, y: -0.7071067, z: -0, w: 0.7071068}
+  - {x: -0, y: -0.7071067, z: -0, w: 0.7071068}
   refreshRotation: 0
 --- !u!1 &1685512540
 GameObject:
@@ -108253,6 +108320,7 @@ MonoBehaviour:
   curWallType: {fileID: 8472611}
   WallType: {fileID: 8472611}
   originalRot:
+  - {x: -0, y: -0.15393536, z: -0, w: 0.988081}
   - {x: -0, y: -0.15393536, z: -0, w: 0.988081}
   - {x: -0, y: -0.15393536, z: -0, w: 0.988081}
   refreshRotation: 0
@@ -108781,7 +108849,6 @@ MonoBehaviour:
   curWallType: {fileID: 815824901}
   WallType: {fileID: 815824901}
   originalRot:
-  - {x: -0, y: -0, z: -0, w: 1}
   - {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   - {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   refreshRotation: 0
@@ -108932,7 +108999,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.38268346, z: -0, w: 0.92387956}
   - {x: -0, y: 0.38268346, z: -0, w: 0.92387956}
-  - {x: -0, y: 0.38268346, z: -0, w: 0.92387956}
   refreshRotation: 0
 --- !u!1 &1696798852
 GameObject:
@@ -109081,6 +109147,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.99997264, z: -0, w: 0.00740256}
   - {x: -0, y: 0.99997264, z: -0, w: 0.00740256}
+  - {x: -0, y: 0.99997264, z: -0, w: 0.00740256}
   refreshRotation: 0
 --- !u!1 &1700882370
 GameObject:
@@ -109227,6 +109294,7 @@ MonoBehaviour:
   curWallType: {fileID: 1591376911}
   WallType: {fileID: 1591376911}
   originalRot:
+  - {x: -0, y: -0.04354198, z: -0, w: 0.99905163}
   - {x: -0, y: -0.04354198, z: -0, w: 0.99905163}
   - {x: -0, y: -0.04354198, z: -0, w: 0.99905163}
   refreshRotation: 0
@@ -109474,7 +109542,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.92387956, z: -0, w: 0.38268346}
   - {x: -0, y: 0.92387956, z: -0, w: 0.38268346}
-  - {x: -0, y: 0.92387956, z: -0, w: 0.38268346}
   refreshRotation: 0
 --- !u!1 &1709326038
 GameObject:
@@ -109524,7 +109591,6 @@ MonoBehaviour:
   curWallType: {fileID: 1246325742}
   WallType: {fileID: 1246325742}
   originalRot:
-  - {x: -0, y: 0.0016843183, z: -0, w: 0.99999857}
   - {x: -0, y: 0.0016843183, z: -0, w: 0.99999857}
   - {x: -0, y: 0.0016843183, z: -0, w: 0.99999857}
   refreshRotation: 0
@@ -109578,7 +109644,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: -0.2534488, z: -0, w: 0.9673488}
   - {x: -0, y: -0.2534488, z: -0, w: 0.9673488}
-  - {x: -0, y: -0.2534488, z: -0, w: 0.9673488}
   refreshRotation: 0
 --- !u!1 &1710689122
 GameObject:
@@ -109628,7 +109693,6 @@ MonoBehaviour:
   curWallType: {fileID: 195750261}
   WallType: {fileID: 195750261}
   originalRot:
-  - {x: -0, y: -0, z: -0, w: 1}
   - {x: -0, y: -0, z: -0, w: 1}
   - {x: -0, y: -0, z: -0, w: 1}
   refreshRotation: 0
@@ -109828,7 +109892,6 @@ MonoBehaviour:
   curWallType: {fileID: 532360234}
   WallType: {fileID: 532360234}
   originalRot:
-  - {x: -0, y: 0.973249, z: -0, w: 0.22975294}
   - {x: -0, y: 0.973249, z: -0, w: 0.22975294}
   - {x: -0, y: 0.973249, z: -0, w: 0.22975294}
   refreshRotation: 0
@@ -110171,7 +110234,6 @@ MonoBehaviour:
   curWallType: {fileID: 1475924413}
   WallType: {fileID: 1475924413}
   originalRot:
-  - {x: -0, y: -0.745441, z: -0, w: 0.6665716}
   - {x: -0, y: -0.745441, z: -0, w: 0.6665716}
   - {x: -0, y: -0.745441, z: -0, w: 0.6665716}
   refreshRotation: 0
@@ -110584,7 +110646,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: -0.7071067, z: -0, w: 0.7071068}
   - {x: -0, y: -0.7071067, z: -0, w: 0.7071068}
-  - {x: -0, y: -0.7071067, z: -0, w: 0.7071068}
   refreshRotation: 0
 --- !u!4 &1722120876
 Transform:
@@ -110650,7 +110711,6 @@ MonoBehaviour:
   curWallType: {fileID: 68157767}
   WallType: {fileID: 68157767}
   originalRot:
-  - {x: -0, y: 0.8590963, z: -0, w: 0.511814}
   - {x: -0, y: 0.8590963, z: -0, w: 0.511814}
   - {x: -0, y: 0.8590963, z: -0, w: 0.511814}
   refreshRotation: 0
@@ -111821,6 +111881,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: -0, z: -0, w: 1}
   - {x: -0, y: -0, z: -0, w: 1}
+  - {x: -0, y: -0, z: -0, w: 1}
   refreshRotation: 0
 --- !u!1 &1750356714
 GameObject:
@@ -111953,7 +112014,6 @@ MonoBehaviour:
   curWallType: {fileID: 849517922}
   WallType: {fileID: 849517922}
   originalRot:
-  - {x: 0.06876054, y: 0.92864037, z: -0.2912743, w: 0.21922225}
   - {x: 0.06876054, y: 0.92864037, z: -0.2912743, w: 0.21922225}
   - {x: 0.06876054, y: 0.92864037, z: -0.2912743, w: 0.21922225}
   refreshRotation: 0
@@ -112154,7 +112214,6 @@ MonoBehaviour:
   curWallType: {fileID: 411307688}
   WallType: {fileID: 411307688}
   originalRot:
-  - {x: -0, y: 0.46128303, z: -0, w: 0.88725305}
   - {x: -0, y: 0.46128303, z: -0, w: 0.88725305}
   - {x: -0, y: 0.46128303, z: -0, w: 0.88725305}
   refreshRotation: 0
@@ -112401,7 +112460,6 @@ MonoBehaviour:
   curWallType: {fileID: 1515527508}
   WallType: {fileID: 1515527508}
   originalRot:
-  - {x: -0, y: 0.99456316, z: -0, w: 0.10413522}
   - {x: -0, y: 0.99456316, z: -0, w: 0.10413522}
   - {x: -0, y: 0.99456316, z: -0, w: 0.10413522}
   refreshRotation: 0
@@ -112689,7 +112747,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0.03154925, y: 0.9645443, z: -0.13579243, w: -0.22409676}
   - {x: -0.03154925, y: 0.9645443, z: -0.13579243, w: -0.22409676}
-  - {x: -0.03154925, y: 0.9645443, z: -0.13579243, w: -0.22409676}
   refreshRotation: 0
 --- !u!1 &1764169152
 GameObject:
@@ -112739,6 +112796,7 @@ MonoBehaviour:
   curWallType: {fileID: 630865828}
   WallType: {fileID: 630865828}
   originalRot:
+  - {x: -0, y: 0.78361917, z: -0, w: 0.62124157}
   - {x: -0, y: 0.78361917, z: -0, w: 0.62124157}
   - {x: -0, y: 0.78361917, z: -0, w: 0.62124157}
   refreshRotation: 0
@@ -113283,6 +113341,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   - {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  - {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   refreshRotation: 0
 --- !u!1 &1778089674
 GameObject:
@@ -113429,7 +113488,6 @@ MonoBehaviour:
   curWallType: {fileID: 1829264496}
   WallType: {fileID: 1829264496}
   originalRot:
-  - {x: -0, y: -0.7960178, z: -0, w: 0.6052731}
   - {x: -0, y: -0.7960178, z: -0, w: 0.6052731}
   - {x: -0, y: -0.7960178, z: -0, w: 0.6052731}
   refreshRotation: 0
@@ -113871,7 +113929,6 @@ MonoBehaviour:
   originalRot:
   - {x: 0.014455405, y: 0.97132075, z: -0.06123408, w: 0.22929771}
   - {x: 0.014455405, y: 0.97132075, z: -0.06123408, w: 0.22929771}
-  - {x: 0.014455405, y: 0.97132075, z: -0.06123408, w: 0.22929771}
   refreshRotation: 0
 --- !u!1 &1786316575
 GameObject:
@@ -114018,6 +114075,7 @@ MonoBehaviour:
   curWallType: {fileID: 1393244420}
   WallType: {fileID: 1393244420}
   originalRot:
+  - {x: -0, y: -0, z: -0, w: 1}
   - {x: -0, y: -0, z: -0, w: 1}
   - {x: -0, y: -0, z: -0, w: 1}
   refreshRotation: 0
@@ -114446,6 +114504,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.99995756, z: -0, w: -0.009213954}
   - {x: -0, y: 0.99995756, z: -0, w: -0.009213954}
+  - {x: -0, y: 0.99995756, z: -0, w: -0.009213954}
   refreshRotation: 0
 --- !u!1 &1792057822
 GameObject:
@@ -114594,7 +114653,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.92387956, z: -0, w: 0.38268346}
   - {x: -0, y: 0.92387956, z: -0, w: 0.38268346}
-  - {x: -0, y: 0.92387956, z: -0, w: 0.38268346}
   refreshRotation: 0
 --- !u!1 &1793892139
 GameObject:
@@ -114644,7 +114702,8 @@ MonoBehaviour:
   curWallType: {fileID: 730441421}
   WallType: {fileID: 730441421}
   originalRot:
-  - {x: -0, y: 0.009508908, z: -0, w: 0.9999548}
+  - {x: -0, y: 0.71379864, z: -0, w: 0.700351}
+  - {x: -0, y: 0.71379864, z: -0, w: 0.700351}
   - {x: -0, y: 0.71379864, z: -0, w: 0.700351}
   refreshRotation: 0
 --- !u!1 &1795345573
@@ -114794,7 +114853,6 @@ MonoBehaviour:
   originalRot:
   - {x: 0.33268008, y: 0.64524126, z: -0.37046206, w: 0.57943565}
   - {x: 0.33268008, y: 0.64524126, z: -0.37046206, w: 0.57943565}
-  - {x: 0.33268008, y: 0.64524126, z: -0.37046206, w: 0.57943565}
   refreshRotation: 0
 --- !u!1 &1796924629
 GameObject:
@@ -114897,6 +114955,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.48225975, z: -0, w: 0.8760283}
   - {x: -0, y: 0.48225975, z: -0, w: 0.8760283}
+  - {x: -0, y: 0.48225975, z: -0, w: 0.8760283}
   refreshRotation: 0
 --- !u!1 &1797826622
 GameObject:
@@ -114946,7 +115005,6 @@ MonoBehaviour:
   curWallType: {fileID: 1642116019}
   WallType: {fileID: 1642116019}
   originalRot:
-  - {x: -0, y: -0.09676447, z: -0, w: 0.9953073}
   - {x: -0, y: -0.09676447, z: -0, w: 0.9953073}
   - {x: -0, y: -0.09676447, z: -0, w: 0.9953073}
   refreshRotation: 0
@@ -115049,7 +115107,6 @@ MonoBehaviour:
   curWallType: {fileID: 1076710749}
   WallType: {fileID: 1076710749}
   originalRot:
-  - {x: 0.102474965, y: 0.8791425, z: -0.21952587, w: 0.41038492}
   - {x: 0.22768897, y: 0.9118336, z: -0.08276749, w: -0.33146167}
   - {x: 0.22768897, y: 0.9118336, z: -0.08276749, w: -0.33146167}
   refreshRotation: 0
@@ -115760,6 +115817,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0.022942621, y: 0.9741333, z: -0.1925109, w: -0.116093025}
   - {x: -0.022942621, y: 0.9741333, z: -0.1925109, w: -0.116093025}
+  - {x: -0.022942621, y: 0.9741333, z: -0.1925109, w: -0.116093025}
   refreshRotation: 0
 --- !u!1 &1810082608
 GameObject:
@@ -115809,7 +115867,6 @@ MonoBehaviour:
   curWallType: {fileID: 2115021357}
   WallType: {fileID: 2115021357}
   originalRot:
-  - {x: -0, y: -0, z: -0, w: 1}
   - {x: -0, y: -0, z: -0, w: 1}
   - {x: -0, y: -0, z: -0, w: 1}
   refreshRotation: 0
@@ -116154,7 +116211,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: -0, z: -0, w: 1}
   - {x: -0, y: -0, z: -0, w: 1}
-  - {x: -0, y: -0, z: -0, w: 1}
   refreshRotation: 0
 --- !u!1 &1817551212
 GameObject:
@@ -116204,7 +116260,6 @@ MonoBehaviour:
   curWallType: {fileID: 1759707816}
   WallType: {fileID: 1759707816}
   originalRot:
-  - {x: -0, y: 0.1219532, z: -0, w: 0.9925359}
   - {x: -0, y: 0.78806275, z: -0, w: 0.6155949}
   - {x: -0, y: 0.78806275, z: -0, w: 0.6155949}
   refreshRotation: 0
@@ -116452,6 +116507,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.92201686, z: -0, w: 0.38714978}
   - {x: -0, y: 0.92201686, z: -0, w: 0.38714978}
+  - {x: -0, y: 0.92201686, z: -0, w: 0.38714978}
   refreshRotation: 0
 --- !u!1 &1824907991
 GameObject:
@@ -116598,6 +116654,7 @@ MonoBehaviour:
   curWallType: {fileID: 2025891602}
   WallType: {fileID: 2025891602}
   originalRot:
+  - {x: -0, y: 0.9815051, z: -0, w: 0.19143608}
   - {x: -0, y: 0.9815051, z: -0, w: 0.19143608}
   - {x: -0, y: 0.9815051, z: -0, w: 0.19143608}
   refreshRotation: 0
@@ -116942,7 +116999,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 1, z: -0, w: 0}
   - {x: -0, y: 1, z: -0, w: 0}
-  - {x: -0, y: 1, z: -0, w: 0}
   refreshRotation: 0
 --- !u!1 &1830335613
 GameObject:
@@ -117285,6 +117341,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.973249, z: -0, w: 0.22975294}
   - {x: -0, y: 0.973249, z: -0, w: 0.22975294}
+  - {x: -0, y: 0.973249, z: -0, w: 0.22975294}
   refreshRotation: 0
 --- !u!1 &1834980460
 GameObject:
@@ -117485,7 +117542,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.78820544, z: -0, w: 0.61541224}
   - {x: -0, y: 0.78820544, z: -0, w: 0.61541224}
-  - {x: -0, y: 0.78820544, z: -0, w: 0.61541224}
   refreshRotation: 0
 --- !u!1 &1839856120
 GameObject:
@@ -117632,7 +117688,6 @@ MonoBehaviour:
   curWallType: {fileID: 155913538}
   WallType: {fileID: 155913538}
   originalRot:
-  - {x: -0.0035741085, y: 0.99208283, z: 0.02903286, w: 0.12213098}
   - {x: -0.0035741085, y: 0.99208283, z: 0.02903286, w: 0.12213098}
   - {x: -0.0035741085, y: 0.99208283, z: 0.02903286, w: 0.12213098}
   refreshRotation: 0
@@ -117783,7 +117838,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.9988631, z: -0, w: -0.047671657}
   - {x: -0, y: 0.9988631, z: -0, w: -0.047671657}
-  - {x: -0, y: 0.9988631, z: -0, w: -0.047671657}
   refreshRotation: 0
 --- !u!1 &1844464390
 GameObject:
@@ -117932,6 +117986,7 @@ MonoBehaviour:
   originalRot:
   - {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
   - {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  - {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
   refreshRotation: 0
 --- !u!1 &1844921730
 GameObject:
@@ -118078,7 +118133,6 @@ MonoBehaviour:
   curWallType: {fileID: 1959578691}
   WallType: {fileID: 1959578691}
   originalRot:
-  - {x: -0, y: -0.3195501, z: -0, w: 0.9475694}
   - {x: -0, y: -0.3195501, z: -0, w: 0.9475694}
   - {x: -0, y: -0.3195501, z: -0, w: 0.9475694}
   refreshRotation: 0
@@ -119070,6 +119124,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0.05058967, y: 0.79925454, z: 0.067957334, w: 0.5949913}
   - {x: -0.05058967, y: 0.79925454, z: 0.067957334, w: 0.5949913}
+  - {x: -0.05058967, y: 0.79925454, z: 0.067957334, w: 0.5949913}
   refreshRotation: 0
 --- !u!1 &1857095447
 GameObject:
@@ -119218,6 +119273,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.38268346, z: -0, w: 0.92387956}
   - {x: -0, y: 0.38268346, z: -0, w: 0.92387956}
+  - {x: -0, y: 0.38268346, z: -0, w: 0.92387956}
   refreshRotation: 0
 --- !u!1 &1858875798
 GameObject:
@@ -119267,7 +119323,6 @@ MonoBehaviour:
   curWallType: {fileID: 1163969495}
   WallType: {fileID: 1163969495}
   originalRot:
-  - {x: -0, y: 0.02043805, z: -0, w: 0.99979115}
   - {x: -0, y: 0.02043805, z: -0, w: 0.99979115}
   - {x: -0, y: 0.02043805, z: -0, w: 0.99979115}
   refreshRotation: 0
@@ -119955,7 +120010,6 @@ MonoBehaviour:
   originalRot:
   - {x: 0.44147712, y: 0.24311532, z: -0.12560143, w: 0.8545275}
   - {x: 0.44147712, y: 0.24311532, z: -0.12560143, w: 0.8545275}
-  - {x: 0.44147712, y: 0.24311532, z: -0.12560143, w: 0.8545275}
   refreshRotation: 0
 --- !u!1 &1869397285
 GameObject:
@@ -120447,7 +120501,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.9939855, z: -0, w: -0.10951195}
   - {x: -0, y: 0.9939855, z: -0, w: -0.10951195}
-  - {x: -0, y: 0.9939855, z: -0, w: -0.10951195}
   refreshRotation: 0
 --- !u!1 &1875584368
 GameObject:
@@ -120497,7 +120550,6 @@ MonoBehaviour:
   curWallType: {fileID: 990301409}
   WallType: {fileID: 990301409}
   originalRot:
-  - {x: -0, y: -0, z: -0, w: 1}
   - {x: -0, y: -0, z: -0, w: 1}
   - {x: -0, y: -0, z: -0, w: 1}
   refreshRotation: 0
@@ -120646,7 +120698,6 @@ MonoBehaviour:
   curWallType: {fileID: 1791364328}
   WallType: {fileID: 1791364328}
   originalRot:
-  - {x: 0.05166808, y: -0.82652915, z: 0.07691644, w: 0.5552152}
   - {x: 0.05166808, y: -0.82652915, z: 0.07691644, w: 0.5552152}
   - {x: 0.05166808, y: -0.82652915, z: 0.07691644, w: 0.5552152}
   refreshRotation: 0
@@ -121086,7 +121137,6 @@ MonoBehaviour:
   curWallType: {fileID: 105014672}
   WallType: {fileID: 105014672}
   originalRot:
-  - {x: -0, y: -0, z: -0, w: 1}
   - {x: -0, y: -0, z: -0, w: 1}
   - {x: -0, y: -0, z: -0, w: 1}
   refreshRotation: 0
@@ -121908,7 +121958,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0.019724522, y: -0.81078047, z: -0.027366314, w: 0.5843776}
   - {x: -0.019724522, y: -0.81078047, z: -0.027366314, w: 0.5843776}
-  - {x: -0.019724522, y: -0.81078047, z: -0.027366314, w: 0.5843776}
   refreshRotation: 0
 --- !u!1 &1893899385
 GameObject:
@@ -122401,6 +122450,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0.7071067, y: -0, z: -0, w: 0.7071068}
   - {x: -0.7071067, y: -0, z: -0, w: 0.7071068}
+  - {x: -0.7071067, y: -0, z: -0, w: 0.7071068}
   refreshRotation: 0
 --- !u!1 &1897890470
 GameObject:
@@ -122743,6 +122793,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.22975293, z: -0, w: 0.973249}
   - {x: -0, y: 0.22975293, z: -0, w: 0.973249}
+  - {x: -0, y: 0.22975293, z: -0, w: 0.973249}
   refreshRotation: 0
 --- !u!1 &1905364771
 GameObject:
@@ -122792,6 +122843,7 @@ MonoBehaviour:
   curWallType: {fileID: 196055844}
   WallType: {fileID: 196055844}
   originalRot:
+  - {x: -0, y: 0.47185796, z: -0, w: 0.8816746}
   - {x: -0, y: 0.47185796, z: -0, w: 0.8816746}
   - {x: -0, y: 0.47185796, z: -0, w: 0.8816746}
   refreshRotation: 0
@@ -123244,6 +123296,7 @@ MonoBehaviour:
   curWallType: {fileID: 395909107}
   WallType: {fileID: 395909107}
   originalRot:
+  - {x: -0, y: -0, z: -0, w: 1}
   - {x: -0, y: -0, z: -0, w: 1}
   - {x: -0, y: -0, z: -0, w: 1}
   refreshRotation: 0
@@ -124051,6 +124104,7 @@ MonoBehaviour:
   originalRot:
   - {x: 0.0804309, y: 0.8099028, z: -0.11435111, w: 0.56965977}
   - {x: 0.0804309, y: 0.8099028, z: -0.11435111, w: 0.56965977}
+  - {x: 0.0804309, y: 0.8099028, z: -0.11435111, w: 0.56965977}
   refreshRotation: 0
 --- !u!1 &1933064992
 GameObject:
@@ -124684,7 +124738,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.7071067, z: -0, w: 0.7071068}
   - {x: -0, y: 0.7071067, z: -0, w: 0.7071068}
-  - {x: -0, y: 0.7071067, z: -0, w: 0.7071068}
   refreshRotation: 0
 --- !u!1 &1943187053
 GameObject:
@@ -124981,6 +125034,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: -0.047539458, z: -0, w: 0.99886936}
   - {x: -0, y: -0.047539458, z: -0, w: 0.99886936}
+  - {x: -0, y: -0.047539458, z: -0, w: 0.99886936}
   refreshRotation: 0
 --- !u!1 &1950306375
 GameObject:
@@ -125129,7 +125183,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.12218326, z: -0, w: 0.9925076}
   - {x: -0, y: 0.12218326, z: -0, w: 0.9925076}
-  - {x: -0, y: 0.12218326, z: -0, w: 0.9925076}
   refreshRotation: 0
 --- !u!1 &1953234320
 GameObject:
@@ -125179,7 +125232,6 @@ MonoBehaviour:
   curWallType: {fileID: 990516090}
   WallType: {fileID: 990516090}
   originalRot:
-  - {x: -0, y: -0.15774909, z: -0, w: 0.98747927}
   - {x: -0, y: -0.15774909, z: -0, w: 0.98747927}
   - {x: -0, y: -0.15774909, z: -0, w: 0.98747927}
   refreshRotation: 0
@@ -125233,7 +125285,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0.13446237, y: 0.864971, z: 0.32462087, w: 0.35828272}
   - {x: -0.13446237, y: 0.864971, z: 0.32462087, w: 0.35828272}
-  - {x: -0.13446237, y: 0.864971, z: 0.32462087, w: 0.35828272}
   refreshRotation: 0
 --- !u!1 &1954516037
 GameObject:
@@ -125285,7 +125336,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.5896849, z: -0, w: 0.8076334}
   - {x: -0, y: 0.5896849, z: -0, w: 0.8076334}
-  - {x: -0, y: 0.5896849, z: -0, w: 0.8076334}
   refreshRotation: 0
 --- !u!1 &1956050498
 GameObject:
@@ -125335,7 +125385,6 @@ MonoBehaviour:
   curWallType: {fileID: 337866765}
   WallType: {fileID: 337866765}
   originalRot:
-  - {x: -0, y: 0.03603911, z: -0, w: 0.99935037}
   - {x: -0, y: 0.73213094, z: -0, w: 0.68116397}
   - {x: -0, y: 0.73213094, z: -0, w: 0.68116397}
   refreshRotation: 0
@@ -125734,8 +125783,7 @@ MonoBehaviour:
   curWallType: {fileID: 563947094}
   WallType: {fileID: 563947094}
   originalRot:
-  - {x: -0, y: 0.77079093, z: -0, w: -0.6370882}
-  - {x: -0, y: 0.09454213, z: -0, w: -0.9955209}
+  - {x: -0, y: -0.6370882, z: -0, w: -0.77079093}
   - {x: -0, y: -0.6370882, z: -0, w: -0.77079093}
   refreshRotation: 0
 --- !u!1 &1960977467
@@ -125786,7 +125834,6 @@ MonoBehaviour:
   curWallType: {fileID: 753024976}
   WallType: {fileID: 753024976}
   originalRot:
-  - {x: -0, y: -0, z: -0, w: 1}
   - {x: -0, y: -0, z: -0, w: 1}
   - {x: -0, y: -0, z: -0, w: 1}
   refreshRotation: 0
@@ -126337,6 +126384,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.9939022, z: -0, w: 0.11026558}
   - {x: -0, y: 0.9939022, z: -0, w: 0.11026558}
+  - {x: -0, y: 0.9939022, z: -0, w: 0.11026558}
   refreshRotation: 0
 --- !u!1 &1972637861
 GameObject:
@@ -126386,6 +126434,7 @@ MonoBehaviour:
   curWallType: {fileID: 593794339}
   WallType: {fileID: 593794339}
   originalRot:
+  - {x: -0, y: 0.9174967, z: -0, w: -0.3977434}
   - {x: -0, y: 0.9174967, z: -0, w: -0.3977434}
   - {x: -0, y: 0.9174967, z: -0, w: -0.3977434}
   refreshRotation: 0
@@ -126488,7 +126537,6 @@ MonoBehaviour:
   curWallType: {fileID: 1202231383}
   WallType: {fileID: 1202231383}
   originalRot:
-  - {x: -0, y: 0.78361905, z: -0, w: 0.6212417}
   - {x: -0, y: 0.78361905, z: -0, w: 0.6212417}
   - {x: -0, y: 0.78361905, z: -0, w: 0.6212417}
   refreshRotation: 0
@@ -126981,7 +127029,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.9047662, z: -0, w: -0.4259086}
   - {x: -0, y: 0.9047662, z: -0, w: -0.4259086}
-  - {x: -0, y: 0.9047662, z: -0, w: -0.4259086}
   refreshRotation: 0
 --- !u!1 &1978137018
 GameObject:
@@ -127128,6 +127175,7 @@ MonoBehaviour:
   curWallType: {fileID: 2057354235}
   WallType: {fileID: 2057354235}
   originalRot:
+  - {x: -0, y: 0.117926694, z: -0, w: 0.9930223}
   - {x: -0, y: 0.117926694, z: -0, w: 0.9930223}
   - {x: -0, y: 0.117926694, z: -0, w: 0.9930223}
   refreshRotation: 0
@@ -127901,7 +127949,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.9999044, z: -0, w: -0.013830808}
   - {x: -0, y: 0.9999044, z: -0, w: -0.013830808}
-  - {x: -0, y: 0.9999044, z: -0, w: -0.013830808}
   refreshRotation: 0
 --- !u!1 &1993711284
 GameObject:
@@ -128535,7 +128582,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
   - {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  - {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
   refreshRotation: 0
 --- !u!1 &1999483575
 GameObject:
@@ -128585,6 +128631,7 @@ MonoBehaviour:
   curWallType: {fileID: 1438320758}
   WallType: {fileID: 1438320758}
   originalRot:
+  - {x: -0, y: 0.5257311, z: -0, w: 0.85065085}
   - {x: -0, y: 0.5257311, z: -0, w: 0.85065085}
   - {x: -0, y: 0.5257311, z: -0, w: 0.85065085}
   refreshRotation: 0
@@ -128787,6 +128834,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: -0.078701295, z: -0, w: 0.9968983}
   - {x: -0, y: -0.078701295, z: -0, w: 0.9968983}
+  - {x: -0, y: -0.078701295, z: -0, w: 0.9968983}
   refreshRotation: 0
 --- !u!1 &2002441386
 GameObject:
@@ -128836,7 +128884,6 @@ MonoBehaviour:
   curWallType: {fileID: 1181645637}
   WallType: {fileID: 1181645637}
   originalRot:
-  - {x: 0.04134454, y: 0.94778246, z: -0.2847017, w: 0.1376375}
   - {x: 0.2305495, y: 0.7675078, z: -0.1720795, w: -0.572859}
   - {x: 0.2305495, y: 0.7675078, z: -0.1720795, w: -0.572859}
   refreshRotation: 0
@@ -128987,6 +129034,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.082480535, z: -0, w: 0.9965927}
   - {x: -0, y: 0.082480535, z: -0, w: 0.9965927}
+  - {x: -0, y: 0.082480535, z: -0, w: 0.9965927}
   refreshRotation: 0
 --- !u!1 &2004478814
 GameObject:
@@ -129135,6 +129183,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.92387956, z: -0, w: 0.38268346}
   - {x: -0, y: 0.92387956, z: -0, w: 0.38268346}
+  - {x: -0, y: 0.92387956, z: -0, w: 0.38268346}
   refreshRotation: 0
 --- !u!1 &2005549058
 GameObject:
@@ -129184,7 +129233,8 @@ MonoBehaviour:
   curWallType: {fileID: 1336510173}
   WallType: {fileID: 1336510173}
   originalRot:
-  - {x: -0.00000011083876, y: 0.068491794, z: 0.000000007609416, w: 0.9976517}
+  - {x: -0.00000008375551, y: 0.7538773, z: -0.00000007299417, w: 0.65701526}
+  - {x: -0.00000008375551, y: 0.7538773, z: -0.00000007299417, w: 0.65701526}
   - {x: -0.00000008375551, y: 0.7538773, z: -0.00000007299417, w: 0.65701526}
   refreshRotation: 0
 --- !u!1 &2005585558
@@ -129480,6 +129530,7 @@ MonoBehaviour:
   curWallType: {fileID: 1696798852}
   WallType: {fileID: 1696798852}
   originalRot:
+  - {x: -0, y: 0.7071067, z: -0, w: 0.7071068}
   - {x: -0, y: 0.7071067, z: -0, w: 0.7071068}
   - {x: -0, y: 0.7071067, z: -0, w: 0.7071068}
   refreshRotation: 0
@@ -130024,7 +130075,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.92387956, z: -0, w: 0.38268346}
   - {x: -0, y: 0.92387956, z: -0, w: 0.38268346}
-  - {x: -0, y: 0.92387956, z: -0, w: 0.38268346}
   refreshRotation: 0
 --- !u!1 &2017848156
 GameObject:
@@ -130173,6 +130223,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.8914206, z: -0.45317695, w: 0}
   - {x: -0, y: 0.8914206, z: -0.45317695, w: 0}
+  - {x: -0, y: 0.8914206, z: -0.45317695, w: 0}
   refreshRotation: 0
 --- !u!1 &2019820892
 GameObject:
@@ -130222,7 +130273,6 @@ MonoBehaviour:
   curWallType: {fileID: 397356002}
   WallType: {fileID: 397356002}
   originalRot:
-  - {x: -0, y: -0, z: -0, w: 1}
   - {x: -0, y: -0, z: -0, w: 1}
   - {x: -0, y: -0, z: -0, w: 1}
   refreshRotation: 0
@@ -131052,6 +131102,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.41858593, z: -0, w: 0.9081772}
   - {x: -0, y: 0.41858593, z: -0, w: 0.9081772}
+  - {x: -0, y: 0.41858593, z: -0, w: 0.9081772}
   refreshRotation: 0
 --- !u!1 &2031109301
 GameObject:
@@ -131250,7 +131301,6 @@ MonoBehaviour:
   curWallType: {fileID: 117362975}
   WallType: {fileID: 117362975}
   originalRot:
-  - {x: -0, y: 0.92387956, z: -0, w: 0.38268346}
   - {x: -0, y: 0.92387956, z: -0, w: 0.38268346}
   - {x: -0, y: 0.92387956, z: -0, w: 0.38268346}
   refreshRotation: 0
@@ -132018,7 +132068,6 @@ MonoBehaviour:
   curWallType: {fileID: 994800589}
   WallType: {fileID: 994800589}
   originalRot:
-  - {x: -0.22024995, y: 0.7755644, z: 0.3701205, w: 0.46152008}
   - {x: -0.41745493, y: 0.8747508, z: 0.10597447, w: -0.22206284}
   - {x: -0.41745493, y: 0.8747508, z: 0.10597447, w: -0.22206284}
   refreshRotation: 0
@@ -132167,7 +132216,6 @@ MonoBehaviour:
   curWallType: {fileID: 772379942}
   WallType: {fileID: 772379942}
   originalRot:
-  - {x: -0, y: 0.61541224, z: -0, w: 0.78820544}
   - {x: -0, y: 0.61541224, z: -0, w: 0.78820544}
   - {x: -0, y: 0.61541224, z: -0, w: 0.78820544}
   refreshRotation: 0
@@ -132466,7 +132514,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 1, z: -0, w: 0}
   - {x: -0, y: 1, z: -0, w: 0}
-  - {x: -0, y: 1, z: -0, w: 0}
   refreshRotation: 0
 --- !u!1 &2054897820
 GameObject:
@@ -132615,6 +132662,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.5792414, z: -0, w: 0.81515604}
   - {x: -0, y: 0.5792414, z: -0, w: 0.81515604}
+  - {x: -0, y: 0.5792414, z: -0, w: 0.81515604}
   refreshRotation: 0
 --- !u!1 &2055161841
 GameObject:
@@ -132664,7 +132712,6 @@ MonoBehaviour:
   curWallType: {fileID: 116223458}
   WallType: {fileID: 116223458}
   originalRot:
-  - {x: -0, y: 1, z: -0, w: 0}
   - {x: -0, y: 1, z: -0, w: 0}
   - {x: -0, y: 1, z: -0, w: 0}
   refreshRotation: 0
@@ -132912,7 +132959,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.7929725, z: -0, w: 0.6092575}
   - {x: -0, y: 0.7929725, z: -0, w: 0.6092575}
-  - {x: -0, y: 0.7929725, z: -0, w: 0.6092575}
   refreshRotation: 0
 --- !u!1 &2057432285
 GameObject:
@@ -132962,7 +133008,6 @@ MonoBehaviour:
   curWallType: {fileID: 860529159}
   WallType: {fileID: 860529159}
   originalRot:
-  - {x: -0.052894726, y: 0.8661072, z: 0.48810992, w: 0.09385694}
   - {x: -0.052894726, y: 0.8661072, z: 0.48810992, w: 0.09385694}
   - {x: -0.052894726, y: 0.8661072, z: 0.48810992, w: 0.09385694}
   refreshRotation: 0
@@ -133065,7 +133110,6 @@ MonoBehaviour:
   curWallType: {fileID: 1653694416}
   WallType: {fileID: 1653694416}
   originalRot:
-  - {x: -0, y: -0, z: -0, w: 1}
   - {x: -0, y: -0, z: -0, w: 1}
   - {x: -0, y: -0, z: -0, w: 1}
   refreshRotation: 0
@@ -133468,7 +133512,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: -0.19325775, z: -0, w: 0.98114806}
   - {x: -0, y: -0.19325775, z: -0, w: 0.98114806}
-  - {x: -0, y: -0.19325775, z: -0, w: 0.98114806}
   refreshRotation: 0
 --- !u!1 &2072464237
 GameObject:
@@ -133520,6 +133563,7 @@ MonoBehaviour:
   originalRot:
   - {x: 0.31840396, y: -0.6313628, z: 0.31840396, w: 0.63136274}
   - {x: 0.31840396, y: -0.6313628, z: 0.31840396, w: 0.63136274}
+  - {x: 0.31840396, y: -0.6313628, z: 0.31840396, w: 0.63136274}
   refreshRotation: 0
 --- !u!1 &2073809979
 GameObject:
@@ -133569,7 +133613,6 @@ MonoBehaviour:
   curWallType: {fileID: 1043031655}
   WallType: {fileID: 1043031655}
   originalRot:
-  - {x: -0, y: 0.85065085, z: -0, w: 0.5257311}
   - {x: -0, y: 0.85065085, z: -0, w: 0.5257311}
   - {x: -0, y: 0.85065085, z: -0, w: 0.5257311}
   refreshRotation: 0
@@ -133772,7 +133815,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0.042793408, y: 0.9562179, z: -0.1812758, w: -0.22573243}
   - {x: -0.042793408, y: 0.9562179, z: -0.1812758, w: -0.22573243}
-  - {x: -0.042793408, y: 0.9562179, z: -0.1812758, w: -0.22573243}
   refreshRotation: 0
 --- !u!1 &2083672098
 GameObject:
@@ -133822,7 +133864,6 @@ MonoBehaviour:
   curWallType: {fileID: 707495055}
   WallType: {fileID: 707495055}
   originalRot:
-  - {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   - {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   - {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   refreshRotation: 0
@@ -134122,7 +134163,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.973249, z: -0, w: 0.22975294}
   - {x: -0, y: 0.973249, z: -0, w: 0.22975294}
-  - {x: -0, y: 0.973249, z: -0, w: 0.22975294}
   refreshRotation: 0
 --- !u!1 &2087804943
 GameObject:
@@ -134172,6 +134212,7 @@ MonoBehaviour:
   curWallType: {fileID: 2093689565}
   WallType: {fileID: 2093689565}
   originalRot:
+  - {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   - {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   - {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   refreshRotation: 0
@@ -134322,6 +134363,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.33156812, z: -0, w: 0.9434313}
   - {x: -0, y: 0.33156812, z: -0, w: 0.9434313}
+  - {x: -0, y: 0.33156812, z: -0, w: 0.9434313}
   refreshRotation: 0
 --- !u!1 &2091488219
 GameObject:
@@ -134468,6 +134510,7 @@ MonoBehaviour:
   curWallType: {fileID: 183035255}
   WallType: {fileID: 183035255}
   originalRot:
+  - {x: -0.049054652, y: 0.9508066, z: 0.20779885, w: 0.22445501}
   - {x: -0.049054652, y: 0.9508066, z: 0.20779885, w: 0.22445501}
   - {x: -0.049054652, y: 0.9508066, z: 0.20779885, w: 0.22445501}
   refreshRotation: 0
@@ -134906,7 +134949,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: -0.18010816, z: -0, w: 0.98364687}
   - {x: -0, y: -0.18010816, z: -0, w: 0.98364687}
-  - {x: -0, y: -0.18010816, z: -0, w: 0.98364687}
   refreshRotation: 0
 --- !u!1 &2093689565
 GameObject:
@@ -135249,7 +135291,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: -0.7071067, z: -0, w: 0.7071068}
   - {x: -0, y: -0.7071067, z: -0, w: 0.7071068}
-  - {x: -0, y: -0.7071067, z: -0, w: 0.7071068}
   refreshRotation: 0
 --- !u!1 &2102597036
 GameObject:
@@ -135301,6 +135342,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.92387956, z: -0, w: 0.38268346}
   - {x: -0, y: 0.92387956, z: -0, w: 0.38268346}
+  - {x: -0, y: 0.92387956, z: -0, w: 0.38268346}
   refreshRotation: 0
 --- !u!1 &2103536307
 GameObject:
@@ -135350,6 +135392,7 @@ MonoBehaviour:
   curWallType: {fileID: 1213536153}
   WallType: {fileID: 1213536153}
   originalRot:
+  - {x: 0.5096432, y: -0.31919107, z: 0.21110111, w: 0.7705954}
   - {x: 0.5096432, y: -0.31919107, z: 0.21110111, w: 0.7705954}
   - {x: 0.5096432, y: -0.31919107, z: 0.21110111, w: 0.7705954}
   refreshRotation: 0
@@ -135695,7 +135738,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.08047383, z: -0, w: 0.99675673}
   - {x: -0, y: 0.08047383, z: -0, w: 0.99675673}
-  - {x: -0, y: 0.08047383, z: -0, w: 0.99675673}
   refreshRotation: 0
 --- !u!1 &2110850141
 GameObject:
@@ -135796,6 +135838,7 @@ MonoBehaviour:
   curWallType: {fileID: 340233205}
   WallType: {fileID: 340233205}
   originalRot:
+  - {x: -0, y: -0, z: -0, w: 1}
   - {x: -0, y: -0, z: -0, w: 1}
   - {x: -0, y: -0, z: -0, w: 1}
   refreshRotation: 0
@@ -136288,7 +136331,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.38268346, z: -0, w: 0.92387956}
   - {x: -0, y: 0.38268346, z: -0, w: 0.92387956}
-  - {x: -0, y: 0.38268346, z: -0, w: 0.92387956}
   refreshRotation: 0
 --- !u!1 &2119714622
 GameObject:
@@ -136340,6 +136382,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   - {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  - {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   refreshRotation: 0
 --- !u!1 &2120574993
 GameObject:
@@ -136389,7 +136432,6 @@ MonoBehaviour:
   curWallType: {fileID: 444494643}
   WallType: {fileID: 444494643}
   originalRot:
-  - {x: -0, y: 0.13548629, z: -0, w: 0.9907793}
   - {x: -0, y: 0.13548629, z: -0, w: 0.9907793}
   - {x: -0, y: 0.13548629, z: -0, w: 0.9907793}
   refreshRotation: 0
@@ -136674,6 +136716,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   - {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  - {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   refreshRotation: 0
 --- !u!1 &2124697693
 GameObject:
@@ -136777,6 +136820,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: -0, z: -0, w: 1}
   - {x: -0, y: -0, z: -0, w: 1}
+  - {x: -0, y: -0, z: -0, w: 1}
   refreshRotation: 0
 --- !u!1 &2128175700
 GameObject:
@@ -136826,7 +136870,6 @@ MonoBehaviour:
   curWallType: {fileID: 2012481931}
   WallType: {fileID: 2012481931}
   originalRot:
-  - {x: -0, y: 0.082480535, z: -0, w: 0.9965927}
   - {x: -0, y: 0.082480535, z: -0, w: 0.9965927}
   - {x: -0, y: 0.082480535, z: -0, w: 0.9965927}
   refreshRotation: 0
@@ -136880,7 +136923,6 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.99725306, z: -0, w: 0.07407041}
   - {x: -0, y: 0.99725306, z: -0, w: 0.07407041}
-  - {x: -0, y: 0.99725306, z: -0, w: 0.07407041}
   refreshRotation: 0
 --- !u!1 &2134142445
 GameObject:
@@ -136930,7 +136972,6 @@ MonoBehaviour:
   curWallType: {fileID: 734399043}
   WallType: {fileID: 734399043}
   originalRot:
-  - {x: -0, y: 0.973249, z: -0, w: 0.22975294}
   - {x: -0, y: 0.973249, z: -0, w: 0.22975294}
   - {x: -0, y: 0.973249, z: -0, w: 0.22975294}
   refreshRotation: 0
@@ -137230,6 +137271,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: -0.050374236, z: -0, w: 0.9987304}
   - {x: -0, y: -0.050374236, z: -0, w: 0.9987304}
+  - {x: -0, y: -0.050374236, z: -0, w: 0.9987304}
   refreshRotation: 0
 --- !u!1 &2137507350
 GameObject:
@@ -137279,7 +137321,6 @@ MonoBehaviour:
   curWallType: {fileID: 576165113}
   WallType: {fileID: 576165113}
   originalRot:
-  - {x: -0.16659847, y: -0.28536022, z: -0.050441954, w: 0.94248086}
   - {x: -0.16659847, y: -0.28536022, z: -0.050441954, w: 0.94248086}
   - {x: -0.16659847, y: -0.28536022, z: -0.050441954, w: 0.94248086}
   refreshRotation: 0
@@ -137333,6 +137374,7 @@ MonoBehaviour:
   originalRot:
   - {x: -0, y: 0.74082243, z: -0, w: 0.6717009}
   - {x: -0, y: 0.74082243, z: -0, w: 0.6717009}
+  - {x: -0, y: 0.74082243, z: -0, w: 0.6717009}
   refreshRotation: 0
 --- !u!1 &2142057547
 GameObject:
@@ -137382,7 +137424,6 @@ MonoBehaviour:
   curWallType: {fileID: 1011292989}
   WallType: {fileID: 1011292989}
   originalRot:
-  - {x: -0, y: -0, z: -0, w: 1}
   - {x: -0, y: -0, z: -0, w: 1}
   - {x: -0, y: -0, z: -0, w: 1}
   refreshRotation: 0
