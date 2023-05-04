@@ -1,6 +1,7 @@
 
 using System.Collections.Generic;
 using System.Threading;
+using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
 
@@ -19,6 +20,9 @@ public class ShowMousePosition : MonoBehaviour
     [Tooltip("When enabled, this will allow you to paint walls on an object. It will NOT allow you to select anything in the scene view")]
     [SerializeField] public bool creatingWall = true;
 
+    [Tooltip("When enabled, this will use your prefab's x-axis size as your distance")]
+    [SerializeField] public bool useXSize = false;
+
     [Tooltip("When enabled, this will allow you to paint walls on a grid. Best for straight walls.")]
     [SerializeField] private bool useGrid = false;
 
@@ -31,7 +35,7 @@ public class ShowMousePosition : MonoBehaviour
     [Tooltip("When enabled, this will let you draw prefabs on top of prefabs, best to create demolished walls/debris.")]
     [SerializeField] public bool considerRaycast = false;
 
-    [Tooltip("When enabled, this will make your prefabs to consider raycast after you release RMB.")]
+    [Tooltip("When enabled, this will set your drawn walls to be on the 'default' layer after you release RMB.")]
     [SerializeField] public bool backToDefault = true;
 
     [Tooltip("Wall prefab goes here. Only prefab in Element 0 will be drawn, unless 'Random Wall' is enabled")]
@@ -240,7 +244,17 @@ public class ShowMousePosition : MonoBehaviour
             try
             {
                 mesh = walls[0].GetComponent<MeshFilter>().sharedMesh;
-                prefabDistance = mesh.bounds.size.z;
+
+                if (useXSize == true)
+                {
+                    
+                   prefabDistance = mesh.bounds.size.x;
+                }
+                else if (useXSize == false)
+                {
+
+                    prefabDistance = mesh.bounds.size.z;
+                }
             }
             catch
             {

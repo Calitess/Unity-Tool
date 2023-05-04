@@ -9,7 +9,7 @@ using UnityEngine.UIElements;
 [CustomEditor(typeof(ShowMousePosition))]
 public class ShowPointerEditor : Editor
 {
-    private SerializedProperty creatingWallProperty,gridProperty,wallsProperty, undoProperty, randomProperty, raycastProperty, useCustomDistanceProperty, customDistanceProperty, backToDefaultProperty;
+    private SerializedProperty creatingWallProperty,gridProperty,wallsProperty, undoProperty, randomProperty, raycastProperty, useCustomDistanceProperty, customDistanceProperty, backToDefaultProperty, rotatePrefabProperty;
     private ShowMousePosition targetObject;
     private bool showTips = true;
 
@@ -26,6 +26,7 @@ public class ShowPointerEditor : Editor
 
         // Get the serialized bool field from the target object
         creatingWallProperty = serializedObject.FindProperty("creatingWall");
+        rotatePrefabProperty = serializedObject.FindProperty("useXSize");
         undoProperty = serializedObject.FindProperty("undoIndividualWalls");
         randomProperty = serializedObject.FindProperty("randomWall");
         gridProperty = serializedObject.FindProperty("useGrid");
@@ -56,6 +57,8 @@ public class ShowPointerEditor : Editor
 
         // Draw the fields for all the property
         EditorGUILayout.PropertyField(creatingWallProperty);
+
+        EditorGUILayout.PropertyField(rotatePrefabProperty);
 
         EditorGUILayout.PropertyField(gridProperty);
 
